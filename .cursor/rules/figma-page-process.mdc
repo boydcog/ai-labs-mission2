@@ -1,0 +1,317 @@
+# Figma Page Processing Workflow
+
+When a user provides a Figma link for a full page/screen, follow this standardized process to create a complete React page component.
+
+## Step 1: Extract Node ID from Figma URL
+- Figma URLs format: `https://www.figma.com/design/{fileKey}/{fileName}?node-id={nodeId}&t=...`
+- Extract nodeId from URL (e.g., `5089-16174` becomes `5089:16174`)
+- If URL format is `https://www.figma.com/design/{fileKey}/branch/{branchKey}/{fileName}`, use branchKey as fileKey
+
+## Step 2: Get Design Context
+1. Use `mcp_Figma_get_design_context` with extracted nodeId
+   - Parameters:
+     - `nodeId`: Extracted from URL (format: `"123:456"` or `"123-456"`)
+     - `clientLanguages`: `"typescript,tsx"`
+     - `clientFrameworks`: `"react"`
+     - `artifactType`: `"WEB_PAGE_OR_APP_SCREEN"` (for full pages)
+     - `taskType`: `"CREATE_ARTIFACT"` (for new pages)
+2. Use `mcp_Figma_get_screenshot` to get visual reference
+   - Same parameters as above
+
+## Step 3: Analyze Page Structure
+1. Identify page components from Figma design:
+   - Topbar/Header
+   - Main content sections
+   - Buttons and interactive elements
+   - Lists and cards
+   - Forms and inputs
+   - Progress indicators
+2. Map Figma components to existing React components:
+   - Check `src/components/default/index.ts` for available components
+   - Use existing components whenever possible
+   - Only create new components if absolutely necessary
+
+## Step 4: Create Page Component
+1. Create page file in appropriate location:
+   - Pages: `src/pages/{PageName}.tsx`
+   - Or in App.tsx if it's a route
+2. Structure the page (mobile-first, max-width 360px):
+   ```tsx
+   import { Topbar, Button, Input, ... } from '@/components/default';
+   
+   function PageName() {
+     // State management
+     const [state, setState] = useState();
+     
+     return (
+       <div className="w-full min-h-screen bg-white">
+         <div className="w-full max-w-[360px] mx-auto">
+           <Topbar ... />
+           <main className="w-full px-4 sm:px-5">
+             {/* Content sections - responsive within mobile range */}
+           </main>
+         </div>
+       </div>
+     );
+   }
+   ```
+
+## Step 5: Apply Design System Rules
+Follow `.cursor/rules/component-usage.mdc` for:
+- Color tokens usage
+- Spacing tokens usage
+- Typography tokens usage
+- Component composition patterns
+- Accessibility requirements
+
+## Step 6: Layout Analysis and Decision (MANDATORY)
+**⚠️ CRITICAL: Figma/Anima 코드를 그대로 적용하지 말고, 스크린샷을 확인한 후 레이아웃을 분석하세요.**
+
+### 6.1. Initial Screenshot and Analysis
+1. **Playwright로 현재 구현 스크린샷 캡처**:
+   - 개발 서버 실행 후 페이지 접속
+   - `mcp_playwright_playwright_screenshot`으로 전체 페이지 캡처
+   - 스크린샷을 분석하여 레이아웃 문제 확인
+
+2. **레이아웃 요구사항 분석**:
+   - **화면 채움 vs 중앙 정렬**:
+     * Figma/Anima 코드가 `w-[360px]` 같은 고정 너비를 사용하는지 확인
+     * 실제 모바일/웹 환경에서 어떻게 보여야 하는지 판단
+     * 모바일: 전체 화면 채움 vs 중앙 정렬
+     * 데스크탑: 중앙 정렬 권장 (`max-w-[360px] mx-auto`)
+   - **컴포넌트 배치**:
+     * `absolute` positioning이 과도하게 사용되는지 확인
+     * 정상적인 flow로 변경 가능한지 판단
+     * 겹치는 요소만 `absolute` 사용 (예: 카드가 헤더와 콘텐츠 사이에 겹침)
+   - **반응형 동작**:
+     * 다양한 화면 크기(320px-480px)에서 테스트
+     * 콘텐츠 오버플로우나 좁아 보이는 문제 확인
+     * 데스크탑에서 중앙 정렬이 제대로 작동하는지 확인
+
+3. **레이아웃 결정**:
+   - **컨테이너 구조 선택**:
+     * ✅ **권장**: `w-full max-w-[360px] mx-auto` (모바일 우선, 데스크탑 중앙 정렬)
+     * ⚠️ **조건부**: `w-full` (디자인이 명시적으로 전체 화면을 요구하는 경우만)
+   - **컴포넌트 레이아웃 선택**:
+     * ✅ **권장**: Flex/Grid + relative positioning (정상 flow)
+     * ⚠️ **조건부**: Absolute positioning (겹치는 요소만)
+   - **간격 패턴**:
+     * `px-4 sm:px-5` (수평 패딩)
+     * `space-y-4 sm:space-y-5` (수직 간격)
+   - **결정 사항 문서화** 후 구현
+
+### 6.2. Implement Layout
+**이 프로젝트는 모바일 우선 디자인입니다 (360px x 732px 기준)**
+
+1. Use consistent layout patterns:
+   - Full screen wrapper: `w-full min-h-screen bg-white`
+   - **Mobile container**: `w-full max-w-[360px] mx-auto` (항상 최대 너비 360px, 데스크탑에서 중앙 정렬)
+   - Padding: `px-4 sm:px-5` (작은 모바일: 16px, 큰 모바일: 20px)
+   - Sections: `space-y-4 sm:space-y-5` (반응형 간격)
+   
+2. **Mobile-first responsive design (MANDATORY)**:
+   - **기본 디자인**: 360px x 732px (Figma 기준)
+   - **모바일 범위**: 320px ~ 480px (sm: breakpoint 사용)
+   - **데스크탑/태블릿**: 모바일 UI 유지, 중앙 정렬 (`max-w-[360px] mx-auto`)
+   - ❌ **금지**: `md:`, `lg:` breakpoint로 레이아웃 구조 변경
+   - ✅ **허용**: `sm:` breakpoint로 모바일 크기 범위 내 반응형 (텍스트, 간격, 패딩)
+   - **⚠️ CRITICAL**: Figma에서 픽셀로 정의되어 있어도 반응형으로 적용해야 함
+     * 고정 픽셀 값(`w-[360px]`, `h-[259px]` 등)을 사용하지 말고 상대적 단위 사용
+     * `w-full`, `h-auto`, `min-h-`, `max-h-` 등 반응형 유틸리티 사용
+     * 퍼센트, `vw`, `vh` 등 상대 단위 활용
+     * Flex/Grid의 `flex-1`, `grow`, `shrink` 속성 활용
+
+3. **Positioning Strategy**:
+   - ✅ **권장**: Flex/Grid with relative positioning
+   - ⚠️ **조건부**: Absolute positioning (겹치는 요소만)
+   - ❌ **금지**: 과도한 absolute positioning, 복잡한 calc() 계산
+
+## Step 7: Add State Management
+1. Use React hooks for local state:
+   ```tsx
+   const [value, setValue] = useState('');
+   const [progress, setProgress] = useState(0);
+   ```
+2. Handle user interactions:
+   - Form inputs: controlled components
+   - Buttons: onClick handlers
+   - Navigation: useNavigate or callback props
+
+## Step 8: Responsive Verification (MANDATORY)
+**⚠️ 필수: 반응형 동작을 다양한 화면 크기로 검증해야 합니다.**
+
+1. **Playwright로 다양한 화면 크기 테스트**:
+   - **작은 모바일**: 320px x 568px (iPhone SE)
+   - **표준 모바일**: 360px x 800px (기본 디자인)
+   - **큰 모바일**: 480px x 854px
+   - **데스크탑**: 1280px x 720px (중앙 정렬 확인)
+   
+2. **각 화면 크기에서 확인할 사항**:
+   - 콘텐츠가 오버플로우되지 않는지
+   - 텍스트가 잘리지 않는지
+   - 버튼/인터랙티브 요소가 터치 가능한 크기인지 (최소 44px)
+   - 간격과 패딩이 적절한지
+   - 헤더/푸터가 화면 상/하단에 고정되어 있는지 (필요한 경우)
+   - 중앙 정렬이 제대로 작동하는지 (데스크탑)
+
+3. **스크린샷 캡처 및 비교**:
+   - 각 화면 크기마다 `mcp_playwright_playwright_screenshot`으로 캡처
+   - 문제가 발견되면 수정 후 재캡처
+   - 최소 3개 이상의 화면 크기로 검증 완료
+
+4. **고정 위치 요소 처리**:
+   - **헤더/푸터**: 화면 상/하단에 고정되어야 하는 경우
+     * `sticky top-0` 또는 `fixed top-0` 사용
+     * 레퍼런스(Figma/Anima)와 달라도 화면 상/하단 고정 적용
+   - **Floating Action Button**: 화면 하단 고정
+   - **Navigation Bar**: 화면 하단 고정
+   - **Modal/Overlay**: 화면 전체를 덮도록 `fixed inset-0` 사용
+
+## Step 9: Verify Implementation
+
+**⚠️ 필수: 모든 코드 변경 후 반드시 테스트를 실행해야 합니다.**
+
+1. Check for linter errors using `read_lints`
+2. Ensure all design tokens are used correctly
+3. Verify component props match design
+4. **Test responsive behavior** (Step 8에서 이미 완료)
+5. Check accessibility (ARIA labels, semantic HTML)
+6. **File size check**: Ensure page component is under 300 lines (split if necessary)
+7. **Code reuse**: Check for similar pages/components and reuse patterns
+8. **Run lint**: Execute `pnpm lint` to check for errors
+9. **Run type-check**: Execute `pnpm type-check` to verify TypeScript types
+10. **Run build**: Execute `pnpm build` to verify build success
+11. **Run test**: Execute `pnpm test` to run page tests (lint + type-check + build + playwright page tests)
+12. Fix any errors and re-verify
+13. **Do not proceed if any test fails**
+
+**테스트 실행은 필수이며, 생략할 수 없습니다.**
+
+**참고**: 페이지 생성/수정 시에는 `pnpm test`를 실행합니다. 이는 페이지 테스트만 실행하며, 컴포넌트 테스트는 제외됩니다 (컴포넌트는 안정되어 있다고 가정).
+
+## Page Structure Template
+
+```tsx
+import { useState } from 'react';
+import { Topbar, Button, Input, ProgressBar, ... } from '@/components/default';
+
+function PageName() {
+  const [state, setState] = useState();
+  
+  return (
+    <div className="w-full min-h-screen bg-white">
+      {/* Mobile-first layout: max-width 360px, centered on desktop */}
+      <div className="w-full max-w-[360px] mx-auto">
+        {/* Topbar if present in design */}
+        <Topbar
+          type="default"
+          title="Page Title"
+          onBack={() => {}}
+          onClose={() => {}}
+        />
+        
+        {/* Main content - responsive within mobile size range */}
+        <main className="w-full px-4 sm:px-5 space-y-4 sm:space-y-5">
+          {/* Section 1 */}
+          <section className="space-y-3 sm:space-y-4">
+            <h1 className="text-xl sm:text-2xl font-bold text-[#1e242f]">Section Title</h1>
+            {/* Content */}
+          </section>
+          
+          {/* Section 2 */}
+          <section className="space-y-3 sm:space-y-4">
+            {/* Content */}
+          </section>
+        </main>
+      </div>
+    </div>
+  );
+}
+
+export default PageName;
+```
+
+## Component Mapping from Figma to React
+
+When analyzing Figma design, map elements to components:
+
+- **Navigation Bar** → `Topbar` component
+- **Buttons** → `Button` component (check hierarchy, height, type)
+- **Text Inputs** → `Input` component (check inputType, status)
+- **Progress Indicators** → `ProgressBar` or `ProgressCircle`
+- **Chips/Tags** → `InputChip` or `AssistChip`
+- **Lists** → `List` and `ListItem` components
+- **Cards** → `Card` component
+- **Icons** → `Icon` component
+- **Quiz Buttons** → `QuizButton` component
+
+## Common Page Patterns
+
+### 1. Form Page
+```tsx
+<div className="w-full min-h-screen bg-white">
+  <div className="w-full max-w-[360px] mx-auto">
+    <Topbar type="default" title="Form" onBack={() => {}} />
+    <main className="w-full px-4 sm:px-5 space-y-4 sm:space-y-5">
+      <form className="space-y-3 sm:space-y-4">
+        <Input ... />
+        <Button ... />
+      </form>
+    </main>
+  </div>
+</div>
+```
+
+### 2. List Page
+```tsx
+<div className="w-full min-h-screen bg-white">
+  <div className="w-full max-w-[360px] mx-auto">
+    <Topbar type="default" title="List" />
+    <main className="w-full px-4 sm:px-5">
+      <List>
+        <ListItem>...</ListItem>
+      </List>
+    </main>
+  </div>
+</div>
+```
+
+### 3. Dashboard Page
+```tsx
+<div className="w-full min-h-screen bg-white">
+  <div className="w-full max-w-[360px] mx-auto">
+    <Topbar type="default" title="Dashboard" />
+    <main className="w-full px-4 sm:px-5 space-y-4 sm:space-y-5">
+      <div className="space-y-3 sm:space-y-4">
+        {/* Single column layout - no grid changes on desktop */}
+        <Card>...</Card>
+        <Card>...</Card>
+      </div>
+    </main>
+  </div>
+</div>
+```
+
+## Execution
+
+When user provides Figma page link:
+```
+@src/pages/{PageName}.tsx : {Figma URL}
+```
+
+Or:
+```
+/create-page {PageName} : {Figma URL}
+```
+
+Execute all steps automatically:
+1. Extract nodeId
+2. Get design context
+3. Analyze structure
+4. Create page component
+5. Apply design system
+6. Implement layout
+7. Add state management
+8. Verify implementation
+
+Do not ask for confirmation - proceed with the full workflow immediately.

@@ -78,6 +78,11 @@ Desktop.ini
 .qodo
 *.pem
 
+# Figma cache (screenshots, specs, extracted assets)
+.figma-cache/
+
 # Optional: Keep docs/ if you want to track documentation
 # Uncomment the line below if you want to ignore docs/
 # docs/
+
+docs/

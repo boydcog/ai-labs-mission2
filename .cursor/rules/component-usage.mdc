@@ -1,0 +1,500 @@
+# Component Usage Rules for Frontend Development
+
+이 규칙은 디자인 시스템을 활용한 프론트엔드 코드 생성 시 따라야 할 가이드라인입니다.
+
+**참고**: 프로젝트 전역 설정(아이콘 라이브러리, 디자인 토큰, 반응형 디자인 등)은 `.cursor/rules/project-context.mdc`를 참고하세요.
+
+## 디자인 토큰 사용 규칙
+
+### 1. 색상 (Colors)
+**항상 시맨틱 토큰을 사용하세요. 하드코딩된 색상 값은 금지됩니다.**
+
+- **Primary 색상**: `bg-[#2a69e9]` 또는 `text-[#2a69e9]` (Figma `color/text/primary_1`, `color/surface/primary_1`)
+- **Neutral 색상**: 
+  - `bg-[#edf1f8]` (neutral_2 surface)
+  - `text-[#1e242f]` (neutral_1 text)
+  - `text-[#323d4e]` (neutral_2 text)
+  - `bg-white` 또는 `bg-[#ffffff]` (neutral_1 bg)
+- **Success 색상**: 
+  - `bg-[#c7ebe4]` (success_1 surface), `text-[#005243]` (success_1 text)
+- **Error 색상**: 
+  - `bg-[#ffd6df]` (error_1 surface), `text-[#91122e]` (error_1 text)
+- **Stroke 색상**: `border-[#dbe1eb]` (neutral_2 stroke)
+
+**사용 예시:**
+```tsx
+// ✅ 올바른 사용
+<div className="bg-[#2a69e9] text-white">Primary Button</div>
+<div className="bg-[#edf1f8] text-[#1e242f]">Neutral Background</div>
+
+// ❌ 잘못된 사용
+<div className="bg-blue-500">하드코딩된 색상</div>
+<div style={{ backgroundColor: '#2a69e9' }}>인라인 스타일</div>
+```
+
+### 2. 간격 (Spacing)
+**시맨틱 gap 토큰을 우선 사용하세요.**
+
+- `gap/gap-m` → `20px`
+- `gap/gap-s` → `16px`
+- `gap/gap-l` → `24px`
+- `gap/gap-xs` → `12px`
+- `gap/gap-2xs` → `8px`
+
+**사용 예시:**
+```tsx
+// ✅ 올바른 사용
+<div className="flex gap-5"> {/* gap-m = 20px */}
+<div className="p-4"> {/* gap-s = 16px */}
+<div className="space-y-6"> {/* gap-l = 24px */}
+
+// ❌ 잘못된 사용
+<div className="flex gap-[23px]"> {/* 하드코딩 */}
+```
+
+### 3. 타이포그래피 (Typography)
+**타이포그래피 토큰을 사용하세요.**
+
+- Font Family: `font-sans` (Inter/Pretendard), `font-mono` (Space Mono)
+- Font Sizes: `text-xs`, `text-sm`, `text-base`, `text-lg`, `text-xl`, `text-2xl`, `text-3xl`
+- Font Weights: `font-regular` (400), `font-medium` (500), `font-bold` (700)
+- Line Heights: `leading-tight` (1.2), `leading-normal` (1.5), `leading-relaxed` (1.75)
+
+**사용 예시:**
+```tsx
+// ✅ 올바른 사용
+<h1 className="text-2xl font-bold leading-tight">Title</h1>
+<p className="text-base font-medium leading-normal">Body text</p>
+
+// ❌ 잘못된 사용
+<h1 style={{ fontSize: '24px', fontWeight: 700 }}>하드코딩</h1>
+```
+
+### 4. Border Radius
+**일관된 radius 값을 사용하세요.**
+
+- `rounded-full` - 완전히 둥근 모서리 (pill shape, 작은 버튼)
+- `rounded-2xl` - 큰 둥근 모서리 (큰 버튼, 카드)
+- `rounded-lg` - 중간 둥근 모서리
+- `rounded-none` - 직각 모서리
+
+**사용 예시:**
+```tsx
+// ✅ 올바른 사용
+<button className="rounded-full">Pill Button</button>
+<div className="rounded-2xl">Large Card</div>
+
+// ❌ 잘못된 사용
+<button className="rounded-[50px]">하드코딩</button>
+```
+
+### 5. Border Width
+**일관된 border width를 사용하세요.**
+
+- 얇은 테두리: `border` (1px) - 작은 버튼, 입력 필드
+- 두꺼운 테두리: `border-4` (4px) - Neobrutalist 스타일 (사용 시 주의)
+
+**사용 예시:**
+```tsx
+// ✅ 올바른 사용
+<input className="border border-[#dbe1eb]" />
+<button className="border-4 border-black">Brutalist Button</button>
+```
+
+## 컴포넌트 사용 규칙
+
+### 1. 컴포넌트 Import
+**항상 `src/components/default`에서 import하세요.**
+
+```tsx
+// ✅ 올바른 사용
+import { Button, Input, ProgressBar, Topbar, QuizButton } from '@/components/default';
+import Icon from '@/components/default/Icon';
+
+// ❌ 잘못된 사용
+import Button from '../components/Button'; // 상대 경로
+```
+
+### 2. 컴포넌트 Props 사용
+**타입 안전성을 위해 항상 타입을 확인하고 사용하세요.**
+
+```tsx
+// ✅ 올바른 사용
+<Button 
+  hierarchy="primary" 
+  height={64} 
+  type="text_only"
+  status="default"
+>
+  Click me
+</Button>
+
+<Input
+  inputType="label+helper"
+  label="Field Label"
+  helper="Helper text"
+  status="default"
+  showClearButton
+  onClear={() => setValue('')}
+/>
+
+<ProgressBar height={14} progress={75} />
+
+<Topbar
+  type="default"
+  title="Subtask"
+  onBack={() => {}}
+  onClose={() => {}}
+/>
+
+<QuizButton
+  height={256}
+  status="default"
+  progress={40}
+>
+  Word
+</QuizButton>
+
+// ❌ 잘못된 사용
+<Button hierarchy="wrong">Invalid prop</Button>
+<Input status="invalid">Invalid status</Input>
+```
+
+### 3. Icon 컴포넌트 사용
+**Icon은 항상 Icon 컴포넌트를 사용하세요.**
+
+```tsx
+// ✅ 올바른 사용
+import Icon from '@/components/default/Icon';
+
+<Icon type="line" name="arrow_back_ios" size={24} />
+<Icon type="fill" name="check_circle" size={24} />
+<Icon type="graphic" name="brain" size={48} />
+
+// ❌ 잘못된 사용
+<span>←</span> {/* 텍스트 아이콘 */}
+<img src="/icon.svg" /> {/* 직접 이미지 */}
+```
+
+### 4. 상태 관리
+**컴포넌트 상태는 React hooks를 사용하세요.**
+
+```tsx
+// ✅ 올바른 사용
+const [value, setValue] = useState('');
+const [progress, setProgress] = useState(0);
+
+<Input
+  value={value}
+  onChange={(e) => setValue(e.target.value)}
+  showClearButton
+  onClear={() => setValue('')}
+/>
+
+<ProgressBar progress={progress} />
+
+// ❌ 잘못된 사용
+// 제어되지 않는 컴포넌트 (uncontrolled)
+<Input defaultValue="text" />
+```
+
+## 스타일링 규칙
+
+### 1. Tailwind CSS 우선 사용
+**인라인 스타일은 최소화하고 Tailwind utility classes를 사용하세요.**
+
+```tsx
+// ✅ 올바른 사용
+<div className="flex items-center justify-between gap-5 p-4 bg-white rounded-lg">
+  <span className="text-base font-medium text-[#1e242f]">Content</span>
+</div>
+
+// ❌ 잘못된 사용
+<div style={{ display: 'flex', alignItems: 'center', gap: '20px' }}>
+  <span style={{ fontSize: '16px', fontWeight: 500 }}>Content</span>
+</div>
+```
+
+### 2. 반응형 디자인
+**이 프로젝트는 모바일 우선 디자인입니다. 기본 디자인 크기: 360px x 732px**
+
+#### 기본 원칙
+- **기본 디자인**: 360px x 732px (모바일 세로)
+- **다른 모바일 기기**: 반응형으로 동작 (320px ~ 480px)
+- **데스크탑/태블릿**: 모바일 UI를 그대로 보여주되, 중앙 정렬 + 최대 너비 제한
+
+#### 레이아웃 패턴
+```tsx
+// ✅ 올바른 사용 - 페이지/화면 레이아웃
+<div className="w-full min-h-screen bg-white">
+  <div className="w-full max-w-[360px] mx-auto">
+    {/* 모바일 UI 내용 */}
+  </div>
+</div>
+
+// ✅ 올바른 사용 - 컴포넌트 내부 반응형
+<div className="w-full px-4 sm:px-6">
+  <div className="w-full max-w-full">
+    {/* 작은 모바일(320px) ~ 큰 모바일(480px)까지 반응형 */}
+  </div>
+</div>
+
+// ✅ 올바른 사용 - 텍스트 크기 반응형
+<div className="text-sm sm:text-base"> {/* 320px: 14px, 360px+: 16px */}
+<div className="text-base sm:text-lg"> {/* 320px: 16px, 360px+: 18px */}
+
+// ✅ 올바른 사용 - 간격 반응형
+<div className="gap-3 sm:gap-4 md:gap-5"> {/* 모바일에서만 반응형 */}
+<div className="p-4 sm:p-5"> {/* 작은 모바일: 16px, 큰 모바일: 20px */}
+
+// ❌ 잘못된 사용
+<div className="w-1/2"> {/* 모바일에서 너무 작음, 항상 w-full 사용 */}
+<div className="md:w-1/2 lg:w-1/3"> {/* 데스크탑 레이아웃 변경 금지 */}
+<div className="max-w-7xl"> {/* 너무 큰 최대 너비 */}
+```
+
+#### 모바일 반응형 Breakpoints
+- **320px ~ 360px**: 작은 모바일 (기본)
+- **360px ~ 480px**: 큰 모바일 (sm:)
+- **480px 이상**: 데스크탑/태블릿 (모바일 UI 유지, 중앙 정렬)
+
+#### 데스크탑/태블릿 처리
+```tsx
+// ✅ 올바른 사용 - 데스크탑에서도 모바일 UI 유지
+<div className="w-full min-h-screen bg-white">
+  <div className="w-full max-w-[360px] mx-auto md:shadow-lg">
+    {/* 데스크탑에서도 360px 너비 유지, 중앙 정렬 */}
+    <div className="w-full px-4">
+      {/* 내용 */}
+    </div>
+  </div>
+</div>
+
+// ❌ 잘못된 사용
+<div className="w-full md:w-1/2 lg:w-1/3"> {/* 데스크탑 레이아웃 변경 */}
+<div className="grid grid-cols-1 md:grid-cols-2"> {/* 데스크탑 그리드 변경 */}
+```
+
+#### 컴포넌트 내부 반응형
+```tsx
+// ✅ 올바른 사용 - 컴포넌트는 모바일 크기에 맞춰 반응형
+<Button 
+  className="w-full sm:w-auto sm:min-w-[120px]"
+  // 작은 모바일: 전체 너비, 큰 모바일: 자동 너비
+/>
+
+// ✅ 올바른 사용 - 간격 조정
+<div className="flex flex-col gap-3 sm:gap-4">
+  {/* 작은 모바일: 12px, 큰 모바일: 16px */}
+</div>
+
+// ✅ 올바른 사용 - 폰트 크기 조정
+<h1 className="text-xl sm:text-2xl"> {/* 320px: 20px, 360px+: 24px */}
+<p className="text-sm sm:text-base"> {/* 320px: 14px, 360px+: 16px */}
+```
+
+### 3. 접근성 (Accessibility)
+**항상 접근성을 고려하세요.**
+
+```tsx
+// ✅ 올바른 사용
+<button
+  onClick={handleClick}
+  aria-label="Close dialog"
+  className="p-2"
+>
+  <Icon type="line" name="close" size={24} aria-hidden="true" />
+</button>
+
+<input
+  id="email"
+  type="email"
+  aria-label="Email address"
+  aria-required="true"
+/>
+
+// ❌ 잘못된 사용
+<div onClick={handleClick}> {/* button 대신 div 사용 */}
+<input type="text" /> {/* 라벨 없음 */}
+```
+
+## 컴포넌트 조합 패턴
+
+### 1. 레이아웃 패턴
+**일관된 레이아웃 패턴을 사용하세요.**
+
+```tsx
+// ✅ 페이지 레이아웃
+<div className="min-h-screen bg-white">
+  <Topbar
+    type="default"
+    title="Page Title"
+    onBack={() => navigate(-1)}
+    onClose={() => close()}
+  />
+  <main className="p-5">
+    {/* Content */}
+  </main>
+</div>
+
+// ✅ 카드 레이아웃
+<Card type="default" className="p-5">
+  <div className="space-y-4">
+    <h2 className="text-xl font-bold">Card Title</h2>
+    <p className="text-base text-[#323d4e]">Card content</p>
+  </div>
+</Card>
+```
+
+### 2. 폼 패턴
+**일관된 폼 패턴을 사용하세요.**
+
+```tsx
+// ✅ 폼 레이아웃
+<form className="space-y-6 p-5">
+  <Input
+    inputType="label+helper"
+    label="Email"
+    helper="Enter your email address"
+    type="email"
+    status="default"
+    showClearButton
+    onClear={() => setEmail('')}
+  />
+  
+  <Input
+    inputType="label+helper"
+    label="Password"
+    helper="Enter your password"
+    type="password"
+    status={errors.password ? 'error' : 'default'}
+    errorMessage={errors.password}
+  />
+  
+  <Button
+    hierarchy="primary"
+    height={64}
+    type="text_only"
+    className="w-full"
+  >
+    Submit
+  </Button>
+</form>
+```
+
+### 3. 리스트 패턴
+**일관된 리스트 패턴을 사용하세요.**
+
+```tsx
+// ✅ 리스트 레이아웃
+<List className="space-y-2">
+  <ListItem>
+    <div className="flex items-center gap-4">
+      <Icon type="graphic" name="brain" size={32} />
+      <div className="flex-1">
+        <h3 className="text-base font-bold">Item Title</h3>
+        <p className="text-sm text-[#323d4e]">Item description</p>
+      </div>
+    </div>
+  </ListItem>
+</List>
+```
+
+## 금지 사항
+
+### 1. 하드코딩 금지
+- ❌ 하드코딩된 색상 값 (`bg-blue-500`, `text-red-600` 등)
+- ❌ 하드코딩된 간격 값 (`gap-[23px]`, `p-[17px]` 등)
+- ❌ 하드코딩된 폰트 크기 (`text-[18px]` 대신 `text-lg` 사용)
+
+### 2. 인라인 스타일 최소화
+- ❌ `style={{ backgroundColor: '#2a69e9' }}` 대신 `bg-[#2a69e9]` 사용
+- ✅ 인라인 스타일은 동적 값이 필요한 경우에만 사용 (예: `style={{ width: `${progress}%` }}`)
+
+### 3. 컴포넌트 직접 수정 금지
+- ❌ `src/components/default`의 컴포넌트를 직접 수정하지 마세요
+- ✅ 필요한 경우 새 컴포넌트를 만들거나 기존 컴포넌트에 prop을 추가하세요
+
+### 4. 타입 무시 금지
+- ❌ `as any` 사용 금지
+- ❌ 타입 단언(`as`) 남용 금지
+- ✅ 항상 정확한 타입을 사용하세요
+
+## 코드 생성 체크리스트
+
+프론트엔드 코드를 생성할 때 다음을 확인하세요:
+
+- [ ] 모든 색상이 시맨틱 토큰을 사용하는가?
+- [ ] 모든 간격이 gap 토큰을 사용하는가?
+- [ ] 컴포넌트가 `@/components/default`에서 import되는가?
+- [ ] 모든 props가 올바른 타입인가?
+- [ ] 접근성 속성(aria-label, role 등)이 포함되어 있는가?
+- [ ] 반응형 디자인이 고려되었는가? (모바일 우선, 최대 너비 360px)
+- [ ] 데스크탑/태블릿에서도 모바일 UI가 유지되는가? (중앙 정렬)
+- [ ] 모바일 크기 범위(320px-480px) 내에서 반응형으로 동작하는가?
+- [ ] 하드코딩된 값이 없는가?
+- [ ] Storybook 스토리가 필요한 경우 추가되었는가?
+- [ ] 파일 크기가 300줄 이내인가? (초과 시 분리)
+- [ ] 비슷한 코드가 있는지 확인하고 재사용했는가?
+- [ ] 아이콘은 `@phosphor-icons/core`에서 import했는가? (SVG 파일 사용 금지)
+- [ ] **⚠️ 필수: `pnpm lint` 실행 및 통과**
+- [ ] **⚠️ 필수: `pnpm type-check` 실행 및 통과**
+- [ ] **⚠️ 필수: `pnpm build` 실행 및 통과**
+- [ ] **⚠️ 필수: 테스트 실행 및 모든 테스트 통과**
+  - 컴포넌트 생성/수정 시: `pnpm test:component` (컴포넌트 테스트)
+  - 페이지 생성/수정 시: `pnpm test` (페이지 테스트, 컴포넌트 테스트 제외)
+- [ ] 테스트 실행 시 발생한 에러/경고 기록 및 해결
+
+## 예제: 완전한 컴포넌트 사용
+
+```tsx
+import { useState } from 'react';
+import { Button, Input, ProgressBar, Topbar } from '@/components/default';
+import Icon from '@/components/default/Icon';
+
+function ExamplePage() {
+  const [value, setValue] = useState('');
+  const [progress, setProgress] = useState(0);
+
+  return (
+    <div className="min-h-screen bg-white">
+      <Topbar
+        type="default"
+        title="Example Page"
+        onBack={() => console.log('back')}
+        onClose={() => console.log('close')}
+      />
+      
+      <main className="p-5 space-y-6">
+        <div className="space-y-4">
+          <h1 className="text-2xl font-bold text-[#1e242f]">Title</h1>
+          
+          <Input
+            inputType="label+helper"
+            label="Field Label"
+            helper="Helper text"
+            value={value}
+            onChange={(e) => setValue(e.target.value)}
+            showClearButton
+            onClear={() => setValue('')}
+            status="default"
+          />
+          
+          <ProgressBar height={14} progress={progress} />
+          
+          <Button
+            hierarchy="primary"
+            height={64}
+            type="text_only"
+            status="default"
+            onClick={() => setProgress(progress + 10)}
+            className="w-full"
+          >
+            Increase Progress
+          </Button>
+        </div>
+      </main>
+    </div>
+  );
+}
+```

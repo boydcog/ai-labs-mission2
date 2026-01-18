@@ -1,0 +1,5664 @@
+{
+  "collections": {
+    "Primitive : Color": {
+      "id": "VariableCollectionId:136:2446",
+      "modes": [
+        {
+          "id": "136:0",
+          "name": "Mode 1"
+        }
+      ],
+      "variables": {
+        "colors": [
+          {
+            "name": "gray/1300",
+            "token": "gray-1300",
+            "type": "color",
+            "value": "#101010"
+          },
+          {
+            "name": "gray/1200",
+            "token": "gray-1200",
+            "type": "color",
+            "value": "#232323"
+          },
+          {
+            "name": "gray/1100",
+            "token": "gray-1100",
+            "type": "color",
+            "value": "#313131"
+          },
+          {
+            "name": "gray/1000",
+            "token": "gray-1000",
+            "type": "color",
+            "value": "#404040"
+          },
+          {
+            "name": "gray/900",
+            "token": "gray-900",
+            "type": "color",
+            "value": "#4f4f4f"
+          },
+          {
+            "name": "gray/800",
+            "token": "gray-800",
+            "type": "color",
+            "value": "#5f5f5f"
+          },
+          {
+            "name": "gray/700",
+            "token": "gray-700",
+            "type": "color",
+            "value": "#767676"
+          },
+          {
+            "name": "gray/600",
+            "token": "gray-600",
+            "type": "color",
+            "value": "#9d9d9d"
+          },
+          {
+            "name": "gray/500",
+            "token": "gray-500",
+            "type": "color",
+            "value": "#b2b2b2"
+          },
+          {
+            "name": "gray/400",
+            "token": "gray-400",
+            "type": "color",
+            "value": "#c5c5c5"
+          },
+          {
+            "name": "gray/300",
+            "token": "gray-300",
+            "type": "color",
+            "value": "#d9d9d9"
+          },
+          {
+            "name": "gray/200",
+            "token": "gray-200",
+            "type": "color",
+            "value": "#e3e3e3"
+          },
+          {
+            "name": "gray/100",
+            "token": "gray-100",
+            "type": "color",
+            "value": "#ebebeb"
+          },
+          {
+            "name": "gray/30",
+            "token": "gray-30",
+            "type": "color",
+            "value": "#f8f8f8"
+          },
+          {
+            "name": "slateBlue/1300",
+            "token": "slateblue-1300",
+            "type": "color",
+            "value": "#1e262f"
+          },
+          {
+            "name": "slateBlue/1200",
+            "token": "slateblue-1200",
+            "type": "color",
+            "value": "#28333e"
+          },
+          {
+            "name": "slateBlue/1100",
+            "token": "slateblue-1100",
+            "type": "color",
+            "value": "#32404e"
+          },
+          {
+            "name": "slateBlue/1000",
+            "token": "slateblue-1000",
+            "type": "color",
+            "value": "#3b4d5e"
+          },
+          {
+            "name": "slateBlue/900",
+            "token": "slateblue-900",
+            "type": "color",
+            "value": "#46596d"
+          },
+          {
+            "name": "slateBlue/800",
+            "token": "slateblue-800",
+            "type": "color",
+            "value": "#4f667d"
+          },
+          {
+            "name": "slateBlue/700",
+            "token": "slateblue-700",
+            "type": "color",
+            "value": "#5b758f"
+          },
+          {
+            "name": "slateBlue/600",
+            "token": "slateblue-600",
+            "type": "color",
+            "value": "#6f87a0"
+          },
+          {
+            "name": "slateBlue/500",
+            "token": "slateblue-500",
+            "type": "color",
+            "value": "#8599ad"
+          },
+          {
+            "name": "slateBlue/400",
+            "token": "slateblue-400",
+            "type": "color",
+            "value": "#a0b2c5"
+          },
+          {
+            "name": "slateBlue/300",
+            "token": "slateblue-300",
+            "type": "color",
+            "value": "#c0ccd8"
+          },
+          {
+            "name": "slateBlue/200",
+            "token": "slateblue-200",
+            "type": "color",
+            "value": "#dbe3eb"
+          },
+          {
+            "name": "slateBlue/100",
+            "token": "slateblue-100",
+            "type": "color",
+            "value": "#edf3f8"
+          },
+          {
+            "name": "slateBlue/50",
+            "token": "slateblue-50",
+            "type": "color",
+            "value": "#f8fafc"
+          },
+          {
+            "name": "steelBlue/1300",
+            "token": "steelblue-1300",
+            "type": "color",
+            "value": "#1e242f"
+          },
+          {
+            "name": "steelBlue/1200",
+            "token": "steelblue-1200",
+            "type": "color",
+            "value": "#28313e"
+          },
+          {
+            "name": "steelBlue/1100",
+            "token": "steelblue-1100",
+            "type": "color",
+            "value": "#323d4e"
+          },
+          {
+            "name": "steelBlue/1000",
+            "token": "steelblue-1000",
+            "type": "color",
+            "value": "#3b495e"
+          },
+          {
+            "name": "steelBlue/900",
+            "token": "steelblue-900",
+            "type": "color",
+            "value": "#46556d"
+          },
+          {
+            "name": "steelBlue/800",
+            "token": "steelblue-800",
+            "type": "color",
+            "value": "#4f617d"
+          },
+          {
+            "name": "steelBlue/700",
+            "token": "steelblue-700",
+            "type": "color",
+            "value": "#5b708f"
+          },
+          {
+            "name": "steelBlue/600",
+            "token": "steelblue-600",
+            "type": "color",
+            "value": "#6f82a0"
+          },
+          {
+            "name": "steelBlue/500",
+            "token": "steelblue-500",
+            "type": "color",
+            "value": "#8595ad"
+          },
+          {
+            "name": "steelBlue/400",
+            "token": "steelblue-400",
+            "type": "color",
+            "value": "#a0aec5"
+          },
+          {
+            "name": "steelBlue/300",
+            "token": "steelblue-300",
+            "type": "color",
+            "value": "#c3ccda"
+          },
+          {
+            "name": "steelBlue/200",
+            "token": "steelblue-200",
+            "type": "color",
+            "value": "#dbe1eb"
+          },
+          {
+            "name": "steelBlue/100",
+            "token": "steelblue-100",
+            "type": "color",
+            "value": "#edf1f8"
+          },
+          {
+            "name": "sunsetRed/100",
+            "token": "sunsetred-100",
+            "type": "color",
+            "value": "#ffedf1"
+          },
+          {
+            "name": "sunsetRed/200",
+            "token": "sunsetred-200",
+            "type": "color",
+            "value": "#ffd6df"
+          },
+          {
+            "name": "sunsetRed/300",
+            "token": "sunsetred-300",
+            "type": "color",
+            "value": "#ffbdcb"
+          },
+          {
+            "name": "sunsetRed/400",
+            "token": "sunsetred-400",
+            "type": "color",
+            "value": "#ff99af"
+          },
+          {
+            "name": "sunsetRed/500",
+            "token": "sunsetred-500",
+            "type": "color",
+            "value": "#fe7492"
+          },
+          {
+            "name": "sunsetRed/600",
+            "token": "sunsetred-600",
+            "type": "color",
+            "value": "#f4456b"
+          },
+          {
+            "name": "sunsetRed/700",
+            "token": "sunsetred-700",
+            "type": "color",
+            "value": "#eb0033"
+          },
+          {
+            "name": "sunsetRed/800",
+            "token": "sunsetred-800",
+            "type": "color",
+            "value": "#d50733"
+          },
+          {
+            "name": "sunsetRed/900",
+            "token": "sunsetred-900",
+            "type": "color",
+            "value": "#b20b2f"
+          },
+          {
+            "name": "sunsetRed/1000",
+            "token": "sunsetred-1000",
+            "type": "color",
+            "value": "#91122e"
+          },
+          {
+            "name": "sunsetRed/1100",
+            "token": "sunsetred-1100",
+            "type": "color",
+            "value": "#760921"
+          },
+          {
+            "name": "sunsetRed/1200",
+            "token": "sunsetred-1200",
+            "type": "color",
+            "value": "#581322"
+          },
+          {
+            "name": "sunsetRed/1300",
+            "token": "sunsetred-1300",
+            "type": "color",
+            "value": "#410714"
+          },
+          {
+            "name": "red/100",
+            "token": "red-100",
+            "type": "color",
+            "value": "#ffeded"
+          },
+          {
+            "name": "red/200",
+            "token": "red-200",
+            "type": "color",
+            "value": "#ffd6d6"
+          },
+          {
+            "name": "red/300",
+            "token": "red-300",
+            "type": "color",
+            "value": "#ffc2c2"
+          },
+          {
+            "name": "red/400",
+            "token": "red-400",
+            "type": "color",
+            "value": "#ffa3a3"
+          },
+          {
+            "name": "red/500",
+            "token": "red-500",
+            "type": "color",
+            "value": "#ff7a7a"
+          },
+          {
+            "name": "red/600",
+            "token": "red-600",
+            "type": "color",
+            "value": "#fb5050"
+          },
+          {
+            "name": "red/700",
+            "token": "red-700",
+            "type": "color",
+            "value": "#f50000"
+          },
+          {
+            "name": "red/800",
+            "token": "red-800",
+            "type": "color",
+            "value": "#d50707"
+          },
+          {
+            "name": "red/900",
+            "token": "red-900",
+            "type": "color",
+            "value": "#b20b0b"
+          },
+          {
+            "name": "red/1000",
+            "token": "red-1000",
+            "type": "color",
+            "value": "#911212"
+          },
+          {
+            "name": "red/1100",
+            "token": "red-1100",
+            "type": "color",
+            "value": "#760909"
+          },
+          {
+            "name": "red/1200",
+            "token": "red-1200",
+            "type": "color",
+            "value": "#581313"
+          },
+          {
+            "name": "red/1300",
+            "token": "red-1300",
+            "type": "color",
+            "value": "#410707"
+          },
+          {
+            "name": "coralRed/100",
+            "token": "coralred-100",
+            "type": "color",
+            "value": "#fff0ed"
+          },
+          {
+            "name": "coralRed/200",
+            "token": "coralred-200",
+            "type": "color",
+            "value": "#ffddd6"
+          },
+          {
+            "name": "coralRed/300",
+            "token": "coralred-300",
+            "type": "color",
+            "value": "#ffccc2"
+          },
+          {
+            "name": "coralRed/400",
+            "token": "coralred-400",
+            "type": "color",
+            "value": "#ffae9e"
+          },
+          {
+            "name": "coralRed/500",
+            "token": "coralred-500",
+            "type": "color",
+            "value": "#ff8870"
+          },
+          {
+            "name": "coralRed/600",
+            "token": "coralred-600",
+            "type": "color",
+            "value": "#ff5e3d"
+          },
+          {
+            "name": "coralRed/700",
+            "token": "coralred-700",
+            "type": "color",
+            "value": "#ff2b00"
+          },
+          {
+            "name": "coralRed/800",
+            "token": "coralred-800",
+            "type": "color",
+            "value": "#d52907"
+          },
+          {
+            "name": "coralRed/900",
+            "token": "coralred-900",
+            "type": "color",
+            "value": "#b2270b"
+          },
+          {
+            "name": "coralRed/1000",
+            "token": "coralred-1000",
+            "type": "color",
+            "value": "#912712"
+          },
+          {
+            "name": "coralRed/1100",
+            "token": "coralred-1100",
+            "type": "color",
+            "value": "#761b09"
+          },
+          {
+            "name": "coralRed/1200",
+            "token": "coralred-1200",
+            "type": "color",
+            "value": "#581f13"
+          },
+          {
+            "name": "coralRed/1300",
+            "token": "coralred-1300",
+            "type": "color",
+            "value": "#411107"
+          },
+          {
+            "name": "redOrange/100",
+            "token": "redorange-100",
+            "type": "color",
+            "value": "#fff1eb"
+          },
+          {
+            "name": "redOrange/200",
+            "token": "redorange-200",
+            "type": "color",
+            "value": "#ffe2d6"
+          },
+          {
+            "name": "redOrange/300",
+            "token": "redorange-300",
+            "type": "color",
+            "value": "#ffccb7"
+          },
+          {
+            "name": "redOrange/400",
+            "token": "redorange-400",
+            "type": "color",
+            "value": "#ffb698"
+          },
+          {
+            "name": "redOrange/500",
+            "token": "redorange-500",
+            "type": "color",
+            "value": "#ff976b"
+          },
+          {
+            "name": "redOrange/600",
+            "token": "redorange-600",
+            "type": "color",
+            "value": "#ff783d"
+          },
+          {
+            "name": "redOrange/700",
+            "token": "redorange-700",
+            "type": "color",
+            "value": "#ff4d00"
+          },
+          {
+            "name": "redOrange/800",
+            "token": "redorange-800",
+            "type": "color",
+            "value": "#d54407"
+          },
+          {
+            "name": "redOrange/900",
+            "token": "redorange-900",
+            "type": "color",
+            "value": "#b43e0b"
+          },
+          {
+            "name": "redOrange/1000",
+            "token": "redorange-1000",
+            "type": "color",
+            "value": "#952d00"
+          },
+          {
+            "name": "redOrange/1100",
+            "token": "redorange-1100",
+            "type": "color",
+            "value": "#722809"
+          },
+          {
+            "name": "redOrange/1200",
+            "token": "redorange-1200",
+            "type": "color",
+            "value": "#5a2007"
+          },
+          {
+            "name": "redOrange/1300",
+            "token": "redorange-1300",
+            "type": "color",
+            "value": "#3e1605"
+          },
+          {
+            "name": "orange/100",
+            "token": "orange-100",
+            "type": "color",
+            "value": "#fff3e6"
+          },
+          {
+            "name": "orange/200",
+            "token": "orange-200",
+            "type": "color",
+            "value": "#ffe8cc"
+          },
+          {
+            "name": "orange/300",
+            "token": "orange-300",
+            "type": "color",
+            "value": "#ffdbb0"
+          },
+          {
+            "name": "orange/400",
+            "token": "orange-400",
+            "type": "color",
+            "value": "#ffc988"
+          },
+          {
+            "name": "orange/500",
+            "token": "orange-500",
+            "type": "color",
+            "value": "#ffb35a"
+          },
+          {
+            "name": "orange/600",
+            "token": "orange-600",
+            "type": "color",
+            "value": "#ff9a23"
+          },
+          {
+            "name": "orange/700",
+            "token": "orange-700",
+            "type": "color",
+            "value": "#f78500"
+          },
+          {
+            "name": "orange/800",
+            "token": "orange-800",
+            "type": "color",
+            "value": "#db7600"
+          },
+          {
+            "name": "orange/900",
+            "token": "orange-900",
+            "type": "color",
+            "value": "#b36409"
+          },
+          {
+            "name": "orange/1000",
+            "token": "orange-1000",
+            "type": "color",
+            "value": "#995300"
+          },
+          {
+            "name": "orange/1100",
+            "token": "orange-1100",
+            "type": "color",
+            "value": "#703d00"
+          },
+          {
+            "name": "orange/1200",
+            "token": "orange-1200",
+            "type": "color",
+            "value": "#572f00"
+          },
+          {
+            "name": "orange/1300",
+            "token": "orange-1300",
+            "type": "color",
+            "value": "#422400"
+          },
+          {
+            "name": "sunOrange/100",
+            "token": "sunorange-100",
+            "type": "color",
+            "value": "#fff6e6"
+          },
+          {
+            "name": "sunOrange/200",
+            "token": "sunorange-200",
+            "type": "color",
+            "value": "#ffeecc"
+          },
+          {
+            "name": "sunOrange/300",
+            "token": "sunorange-300",
+            "type": "color",
+            "value": "#ffe4b0"
+          },
+          {
+            "name": "sunOrange/400",
+            "token": "sunorange-400",
+            "type": "color",
+            "value": "#ffdb94"
+          },
+          {
+            "name": "sunOrange/500",
+            "token": "sunorange-500",
+            "type": "color",
+            "value": "#ffca64"
+          },
+          {
+            "name": "sunOrange/600",
+            "token": "sunorange-600",
+            "type": "color",
+            "value": "#ffb627"
+          },
+          {
+            "name": "sunOrange/700",
+            "token": "sunorange-700",
+            "type": "color",
+            "value": "#ffa800"
+          },
+          {
+            "name": "sunOrange/800",
+            "token": "sunorange-800",
+            "type": "color",
+            "value": "#e69700"
+          },
+          {
+            "name": "sunOrange/900",
+            "token": "sunorange-900",
+            "type": "color",
+            "value": "#b97a00"
+          },
+          {
+            "name": "sunOrange/1000",
+            "token": "sunorange-1000",
+            "type": "color",
+            "value": "#9c6700"
+          },
+          {
+            "name": "sunOrange/1100",
+            "token": "sunorange-1100",
+            "type": "color",
+            "value": "#724b00"
+          },
+          {
+            "name": "sunOrange/1200",
+            "token": "sunorange-1200",
+            "type": "color",
+            "value": "#593b00"
+          },
+          {
+            "name": "sunOrange/1300",
+            "token": "sunorange-1300",
+            "type": "color",
+            "value": "#422c00"
+          },
+          {
+            "name": "goldYellow/100",
+            "token": "goldyellow-100",
+            "type": "color",
+            "value": "#fffbe6"
+          },
+          {
+            "name": "goldYellow/200",
+            "token": "goldyellow-200",
+            "type": "color",
+            "value": "#fff6c7"
+          },
+          {
+            "name": "goldYellow/300",
+            "token": "goldyellow-300",
+            "type": "color",
+            "value": "#fff1a8"
+          },
+          {
+            "name": "goldYellow/400",
+            "token": "goldyellow-400",
+            "type": "color",
+            "value": "#ffeb80"
+          },
+          {
+            "name": "goldYellow/500",
+            "token": "goldyellow-500",
+            "type": "color",
+            "value": "#ffe661"
+          },
+          {
+            "name": "goldYellow/600",
+            "token": "goldyellow-600",
+            "type": "color",
+            "value": "#ffd914"
+          },
+          {
+            "name": "goldYellow/700",
+            "token": "goldyellow-700",
+            "type": "color",
+            "value": "#f5cd00"
+          },
+          {
+            "name": "goldYellow/800",
+            "token": "goldyellow-800",
+            "type": "color",
+            "value": "#dbb800"
+          },
+          {
+            "name": "goldYellow/900",
+            "token": "goldyellow-900",
+            "type": "color",
+            "value": "#bfa100"
+          },
+          {
+            "name": "goldYellow/1000",
+            "token": "goldyellow-1000",
+            "type": "color",
+            "value": "#998000"
+          },
+          {
+            "name": "goldYellow/1100",
+            "token": "goldyellow-1100",
+            "type": "color",
+            "value": "#705d01"
+          },
+          {
+            "name": "goldYellow/1200",
+            "token": "goldyellow-1200",
+            "type": "color",
+            "value": "#594c00"
+          },
+          {
+            "name": "goldYellow/1300",
+            "token": "goldyellow-1300",
+            "type": "color",
+            "value": "#423800"
+          },
+          {
+            "name": "yellow/100",
+            "token": "yellow-100",
+            "type": "color",
+            "value": "#fffee8"
+          },
+          {
+            "name": "yellow/200",
+            "token": "yellow-200",
+            "type": "color",
+            "value": "#fffcc7"
+          },
+          {
+            "name": "yellow/300",
+            "token": "yellow-300",
+            "type": "color",
+            "value": "#fffaa3"
+          },
+          {
+            "name": "yellow/400",
+            "token": "yellow-400",
+            "type": "color",
+            "value": "#fff870"
+          },
+          {
+            "name": "yellow/500",
+            "token": "yellow-500",
+            "type": "color",
+            "value": "#fff642"
+          },
+          {
+            "name": "yellow/600",
+            "token": "yellow-600",
+            "type": "color",
+            "value": "#f8ec02"
+          },
+          {
+            "name": "yellow/700",
+            "token": "yellow-700",
+            "type": "color",
+            "value": "#ebdf00"
+          },
+          {
+            "name": "yellow/800",
+            "token": "yellow-800",
+            "type": "color",
+            "value": "#dbd000"
+          },
+          {
+            "name": "yellow/900",
+            "token": "yellow-900",
+            "type": "color",
+            "value": "#bdb300"
+          },
+          {
+            "name": "yellow/1000",
+            "token": "yellow-1000",
+            "type": "color",
+            "value": "#999100"
+          },
+          {
+            "name": "yellow/1100",
+            "token": "yellow-1100",
+            "type": "color",
+            "value": "#706b00"
+          },
+          {
+            "name": "yellow/1200",
+            "token": "yellow-1200",
+            "type": "color",
+            "value": "#575200"
+          },
+          {
+            "name": "yellow/1300",
+            "token": "yellow-1300",
+            "type": "color",
+            "value": "#423e00"
+          },
+          {
+            "name": "neonYellow/100",
+            "token": "neonyellow-100",
+            "type": "color",
+            "value": "#fcffe8"
+          },
+          {
+            "name": "neonYellow/200",
+            "token": "neonyellow-200",
+            "type": "color",
+            "value": "#f6ffc2"
+          },
+          {
+            "name": "neonYellow/300",
+            "token": "neonyellow-300",
+            "type": "color",
+            "value": "#f1ffa3"
+          },
+          {
+            "name": "neonYellow/400",
+            "token": "neonyellow-400",
+            "type": "color",
+            "value": "#e7ff5c"
+          },
+          {
+            "name": "neonYellow/500",
+            "token": "neonyellow-500",
+            "type": "color",
+            "value": "#daff05"
+          },
+          {
+            "name": "neonYellow/600",
+            "token": "neonyellow-600",
+            "type": "color",
+            "value": "#cff302"
+          },
+          {
+            "name": "neonYellow/700",
+            "token": "neonyellow-700",
+            "type": "color",
+            "value": "#c3e500"
+          },
+          {
+            "name": "neonYellow/800",
+            "token": "neonyellow-800",
+            "type": "color",
+            "value": "#adcc00"
+          },
+          {
+            "name": "neonYellow/900",
+            "token": "neonyellow-900",
+            "type": "color",
+            "value": "#93ad00"
+          },
+          {
+            "name": "neonYellow/1000",
+            "token": "neonyellow-1000",
+            "type": "color",
+            "value": "#758a00"
+          },
+          {
+            "name": "neonYellow/1100",
+            "token": "neonyellow-1100",
+            "type": "color",
+            "value": "#5b6b00"
+          },
+          {
+            "name": "neonYellow/1200",
+            "token": "neonyellow-1200",
+            "type": "color",
+            "value": "#455200"
+          },
+          {
+            "name": "neonYellow/1300",
+            "token": "neonyellow-1300",
+            "type": "color",
+            "value": "#343d00"
+          },
+          {
+            "name": "yellowGreen/100",
+            "token": "yellowgreen-100",
+            "type": "color",
+            "value": "#f2fae6"
+          },
+          {
+            "name": "yellowGreen/200",
+            "token": "yellowgreen-200",
+            "type": "color",
+            "value": "#e5f5cc"
+          },
+          {
+            "name": "yellowGreen/300",
+            "token": "yellowgreen-300",
+            "type": "color",
+            "value": "#d8f0b3"
+          },
+          {
+            "name": "yellowGreen/400",
+            "token": "yellowgreen-400",
+            "type": "color",
+            "value": "#c5eb89"
+          },
+          {
+            "name": "yellowGreen/500",
+            "token": "yellowgreen-500",
+            "type": "color",
+            "value": "#b2e368"
+          },
+          {
+            "name": "yellowGreen/600",
+            "token": "yellowgreen-600",
+            "type": "color",
+            "value": "#97da34"
+          },
+          {
+            "name": "yellowGreen/700",
+            "token": "yellowgreen-700",
+            "type": "color",
+            "value": "#7acc00"
+          },
+          {
+            "name": "yellowGreen/800",
+            "token": "yellowgreen-800",
+            "type": "color",
+            "value": "#6bb102"
+          },
+          {
+            "name": "yellowGreen/900",
+            "token": "yellowgreen-900",
+            "type": "color",
+            "value": "#5c9900"
+          },
+          {
+            "name": "yellowGreen/1000",
+            "token": "yellowgreen-1000",
+            "type": "color",
+            "value": "#4a7a00"
+          },
+          {
+            "name": "yellowGreen/1100",
+            "token": "yellowgreen-1100",
+            "type": "color",
+            "value": "#385e00"
+          },
+          {
+            "name": "yellowGreen/1200",
+            "token": "yellowgreen-1200",
+            "type": "color",
+            "value": "#2b4700"
+          },
+          {
+            "name": "yellowGreen/1300",
+            "token": "yellowgreen-1300",
+            "type": "color",
+            "value": "#25360c"
+          },
+          {
+            "name": "limeGreen/100",
+            "token": "limegreen-100",
+            "type": "color",
+            "value": "#edfae6"
+          },
+          {
+            "name": "limeGreen/200",
+            "token": "limegreen-200",
+            "type": "color",
+            "value": "#ddf6d0"
+          },
+          {
+            "name": "limeGreen/300",
+            "token": "limegreen-300",
+            "type": "color",
+            "value": "#c8f0b3"
+          },
+          {
+            "name": "limeGreen/400",
+            "token": "limegreen-400",
+            "type": "color",
+            "value": "#aceb89"
+          },
+          {
+            "name": "limeGreen/500",
+            "token": "limegreen-500",
+            "type": "color",
+            "value": "#93e368"
+          },
+          {
+            "name": "limeGreen/600",
+            "token": "limegreen-600",
+            "type": "color",
+            "value": "#71db39"
+          },
+          {
+            "name": "limeGreen/700",
+            "token": "limegreen-700",
+            "type": "color",
+            "value": "#47cc00"
+          },
+          {
+            "name": "limeGreen/800",
+            "token": "limegreen-800",
+            "type": "color",
+            "value": "#3fb102"
+          },
+          {
+            "name": "limeGreen/900",
+            "token": "limegreen-900",
+            "type": "color",
+            "value": "#369900"
+          },
+          {
+            "name": "limeGreen/1000",
+            "token": "limegreen-1000",
+            "type": "color",
+            "value": "#2b7a00"
+          },
+          {
+            "name": "limeGreen/1100",
+            "token": "limegreen-1100",
+            "type": "color",
+            "value": "#215e00"
+          },
+          {
+            "name": "limeGreen/1200",
+            "token": "limegreen-1200",
+            "type": "color",
+            "value": "#194700"
+          },
+          {
+            "name": "limeGreen/1300",
+            "token": "limegreen-1300",
+            "type": "color",
+            "value": "#1b360d"
+          },
+          {
+            "name": "forestGreen/100",
+            "token": "forestgreen-100",
+            "type": "color",
+            "value": "#e6f7ea"
+          },
+          {
+            "name": "forestGreen/200",
+            "token": "forestgreen-200",
+            "type": "color",
+            "value": "#cff2d9"
+          },
+          {
+            "name": "forestGreen/300",
+            "token": "forestgreen-300",
+            "type": "color",
+            "value": "#b3eac2"
+          },
+          {
+            "name": "forestGreen/400",
+            "token": "forestgreen-400",
+            "type": "color",
+            "value": "#92e2a8"
+          },
+          {
+            "name": "forestGreen/500",
+            "token": "forestgreen-500",
+            "type": "color",
+            "value": "#6bdb8a"
+          },
+          {
+            "name": "forestGreen/600",
+            "token": "forestgreen-600",
+            "type": "color",
+            "value": "#42d16a"
+          },
+          {
+            "name": "forestGreen/700",
+            "token": "forestgreen-700",
+            "type": "color",
+            "value": "#06c63c"
+          },
+          {
+            "name": "forestGreen/800",
+            "token": "forestgreen-800",
+            "type": "color",
+            "value": "#0fae3c"
+          },
+          {
+            "name": "forestGreen/900",
+            "token": "forestgreen-900",
+            "type": "color",
+            "value": "#0c9232"
+          },
+          {
+            "name": "forestGreen/1000",
+            "token": "forestgreen-1000",
+            "type": "color",
+            "value": "#007521"
+          },
+          {
+            "name": "forestGreen/1100",
+            "token": "forestgreen-1100",
+            "type": "color",
+            "value": "#005c1a"
+          },
+          {
+            "name": "forestGreen/1200",
+            "token": "forestgreen-1200",
+            "type": "color",
+            "value": "#004714"
+          },
+          {
+            "name": "forestGreen/1300",
+            "token": "forestgreen-1300",
+            "type": "color",
+            "value": "#15331d"
+          },
+          {
+            "name": "green/100",
+            "token": "green-100",
+            "type": "color",
+            "value": "#e5f6ed"
+          },
+          {
+            "name": "green/200",
+            "token": "green-200",
+            "type": "color",
+            "value": "#c6f0dd"
+          },
+          {
+            "name": "green/300",
+            "token": "green-300",
+            "type": "color",
+            "value": "#aeeace"
+          },
+          {
+            "name": "green/400",
+            "token": "green-400",
+            "type": "color",
+            "value": "#92e2bd"
+          },
+          {
+            "name": "green/500",
+            "token": "green-500",
+            "type": "color",
+            "value": "#6bdba7"
+          },
+          {
+            "name": "green/600",
+            "token": "green-600",
+            "type": "color",
+            "value": "#23d180"
+          },
+          {
+            "name": "green/700",
+            "token": "green-700",
+            "type": "color",
+            "value": "#06c66c"
+          },
+          {
+            "name": "green/800",
+            "token": "green-800",
+            "type": "color",
+            "value": "#0fae64"
+          },
+          {
+            "name": "green/900",
+            "token": "green-900",
+            "type": "color",
+            "value": "#0c9253"
+          },
+          {
+            "name": "green/1000",
+            "token": "green-1000",
+            "type": "color",
+            "value": "#187248"
+          },
+          {
+            "name": "green/1100",
+            "token": "green-1100",
+            "type": "color",
+            "value": "#135838"
+          },
+          {
+            "name": "green/1200",
+            "token": "green-1200",
+            "type": "color",
+            "value": "#0f472d"
+          },
+          {
+            "name": "green/1300",
+            "token": "green-1300",
+            "type": "color",
+            "value": "#153325"
+          },
+          {
+            "name": "emeraldGreen/100",
+            "token": "emeraldgreen-100",
+            "type": "color",
+            "value": "#e6f6f3"
+          },
+          {
+            "name": "emeraldGreen/200",
+            "token": "emeraldgreen-200",
+            "type": "color",
+            "value": "#c7ebe4"
+          },
+          {
+            "name": "emeraldGreen/300",
+            "token": "emeraldgreen-300",
+            "type": "color",
+            "value": "#a9e0d6"
+          },
+          {
+            "name": "emeraldGreen/400",
+            "token": "emeraldgreen-400",
+            "type": "color",
+            "value": "#87d9ca"
+          },
+          {
+            "name": "emeraldGreen/500",
+            "token": "emeraldgreen-500",
+            "type": "color",
+            "value": "#60d2bd"
+          },
+          {
+            "name": "emeraldGreen/600",
+            "token": "emeraldgreen-600",
+            "type": "color",
+            "value": "#26c4a7"
+          },
+          {
+            "name": "emeraldGreen/700",
+            "token": "emeraldgreen-700",
+            "type": "color",
+            "value": "#00b292"
+          },
+          {
+            "name": "emeraldGreen/800",
+            "token": "emeraldgreen-800",
+            "type": "color",
+            "value": "#009e81"
+          },
+          {
+            "name": "emeraldGreen/900",
+            "token": "emeraldgreen-900",
+            "type": "color",
+            "value": "#00856c"
+          },
+          {
+            "name": "emeraldGreen/1000",
+            "token": "emeraldgreen-1000",
+            "type": "color",
+            "value": "#006653"
+          },
+          {
+            "name": "emeraldGreen/1100",
+            "token": "emeraldgreen-1100",
+            "type": "color",
+            "value": "#005243"
+          },
+          {
+            "name": "emeraldGreen/1200",
+            "token": "emeraldgreen-1200",
+            "type": "color",
+            "value": "#004236"
+          },
+          {
+            "name": "emeraldGreen/1300",
+            "token": "emeraldgreen-1300",
+            "type": "color",
+            "value": "#14342e"
+          },
+          {
+            "name": "tealGreen/100",
+            "token": "tealgreen-100",
+            "type": "color",
+            "value": "#e6f5f6"
+          },
+          {
+            "name": "tealGreen/200",
+            "token": "tealgreen-200",
+            "type": "color",
+            "value": "#cbeaec"
+          },
+          {
+            "name": "tealGreen/300",
+            "token": "tealgreen-300",
+            "type": "color",
+            "value": "#b1dfe2"
+          },
+          {
+            "name": "tealGreen/400",
+            "token": "tealgreen-400",
+            "type": "color",
+            "value": "#8bd5da"
+          },
+          {
+            "name": "tealGreen/500",
+            "token": "tealgreen-500",
+            "type": "color",
+            "value": "#69c8ce"
+          },
+          {
+            "name": "tealGreen/600",
+            "token": "tealgreen-600",
+            "type": "color",
+            "value": "#28b8c3"
+          },
+          {
+            "name": "tealGreen/700",
+            "token": "tealgreen-700",
+            "type": "color",
+            "value": "#00a2ad"
+          },
+          {
+            "name": "tealGreen/800",
+            "token": "tealgreen-800",
+            "type": "color",
+            "value": "#008993"
+          },
+          {
+            "name": "tealGreen/900",
+            "token": "tealgreen-900",
+            "type": "color",
+            "value": "#007780"
+          },
+          {
+            "name": "tealGreen/1000",
+            "token": "tealgreen-1000",
+            "type": "color",
+            "value": "#005f66"
+          },
+          {
+            "name": "tealGreen/1100",
+            "token": "tealgreen-1100",
+            "type": "color",
+            "value": "#005157"
+          },
+          {
+            "name": "tealGreen/1200",
+            "token": "tealgreen-1200",
+            "type": "color",
+            "value": "#004347"
+          },
+          {
+            "name": "tealGreen/1300",
+            "token": "tealgreen-1300",
+            "type": "color",
+            "value": "#173436"
+          },
+          {
+            "name": "\bskyBlue/100",
+            "token": "skyblue-100",
+            "type": "color",
+            "value": "#dbf6ff"
+          },
+          {
+            "name": "\bskyBlue/200",
+            "token": "skyblue-200",
+            "type": "color",
+            "value": "#c2f0ff"
+          },
+          {
+            "name": "\bskyBlue/300",
+            "token": "skyblue-300",
+            "type": "color",
+            "value": "#a8e9ff"
+          },
+          {
+            "name": "\bskyBlue/400",
+            "token": "skyblue-400",
+            "type": "color",
+            "value": "#75ddff"
+          },
+          {
+            "name": "\bskyBlue/500",
+            "token": "skyblue-500",
+            "type": "color",
+            "value": "#42cefc"
+          },
+          {
+            "name": "\bskyBlue/600",
+            "token": "skyblue-600",
+            "type": "color",
+            "value": "#1dc0f6"
+          },
+          {
+            "name": "\bskyBlue/700",
+            "token": "skyblue-700",
+            "type": "color",
+            "value": "#0cafe5"
+          },
+          {
+            "name": "\bskyBlue/800",
+            "token": "skyblue-800",
+            "type": "color",
+            "value": "#0a98c7"
+          },
+          {
+            "name": "\bskyBlue/900",
+            "token": "skyblue-900",
+            "type": "color",
+            "value": "#0981aa"
+          },
+          {
+            "name": "\bskyBlue/1000",
+            "token": "skyblue-1000",
+            "type": "color",
+            "value": "#076888"
+          },
+          {
+            "name": "\bskyBlue/1100",
+            "token": "skyblue-1100",
+            "type": "color",
+            "value": "#06556f"
+          },
+          {
+            "name": "\bskyBlue/1200",
+            "token": "skyblue-1200",
+            "type": "color",
+            "value": "#034359"
+          },
+          {
+            "name": "\bskyBlue/1300",
+            "token": "skyblue-1300",
+            "type": "color",
+            "value": "#13343f"
+          },
+          {
+            "name": "blue/100",
+            "token": "blue-100",
+            "type": "color",
+            "value": "#dbeeff"
+          },
+          {
+            "name": "blue/200",
+            "token": "blue-200",
+            "type": "color",
+            "value": "#c7e5ff"
+          },
+          {
+            "name": "blue/300",
+            "token": "blue-300",
+            "type": "color",
+            "value": "#a8d7ff"
+          },
+          {
+            "name": "blue/400",
+            "token": "blue-400",
+            "type": "color",
+            "value": "#85c8ff"
+          },
+          {
+            "name": "blue/500",
+            "token": "blue-500",
+            "type": "color",
+            "value": "#52b0ff"
+          },
+          {
+            "name": "blue/600",
+            "token": "blue-600",
+            "type": "color",
+            "value": "#2ea0ff"
+          },
+          {
+            "name": "blue/700",
+            "token": "blue-700",
+            "type": "color",
+            "value": "#138df1"
+          },
+          {
+            "name": "blue/800",
+            "token": "blue-800",
+            "type": "color",
+            "value": "#007be0"
+          },
+          {
+            "name": "blue/900",
+            "token": "blue-900",
+            "type": "color",
+            "value": "#0069bf"
+          },
+          {
+            "name": "blue/1000",
+            "token": "blue-1000",
+            "type": "color",
+            "value": "#005aa3"
+          },
+          {
+            "name": "blue/1100",
+            "token": "blue-1100",
+            "type": "color",
+            "value": "#004680"
+          },
+          {
+            "name": "blue/1200",
+            "token": "blue-1200",
+            "type": "color",
+            "value": "#003866"
+          },
+          {
+            "name": "blue/1300",
+            "token": "blue-1300",
+            "type": "color",
+            "value": "#0d2e4a"
+          },
+          {
+            "name": "emocogBlue/100",
+            "token": "emocogblue-100",
+            "type": "color",
+            "value": "#dee8fc"
+          },
+          {
+            "name": "emocogBlue/200",
+            "token": "emocogblue-200",
+            "type": "color",
+            "value": "#ccdbfa"
+          },
+          {
+            "name": "emocogBlue/300",
+            "token": "emocogblue-300",
+            "type": "color",
+            "value": "#a7c1f6"
+          },
+          {
+            "name": "emocogBlue/400",
+            "token": "emocogblue-400",
+            "type": "color",
+            "value": "#8baef3"
+          },
+          {
+            "name": "emocogBlue/500",
+            "token": "emocogblue-500",
+            "type": "color",
+            "value": "#6694ef"
+          },
+          {
+            "name": "emocogBlue/600",
+            "token": "emocogblue-600",
+            "type": "color",
+            "value": "#467dec"
+          },
+          {
+            "name": "emocogBlue/700",
+            "token": "emocogblue-700",
+            "type": "color",
+            "value": "#2a69e9"
+          },
+          {
+            "name": "emocogBlue/800",
+            "token": "emocogblue-800",
+            "type": "color",
+            "value": "#1657da"
+          },
+          {
+            "name": "emocogBlue/900",
+            "token": "emocogblue-900",
+            "type": "color",
+            "value": "#0a44b8"
+          },
+          {
+            "name": "emocogBlue/1000",
+            "token": "emocogblue-1000",
+            "type": "color",
+            "value": "#0036a3"
+          },
+          {
+            "name": "emocogBlue/1100",
+            "token": "emocogblue-1100",
+            "type": "color",
+            "value": "#002c85"
+          },
+          {
+            "name": "emocogBlue/1200",
+            "token": "emocogblue-1200",
+            "type": "color",
+            "value": "#072869"
+          },
+          {
+            "name": "emocogBlue/1300",
+            "token": "emocogblue-1300",
+            "type": "color",
+            "value": "#0e2249"
+          },
+          {
+            "name": "paleBlue/100",
+            "token": "paleblue-100",
+            "type": "color",
+            "value": "#dbe7f5"
+          },
+          {
+            "name": "paleBlue/200",
+            "token": "paleblue-200",
+            "type": "color",
+            "value": "#c7daef"
+          },
+          {
+            "name": "paleBlue/300",
+            "token": "paleblue-300",
+            "type": "color",
+            "value": "#9ec1e5"
+          },
+          {
+            "name": "paleBlue/400",
+            "token": "paleblue-400",
+            "type": "color",
+            "value": "#7eabdd"
+          },
+          {
+            "name": "paleBlue/500",
+            "token": "paleblue-500",
+            "type": "color",
+            "value": "#5e96d4"
+          },
+          {
+            "name": "paleBlue/600",
+            "token": "paleblue-600",
+            "type": "color",
+            "value": "#3a7fca"
+          },
+          {
+            "name": "paleBlue/700",
+            "token": "paleblue-700",
+            "type": "color",
+            "value": "#256ab6"
+          },
+          {
+            "name": "paleBlue/800",
+            "token": "paleblue-800",
+            "type": "color",
+            "value": "#215ea1"
+          },
+          {
+            "name": "paleBlue/900",
+            "token": "paleblue-900",
+            "type": "color",
+            "value": "#1b4c83"
+          },
+          {
+            "name": "paleBlue/1000",
+            "token": "paleblue-1000",
+            "type": "color",
+            "value": "#174372"
+          },
+          {
+            "name": "paleBlue/1100",
+            "token": "paleblue-1100",
+            "type": "color",
+            "value": "#13375d"
+          },
+          {
+            "name": "paleBlue/1200",
+            "token": "paleblue-1200",
+            "type": "color",
+            "value": "#0f2c4c"
+          },
+          {
+            "name": "paleBlue/1300",
+            "token": "paleblue-1300",
+            "type": "color",
+            "value": "#132335"
+          },
+          {
+            "name": "navy/100",
+            "token": "navy-100",
+            "type": "color",
+            "value": "#e2e5f9"
+          },
+          {
+            "name": "navy/200",
+            "token": "navy-200",
+            "type": "color",
+            "value": "#c9cff3"
+          },
+          {
+            "name": "navy/300",
+            "token": "navy-300",
+            "type": "color",
+            "value": "#a3aeeb"
+          },
+          {
+            "name": "navy/400",
+            "token": "navy-400",
+            "type": "color",
+            "value": "#8a98e5"
+          },
+          {
+            "name": "navy/500",
+            "token": "navy-500",
+            "type": "color",
+            "value": "#6d7edf"
+          },
+          {
+            "name": "navy/600",
+            "token": "navy-600",
+            "type": "color",
+            "value": "#5368d9"
+          },
+          {
+            "name": "navy/700",
+            "token": "navy-700",
+            "type": "color",
+            "value": "#3b52ce"
+          },
+          {
+            "name": "navy/800",
+            "token": "navy-800",
+            "type": "color",
+            "value": "#273db4"
+          },
+          {
+            "name": "navy/900",
+            "token": "navy-900",
+            "type": "color",
+            "value": "#213397"
+          },
+          {
+            "name": "navy/1000",
+            "token": "navy-1000",
+            "type": "color",
+            "value": "#1d2d86"
+          },
+          {
+            "name": "navy/1100",
+            "token": "navy-1100",
+            "type": "color",
+            "value": "#182572"
+          },
+          {
+            "name": "navy/1200",
+            "token": "navy-1200",
+            "type": "color",
+            "value": "#141e5c"
+          },
+          {
+            "name": "navy/1300",
+            "token": "navy-1300",
+            "type": "color",
+            "value": "#0e153f"
+          },
+          {
+            "name": "persianPurple/100",
+            "token": "persianpurple-100",
+            "type": "color",
+            "value": "#e5e7ff"
+          },
+          {
+            "name": "persianPurple/200",
+            "token": "persianpurple-200",
+            "type": "color",
+            "value": "#ccd0fa"
+          },
+          {
+            "name": "persianPurple/300",
+            "token": "persianpurple-300",
+            "type": "color",
+            "value": "#a7adf6"
+          },
+          {
+            "name": "persianPurple/400",
+            "token": "persianpurple-400",
+            "type": "color",
+            "value": "#8f97f5"
+          },
+          {
+            "name": "persianPurple/500",
+            "token": "persianpurple-500",
+            "type": "color",
+            "value": "#7680f4"
+          },
+          {
+            "name": "persianPurple/600",
+            "token": "persianpurple-600",
+            "type": "color",
+            "value": "#616def"
+          },
+          {
+            "name": "persianPurple/700",
+            "token": "persianpurple-700",
+            "type": "color",
+            "value": "#4e5aef"
+          },
+          {
+            "name": "persianPurple/800",
+            "token": "persianpurple-800",
+            "type": "color",
+            "value": "#3a45cb"
+          },
+          {
+            "name": "persianPurple/900",
+            "token": "persianpurple-900",
+            "type": "color",
+            "value": "#2c37b5"
+          },
+          {
+            "name": "persianPurple/1000",
+            "token": "persianpurple-1000",
+            "type": "color",
+            "value": "#273096"
+          },
+          {
+            "name": "persianPurple/1100",
+            "token": "persianpurple-1100",
+            "type": "color",
+            "value": "#1e257b"
+          },
+          {
+            "name": "persianPurple/1200",
+            "token": "persianpurple-1200",
+            "type": "color",
+            "value": "#1a2060"
+          },
+          {
+            "name": "persianPurple/1300",
+            "token": "persianpurple-1300",
+            "type": "color",
+            "value": "#13173f"
+          },
+          {
+            "name": "royalPurple/100",
+            "token": "royalpurple-100",
+            "type": "color",
+            "value": "#e9e5ff"
+          },
+          {
+            "name": "royalPurple/200",
+            "token": "royalpurple-200",
+            "type": "color",
+            "value": "#d5cdfe"
+          },
+          {
+            "name": "royalPurple/300",
+            "token": "royalpurple-300",
+            "type": "color",
+            "value": "#bcaffd"
+          },
+          {
+            "name": "royalPurple/400",
+            "token": "royalpurple-400",
+            "type": "color",
+            "value": "#a796fd"
+          },
+          {
+            "name": "royalPurple/500",
+            "token": "royalpurple-500",
+            "type": "color",
+            "value": "#927dfd"
+          },
+          {
+            "name": "royalPurple/600",
+            "token": "royalpurple-600",
+            "type": "color",
+            "value": "#7d64fc"
+          },
+          {
+            "name": "royalPurple/700",
+            "token": "royalpurple-700",
+            "type": "color",
+            "value": "#6a50ed"
+          },
+          {
+            "name": "royalPurple/800",
+            "token": "royalpurple-800",
+            "type": "color",
+            "value": "#543cc9"
+          },
+          {
+            "name": "royalPurple/900",
+            "token": "royalpurple-900",
+            "type": "color",
+            "value": "#4935b1"
+          },
+          {
+            "name": "royalPurple/1000",
+            "token": "royalpurple-1000",
+            "type": "color",
+            "value": "#3f2d97"
+          },
+          {
+            "name": "royalPurple/1100",
+            "token": "royalpurple-1100",
+            "type": "color",
+            "value": "#2f2271"
+          },
+          {
+            "name": "royalPurple/1200",
+            "token": "royalpurple-1200",
+            "type": "color",
+            "value": "#241a58"
+          },
+          {
+            "name": "royalPurple/1300",
+            "token": "royalpurple-1300",
+            "type": "color",
+            "value": "#1a1339"
+          },
+          {
+            "name": "cogtheraPurple/100",
+            "token": "cogtherapurple-100",
+            "type": "color",
+            "value": "#efe5ff"
+          },
+          {
+            "name": "cogtheraPurple/200",
+            "token": "cogtherapurple-200",
+            "type": "color",
+            "value": "#e1cdfe"
+          },
+          {
+            "name": "cogtheraPurple/300",
+            "token": "cogtherapurple-300",
+            "type": "color",
+            "value": "#d1b3fe"
+          },
+          {
+            "name": "cogtheraPurple/400",
+            "token": "cogtherapurple-400",
+            "type": "color",
+            "value": "#c29afe"
+          },
+          {
+            "name": "cogtheraPurple/500",
+            "token": "cogtherapurple-500",
+            "type": "color",
+            "value": "#b07dfd"
+          },
+          {
+            "name": "cogtheraPurple/600",
+            "token": "cogtherapurple-600",
+            "type": "color",
+            "value": "#9d5cff"
+          },
+          {
+            "name": "cogtheraPurple/700",
+            "token": "cogtherapurple-700",
+            "type": "color",
+            "value": "#8941f6"
+          },
+          {
+            "name": "cogtheraPurple/800",
+            "token": "cogtherapurple-800",
+            "type": "color",
+            "value": "#7738d6"
+          },
+          {
+            "name": "cogtheraPurple/900",
+            "token": "cogtherapurple-900",
+            "type": "color",
+            "value": "#6635b1"
+          },
+          {
+            "name": "cogtheraPurple/1000",
+            "token": "cogtherapurple-1000",
+            "type": "color",
+            "value": "#572d97"
+          },
+          {
+            "name": "cogtheraPurple/1100",
+            "token": "cogtherapurple-1100",
+            "type": "color",
+            "value": "#422271"
+          },
+          {
+            "name": "cogtheraPurple/1200",
+            "token": "cogtherapurple-1200",
+            "type": "color",
+            "value": "#331a58"
+          },
+          {
+            "name": "cogtheraPurple/1300",
+            "token": "cogtherapurple-1300",
+            "type": "color",
+            "value": "#271641"
+          },
+          {
+            "name": "violetPurple/100",
+            "token": "violetpurple-100",
+            "type": "color",
+            "value": "#f5e0ff"
+          },
+          {
+            "name": "violetPurple/200",
+            "token": "violetpurple-200",
+            "type": "color",
+            "value": "#edc7ff"
+          },
+          {
+            "name": "violetPurple/300",
+            "token": "violetpurple-300",
+            "type": "color",
+            "value": "#e5adff"
+          },
+          {
+            "name": "violetPurple/400",
+            "token": "violetpurple-400",
+            "type": "color",
+            "value": "#dd94ff"
+          },
+          {
+            "name": "violetPurple/500",
+            "token": "violetpurple-500",
+            "type": "color",
+            "value": "#d170ff"
+          },
+          {
+            "name": "violetPurple/600",
+            "token": "violetpurple-600",
+            "type": "color",
+            "value": "#c64dff"
+          },
+          {
+            "name": "violetPurple/700",
+            "token": "violetpurple-700",
+            "type": "color",
+            "value": "#ba29ff"
+          },
+          {
+            "name": "violetPurple/800",
+            "token": "violetpurple-800",
+            "type": "color",
+            "value": "#ad18ec"
+          },
+          {
+            "name": "violetPurple/900",
+            "token": "violetpurple-900",
+            "type": "color",
+            "value": "#9310cb"
+          },
+          {
+            "name": "violetPurple/1000",
+            "token": "violetpurple-1000",
+            "type": "color",
+            "value": "#7a0eaa"
+          },
+          {
+            "name": "violetPurple/1100",
+            "token": "violetpurple-1100",
+            "type": "color",
+            "value": "#580a7b"
+          },
+          {
+            "name": "violetPurple/1200",
+            "token": "violetpurple-1200",
+            "type": "color",
+            "value": "#460066"
+          },
+          {
+            "name": "violetPurple/1300",
+            "token": "violetpurple-1300",
+            "type": "color",
+            "value": "#340e44"
+          },
+          {
+            "name": "flamingo/100",
+            "token": "flamingo-100",
+            "type": "color",
+            "value": "#fde2fc"
+          },
+          {
+            "name": "flamingo/200",
+            "token": "flamingo-200",
+            "type": "color",
+            "value": "#fcc5f9"
+          },
+          {
+            "name": "flamingo/300",
+            "token": "flamingo-300",
+            "type": "color",
+            "value": "#faa8f6"
+          },
+          {
+            "name": "flamingo/400",
+            "token": "flamingo-400",
+            "type": "color",
+            "value": "#f88bf3"
+          },
+          {
+            "name": "flamingo/500",
+            "token": "flamingo-500",
+            "type": "color",
+            "value": "#f665ef"
+          },
+          {
+            "name": "flamingo/600",
+            "token": "flamingo-600",
+            "type": "color",
+            "value": "#f335ea"
+          },
+          {
+            "name": "flamingo/700",
+            "token": "flamingo-700",
+            "type": "color",
+            "value": "#e000d7"
+          },
+          {
+            "name": "flamingo/800",
+            "token": "flamingo-800",
+            "type": "color",
+            "value": "#c700be"
+          },
+          {
+            "name": "flamingo/900",
+            "token": "flamingo-900",
+            "type": "color",
+            "value": "#a800a1"
+          },
+          {
+            "name": "flamingo/1000",
+            "token": "flamingo-1000",
+            "type": "color",
+            "value": "#8f0089"
+          },
+          {
+            "name": "flamingo/1100",
+            "token": "flamingo-1100",
+            "type": "color",
+            "value": "#6b0066"
+          },
+          {
+            "name": "flamingo/1200",
+            "token": "flamingo-1200",
+            "type": "color",
+            "value": "#52004e"
+          },
+          {
+            "name": "flamingo/1300",
+            "token": "flamingo-1300",
+            "type": "color",
+            "value": "#42003f"
+          },
+          {
+            "name": "hotPink/100",
+            "token": "hotpink-100",
+            "type": "color",
+            "value": "#fce3f0"
+          },
+          {
+            "name": "hotPink/200",
+            "token": "hotpink-200",
+            "type": "color",
+            "value": "#fac7e2"
+          },
+          {
+            "name": "hotPink/300",
+            "token": "hotpink-300",
+            "type": "color",
+            "value": "#f7abd4"
+          },
+          {
+            "name": "hotPink/400",
+            "token": "hotpink-400",
+            "type": "color",
+            "value": "#f58fc6"
+          },
+          {
+            "name": "hotPink/500",
+            "token": "hotpink-500",
+            "type": "color",
+            "value": "#f26eb5"
+          },
+          {
+            "name": "hotPink/600",
+            "token": "hotpink-600",
+            "type": "color",
+            "value": "#ee49a3"
+          },
+          {
+            "name": "hotPink/700",
+            "token": "hotpink-700",
+            "type": "color",
+            "value": "#ea1f8d"
+          },
+          {
+            "name": "hotPink/800",
+            "token": "hotpink-800",
+            "type": "color",
+            "value": "#cd1378"
+          },
+          {
+            "name": "hotPink/900",
+            "token": "hotpink-900",
+            "type": "color",
+            "value": "#b11068"
+          },
+          {
+            "name": "hotPink/1000",
+            "token": "hotpink-1000",
+            "type": "color",
+            "value": "#960e58"
+          },
+          {
+            "name": "hotPink/1100",
+            "token": "hotpink-1100",
+            "type": "color",
+            "value": "#70053f"
+          },
+          {
+            "name": "hotPink/1200",
+            "token": "hotpink-1200",
+            "type": "color",
+            "value": "#570531"
+          },
+          {
+            "name": "hotPink/1300",
+            "token": "hotpink-1300",
+            "type": "color",
+            "value": "#430f2b"
+          },
+          {
+            "name": "pink/100",
+            "token": "pink-100",
+            "type": "color",
+            "value": "#ffe5ef"
+          },
+          {
+            "name": "pink/200",
+            "token": "pink-200",
+            "type": "color",
+            "value": "#ffd1e2"
+          },
+          {
+            "name": "pink/300",
+            "token": "pink-300",
+            "type": "color",
+            "value": "#ffb2cf"
+          },
+          {
+            "name": "pink/400",
+            "token": "pink-400",
+            "type": "color",
+            "value": "#ff99bf"
+          },
+          {
+            "name": "pink/500",
+            "token": "pink-500",
+            "type": "color",
+            "value": "#ff7aab"
+          },
+          {
+            "name": "pink/600",
+            "token": "pink-600",
+            "type": "color",
+            "value": "#ff5c98"
+          },
+          {
+            "name": "pink/700",
+            "token": "pink-700",
+            "type": "color",
+            "value": "#ff3a82"
+          },
+          {
+            "name": "pink/800",
+            "token": "pink-800",
+            "type": "color",
+            "value": "#e63475"
+          },
+          {
+            "name": "pink/900",
+            "token": "pink-900",
+            "type": "color",
+            "value": "#bf2c62"
+          },
+          {
+            "name": "pink/1000",
+            "token": "pink-1000",
+            "type": "color",
+            "value": "#99234e"
+          },
+          {
+            "name": "pink/1100",
+            "token": "pink-1100",
+            "type": "color",
+            "value": "#731a3a"
+          },
+          {
+            "name": "pink/1200",
+            "token": "pink-1200",
+            "type": "color",
+            "value": "#54122a"
+          },
+          {
+            "name": "pink/1300",
+            "token": "pink-1300",
+            "type": "color",
+            "value": "#430f22"
+          },
+          {
+            "name": "pastelPink/100",
+            "token": "pastelpink-100",
+            "type": "color",
+            "value": "#fde8ef"
+          },
+          {
+            "name": "pastelPink/200",
+            "token": "pastelpink-200",
+            "type": "color",
+            "value": "#fbd0e0"
+          },
+          {
+            "name": "pastelPink/300",
+            "token": "pastelpink-300",
+            "type": "color",
+            "value": "#f4b8ce"
+          },
+          {
+            "name": "pastelPink/400",
+            "token": "pastelpink-400",
+            "type": "color",
+            "value": "#ed9cb9"
+          },
+          {
+            "name": "pastelPink/500",
+            "token": "pastelpink-500",
+            "type": "color",
+            "value": "#dd7ea0"
+          },
+          {
+            "name": "pastelPink/600",
+            "token": "pastelpink-600",
+            "type": "color",
+            "value": "#d1668d"
+          },
+          {
+            "name": "pastelPink/700",
+            "token": "pastelpink-700",
+            "type": "color",
+            "value": "#b55477"
+          },
+          {
+            "name": "pastelPink/800",
+            "token": "pastelpink-800",
+            "type": "color",
+            "value": "#a44768"
+          },
+          {
+            "name": "pastelPink/900",
+            "token": "pastelpink-900",
+            "type": "color",
+            "value": "#8b3c58"
+          },
+          {
+            "name": "pastelPink/1000",
+            "token": "pastelpink-1000",
+            "type": "color",
+            "value": "#76334b"
+          },
+          {
+            "name": "pastelPink/1100",
+            "token": "pastelpink-1100",
+            "type": "color",
+            "value": "#60293d"
+          },
+          {
+            "name": "pastelPink/1200",
+            "token": "pastelpink-1200",
+            "type": "color",
+            "value": "#4b2030"
+          },
+          {
+            "name": "pastelPink/1300",
+            "token": "pastelpink-1300",
+            "type": "color",
+            "value": "#3d1a27"
+          },
+          {
+            "name": "pastelRed/100",
+            "token": "pastelred-100",
+            "type": "color",
+            "value": "#fbebe9"
+          },
+          {
+            "name": "pastelRed/200",
+            "token": "pastelred-200",
+            "type": "color",
+            "value": "#f7d7d4"
+          },
+          {
+            "name": "pastelRed/300",
+            "token": "pastelred-300",
+            "type": "color",
+            "value": "#f2beba"
+          },
+          {
+            "name": "pastelRed/400",
+            "token": "pastelred-400",
+            "type": "color",
+            "value": "#e8a09b"
+          },
+          {
+            "name": "pastelRed/500",
+            "token": "pastelred-500",
+            "type": "color",
+            "value": "#db8680"
+          },
+          {
+            "name": "pastelRed/600",
+            "token": "pastelred-600",
+            "type": "color",
+            "value": "#d16d66"
+          },
+          {
+            "name": "pastelRed/700",
+            "token": "pastelred-700",
+            "type": "color",
+            "value": "#b65a54"
+          },
+          {
+            "name": "pastelRed/800",
+            "token": "pastelred-800",
+            "type": "color",
+            "value": "#a24a44"
+          },
+          {
+            "name": "pastelRed/900",
+            "token": "pastelred-900",
+            "type": "color",
+            "value": "#843e39"
+          },
+          {
+            "name": "pastelRed/1000",
+            "token": "pastelred-1000",
+            "type": "color",
+            "value": "#713733"
+          },
+          {
+            "name": "pastelRed/1100",
+            "token": "pastelred-1100",
+            "type": "color",
+            "value": "#5b2925"
+          },
+          {
+            "name": "pastelRed/1200",
+            "token": "pastelred-1200",
+            "type": "color",
+            "value": "#48211e"
+          },
+          {
+            "name": "pastelRed/1300",
+            "token": "pastelred-1300",
+            "type": "color",
+            "value": "#381c1a"
+          },
+          {
+            "name": "pastelOrange/100",
+            "token": "pastelorange-100",
+            "type": "color",
+            "value": "#f8ede7"
+          },
+          {
+            "name": "pastelOrange/200",
+            "token": "pastelorange-200",
+            "type": "color",
+            "value": "#f2ddd4"
+          },
+          {
+            "name": "pastelOrange/300",
+            "token": "pastelorange-300",
+            "type": "color",
+            "value": "#eac8b8"
+          },
+          {
+            "name": "pastelOrange/400",
+            "token": "pastelorange-400",
+            "type": "color",
+            "value": "#e1b098"
+          },
+          {
+            "name": "pastelOrange/500",
+            "token": "pastelorange-500",
+            "type": "color",
+            "value": "#d79879"
+          },
+          {
+            "name": "pastelOrange/600",
+            "token": "pastelorange-600",
+            "type": "color",
+            "value": "#cf835e"
+          },
+          {
+            "name": "pastelOrange/700",
+            "token": "pastelorange-700",
+            "type": "color",
+            "value": "#c27751"
+          },
+          {
+            "name": "pastelOrange/800",
+            "token": "pastelorange-800",
+            "type": "color",
+            "value": "#ab633f"
+          },
+          {
+            "name": "pastelOrange/900",
+            "token": "pastelorange-900",
+            "type": "color",
+            "value": "#96542c"
+          },
+          {
+            "name": "pastelOrange/1000",
+            "token": "pastelorange-1000",
+            "type": "color",
+            "value": "#7e4725"
+          },
+          {
+            "name": "pastelOrange/1100",
+            "token": "pastelorange-1100",
+            "type": "color",
+            "value": "#63361d"
+          },
+          {
+            "name": "pastelOrange/1200",
+            "token": "pastelorange-1200",
+            "type": "color",
+            "value": "#4b2a16"
+          },
+          {
+            "name": "pastelOrange/1300",
+            "token": "pastelorange-1300",
+            "type": "color",
+            "value": "#3b2011"
+          },
+          {
+            "name": "pastelYellow/100",
+            "token": "pastelyellow-100",
+            "type": "color",
+            "value": "#f3efe3"
+          },
+          {
+            "name": "pastelYellow/200",
+            "token": "pastelyellow-200",
+            "type": "color",
+            "value": "#ede6cf"
+          },
+          {
+            "name": "pastelYellow/300",
+            "token": "pastelyellow-300",
+            "type": "color",
+            "value": "#e3d9b5"
+          },
+          {
+            "name": "pastelYellow/400",
+            "token": "pastelyellow-400",
+            "type": "color",
+            "value": "#d3c597"
+          },
+          {
+            "name": "pastelYellow/500",
+            "token": "pastelyellow-500",
+            "type": "color",
+            "value": "#bdae7a"
+          },
+          {
+            "name": "pastelYellow/600",
+            "token": "pastelyellow-600",
+            "type": "color",
+            "value": "#af9f64"
+          },
+          {
+            "name": "pastelYellow/700",
+            "token": "pastelyellow-700",
+            "type": "color",
+            "value": "#9d8d4d"
+          },
+          {
+            "name": "pastelYellow/800",
+            "token": "pastelyellow-800",
+            "type": "color",
+            "value": "#8a7b42"
+          },
+          {
+            "name": "pastelYellow/900",
+            "token": "pastelyellow-900",
+            "type": "color",
+            "value": "#74693e"
+          },
+          {
+            "name": "pastelYellow/1000",
+            "token": "pastelyellow-1000",
+            "type": "color",
+            "value": "#605734"
+          },
+          {
+            "name": "pastelYellow/1100",
+            "token": "pastelyellow-1100",
+            "type": "color",
+            "value": "#494227"
+          },
+          {
+            "name": "pastelYellow/1200",
+            "token": "pastelyellow-1200",
+            "type": "color",
+            "value": "#38331e"
+          },
+          {
+            "name": "pastelYellow/1300",
+            "token": "pastelyellow-1300",
+            "type": "color",
+            "value": "#292619"
+          },
+          {
+            "name": "pastelGreen/100",
+            "token": "pastelgreen-100",
+            "type": "color",
+            "value": "#ebf2e9"
+          },
+          {
+            "name": "pastelGreen/200",
+            "token": "pastelgreen-200",
+            "type": "color",
+            "value": "#dae6d6"
+          },
+          {
+            "name": "pastelGreen/300",
+            "token": "pastelgreen-300",
+            "type": "color",
+            "value": "#cadac3"
+          },
+          {
+            "name": "pastelGreen/400",
+            "token": "pastelgreen-400",
+            "type": "color",
+            "value": "#b0c8a7"
+          },
+          {
+            "name": "pastelGreen/500",
+            "token": "pastelgreen-500",
+            "type": "color",
+            "value": "#96b68b"
+          },
+          {
+            "name": "pastelGreen/600",
+            "token": "pastelgreen-600",
+            "type": "color",
+            "value": "#7da56f"
+          },
+          {
+            "name": "pastelGreen/700",
+            "token": "pastelgreen-700",
+            "type": "color",
+            "value": "#69905a"
+          },
+          {
+            "name": "pastelGreen/800",
+            "token": "pastelgreen-800",
+            "type": "color",
+            "value": "#5d8151"
+          },
+          {
+            "name": "pastelGreen/900",
+            "token": "pastelgreen-900",
+            "type": "color",
+            "value": "#4d6b43"
+          },
+          {
+            "name": "pastelGreen/1000",
+            "token": "pastelgreen-1000",
+            "type": "color",
+            "value": "#425b39"
+          },
+          {
+            "name": "pastelGreen/1100",
+            "token": "pastelgreen-1100",
+            "type": "color",
+            "value": "#34482d"
+          },
+          {
+            "name": "pastelGreen/1200",
+            "token": "pastelgreen-1200",
+            "type": "color",
+            "value": "#293923"
+          },
+          {
+            "name": "pastelGreen/1300",
+            "token": "pastelgreen-1300",
+            "type": "color",
+            "value": "#202c1b"
+          },
+          {
+            "name": "pasteltealGreen/100",
+            "token": "pasteltealgreen-100",
+            "type": "color",
+            "value": "#e8f3f3"
+          },
+          {
+            "name": "pasteltealGreen/200",
+            "token": "pasteltealgreen-200",
+            "type": "color",
+            "value": "#d1e6e6"
+          },
+          {
+            "name": "pasteltealGreen/300",
+            "token": "pasteltealgreen-300",
+            "type": "color",
+            "value": "#b6d8d8"
+          },
+          {
+            "name": "pasteltealGreen/400",
+            "token": "pasteltealgreen-400",
+            "type": "color",
+            "value": "#92c4c4"
+          },
+          {
+            "name": "pasteltealGreen/500",
+            "token": "pasteltealgreen-500",
+            "type": "color",
+            "value": "#70b2b2"
+          },
+          {
+            "name": "pasteltealGreen/600",
+            "token": "pasteltealgreen-600",
+            "type": "color",
+            "value": "#57a2a2"
+          },
+          {
+            "name": "pasteltealGreen/700",
+            "token": "pasteltealgreen-700",
+            "type": "color",
+            "value": "#4b8b8b"
+          },
+          {
+            "name": "pasteltealGreen/800",
+            "token": "pasteltealgreen-800",
+            "type": "color",
+            "value": "#427b7b"
+          },
+          {
+            "name": "pasteltealGreen/900",
+            "token": "pasteltealgreen-900",
+            "type": "color",
+            "value": "#376767"
+          },
+          {
+            "name": "pasteltealGreen/1000",
+            "token": "pasteltealgreen-1000",
+            "type": "color",
+            "value": "#305a5a"
+          },
+          {
+            "name": "pasteltealGreen/1100",
+            "token": "pasteltealgreen-1100",
+            "type": "color",
+            "value": "#244747"
+          },
+          {
+            "name": "pasteltealGreen/1200",
+            "token": "pasteltealgreen-1200",
+            "type": "color",
+            "value": "#1d3a3a"
+          },
+          {
+            "name": "pasteltealGreen/1300",
+            "token": "pasteltealgreen-1300",
+            "type": "color",
+            "value": "#162c2c"
+          },
+          {
+            "name": "pastelBlue/100",
+            "token": "pastelblue-100",
+            "type": "color",
+            "value": "#e8f0f7"
+          },
+          {
+            "name": "pastelBlue/200",
+            "token": "pastelblue-200",
+            "type": "color",
+            "value": "#d5e3f1"
+          },
+          {
+            "name": "pastelBlue/300",
+            "token": "pastelblue-300",
+            "type": "color",
+            "value": "#b7cfe7"
+          },
+          {
+            "name": "pastelBlue/400",
+            "token": "pastelblue-400",
+            "type": "color",
+            "value": "#98bbdc"
+          },
+          {
+            "name": "pastelBlue/500",
+            "token": "pastelblue-500",
+            "type": "color",
+            "value": "#7eaad3"
+          },
+          {
+            "name": "pastelBlue/600",
+            "token": "pastelblue-600",
+            "type": "color",
+            "value": "#6798c5"
+          },
+          {
+            "name": "pastelBlue/700",
+            "token": "pastelblue-700",
+            "type": "color",
+            "value": "#4782b8"
+          },
+          {
+            "name": "pastelBlue/800",
+            "token": "pastelblue-800",
+            "type": "color",
+            "value": "#43729d"
+          },
+          {
+            "name": "pastelBlue/900",
+            "token": "pastelblue-900",
+            "type": "color",
+            "value": "#3a6288"
+          },
+          {
+            "name": "pastelBlue/1000",
+            "token": "pastelblue-1000",
+            "type": "color",
+            "value": "#335576"
+          },
+          {
+            "name": "pastelBlue/1100",
+            "token": "pastelblue-1100",
+            "type": "color",
+            "value": "#28435d"
+          },
+          {
+            "name": "pastelBlue/1200",
+            "token": "pastelblue-1200",
+            "type": "color",
+            "value": "#22394e"
+          },
+          {
+            "name": "pastelBlue/1300",
+            "token": "pastelblue-1300",
+            "type": "color",
+            "value": "#1a2c3c"
+          },
+          {
+            "name": "pastelNavy/100",
+            "token": "pastelnavy-100",
+            "type": "color",
+            "value": "#e9eef6"
+          },
+          {
+            "name": "pastelNavy/200",
+            "token": "pastelnavy-200",
+            "type": "color",
+            "value": "#d7ddea"
+          },
+          {
+            "name": "pastelNavy/300",
+            "token": "pastelnavy-300",
+            "type": "color",
+            "value": "#b9c4da"
+          },
+          {
+            "name": "pastelNavy/400",
+            "token": "pastelnavy-400",
+            "type": "color",
+            "value": "#9eaecc"
+          },
+          {
+            "name": "pastelNavy/500",
+            "token": "pastelnavy-500",
+            "type": "color",
+            "value": "#8a9ec2"
+          },
+          {
+            "name": "pastelNavy/600",
+            "token": "pastelnavy-600",
+            "type": "color",
+            "value": "#6c85b1"
+          },
+          {
+            "name": "pastelNavy/700",
+            "token": "pastelnavy-700",
+            "type": "color",
+            "value": "#5671a3"
+          },
+          {
+            "name": "pastelNavy/800",
+            "token": "pastelnavy-800",
+            "type": "color",
+            "value": "#4e6693"
+          },
+          {
+            "name": "pastelNavy/900",
+            "token": "pastelnavy-900",
+            "type": "color",
+            "value": "#43587f"
+          },
+          {
+            "name": "pastelNavy/1000",
+            "token": "pastelnavy-1000",
+            "type": "color",
+            "value": "#3e5074"
+          },
+          {
+            "name": "pastelNavy/1100",
+            "token": "pastelnavy-1100",
+            "type": "color",
+            "value": "#31405d"
+          },
+          {
+            "name": "pastelNavy/1200",
+            "token": "pastelnavy-1200",
+            "type": "color",
+            "value": "#253655"
+          },
+          {
+            "name": "pastelNavy/1300",
+            "token": "pastelnavy-1300",
+            "type": "color",
+            "value": "#252f41"
+          },
+          {
+            "name": "pastelPurple/100",
+            "token": "pastelpurple-100",
+            "type": "color",
+            "value": "#ebeaf5"
+          },
+          {
+            "name": "pastelPurple/200",
+            "token": "pastelpurple-200",
+            "type": "color",
+            "value": "#dbd9ed"
+          },
+          {
+            "name": "pastelPurple/300",
+            "token": "pastelpurple-300",
+            "type": "color",
+            "value": "#c4c1e1"
+          },
+          {
+            "name": "pastelPurple/400",
+            "token": "pastelpurple-400",
+            "type": "color",
+            "value": "#ada9d5"
+          },
+          {
+            "name": "pastelPurple/500",
+            "token": "pastelpurple-500",
+            "type": "color",
+            "value": "#9995cb"
+          },
+          {
+            "name": "pastelPurple/600",
+            "token": "pastelpurple-600",
+            "type": "color",
+            "value": "#817cc0"
+          },
+          {
+            "name": "pastelPurple/700",
+            "token": "pastelpurple-700",
+            "type": "color",
+            "value": "#6e68b6"
+          },
+          {
+            "name": "pastelPurple/800",
+            "token": "pastelpurple-800",
+            "type": "color",
+            "value": "#625da2"
+          },
+          {
+            "name": "pastelPurple/900",
+            "token": "pastelpurple-900",
+            "type": "color",
+            "value": "#55518b"
+          },
+          {
+            "name": "pastelPurple/1000",
+            "token": "pastelpurple-1000",
+            "type": "color",
+            "value": "#4d4979"
+          },
+          {
+            "name": "pastelPurple/1100",
+            "token": "pastelpurple-1100",
+            "type": "color",
+            "value": "#413d66"
+          },
+          {
+            "name": "pastelPurple/1200",
+            "token": "pastelpurple-1200",
+            "type": "color",
+            "value": "#373356"
+          },
+          {
+            "name": "pastelPurple/1300",
+            "token": "pastelpurple-1300",
+            "type": "color",
+            "value": "#2d2a46"
+          },
+          {
+            "name": "pastelViolet/100",
+            "token": "pastelviolet-100",
+            "type": "color",
+            "value": "#eee9f2"
+          },
+          {
+            "name": "pastelViolet/200",
+            "token": "pastelviolet-200",
+            "type": "color",
+            "value": "#e2d9e8"
+          },
+          {
+            "name": "pastelViolet/300",
+            "token": "pastelviolet-300",
+            "type": "color",
+            "value": "#cfbfd9"
+          },
+          {
+            "name": "pastelViolet/400",
+            "token": "pastelviolet-400",
+            "type": "color",
+            "value": "#bca6ca"
+          },
+          {
+            "name": "pastelViolet/500",
+            "token": "pastelviolet-500",
+            "type": "color",
+            "value": "#ad92be"
+          },
+          {
+            "name": "pastelViolet/600",
+            "token": "pastelviolet-600",
+            "type": "color",
+            "value": "#9979af"
+          },
+          {
+            "name": "pastelViolet/700",
+            "token": "pastelviolet-700",
+            "type": "color",
+            "value": "#8963a2"
+          },
+          {
+            "name": "pastelViolet/800",
+            "token": "pastelviolet-800",
+            "type": "color",
+            "value": "#795690"
+          },
+          {
+            "name": "pastelViolet/900",
+            "token": "pastelviolet-900",
+            "type": "color",
+            "value": "#6c4c80"
+          },
+          {
+            "name": "pastelViolet/1000",
+            "token": "pastelviolet-1000",
+            "type": "color",
+            "value": "#5e4270"
+          },
+          {
+            "name": "pastelViolet/1100",
+            "token": "pastelviolet-1100",
+            "type": "color",
+            "value": "#4e375d"
+          },
+          {
+            "name": "pastelViolet/1200",
+            "token": "pastelviolet-1200",
+            "type": "color",
+            "value": "#402d4d"
+          },
+          {
+            "name": "pastelViolet/1300",
+            "token": "pastelviolet-1300",
+            "type": "color",
+            "value": "#33243d"
+          },
+          {
+            "name": "pastelBrown/100",
+            "token": "pastelbrown-100",
+            "type": "color",
+            "value": "#efeae7"
+          },
+          {
+            "name": "pastelBrown/200",
+            "token": "pastelbrown-200",
+            "type": "color",
+            "value": "#e4dcd7"
+          },
+          {
+            "name": "pastelBrown/300",
+            "token": "pastelbrown-300",
+            "type": "color",
+            "value": "#d0c1b8"
+          },
+          {
+            "name": "pastelBrown/400",
+            "token": "pastelbrown-400",
+            "type": "color",
+            "value": "#bea99d"
+          },
+          {
+            "name": "pastelBrown/500",
+            "token": "pastelbrown-500",
+            "type": "color",
+            "value": "#b09687"
+          },
+          {
+            "name": "pastelBrown/600",
+            "token": "pastelbrown-600",
+            "type": "color",
+            "value": "#a0806e"
+          },
+          {
+            "name": "pastelBrown/700",
+            "token": "pastelbrown-700",
+            "type": "color",
+            "value": "#8a6c5b"
+          },
+          {
+            "name": "pastelBrown/800",
+            "token": "pastelbrown-800",
+            "type": "color",
+            "value": "#755b4d"
+          },
+          {
+            "name": "pastelBrown/900",
+            "token": "pastelbrown-900",
+            "type": "color",
+            "value": "#695144"
+          },
+          {
+            "name": "pastelBrown/1000",
+            "token": "pastelbrown-1000",
+            "type": "color",
+            "value": "#59453a"
+          },
+          {
+            "name": "pastelBrown/1100",
+            "token": "pastelbrown-1100",
+            "type": "color",
+            "value": "#47372e"
+          },
+          {
+            "name": "pastelBrown/1200",
+            "token": "pastelbrown-1200",
+            "type": "color",
+            "value": "#382b24"
+          },
+          {
+            "name": "pastelBrown/1300",
+            "token": "pastelbrown-1300",
+            "type": "color",
+            "value": "#251f1b"
+          },
+          {
+            "name": "black",
+            "token": "black",
+            "type": "color",
+            "value": "#000000"
+          },
+          {
+            "name": "blackAlpha/80",
+            "token": "blackalpha-80",
+            "type": "color",
+            "value": "rgba(0, 0, 0, 0.08)"
+          },
+          {
+            "name": "blackAlpha/100",
+            "token": "blackalpha-100",
+            "type": "color",
+            "value": "rgba(0, 0, 0, 0.12)"
+          },
+          {
+            "name": "blackAlpha/150",
+            "token": "blackalpha-150",
+            "type": "color",
+            "value": "rgba(0, 0, 0, 0.16)"
+          },
+          {
+            "name": "blackAlpha/200",
+            "token": "blackalpha-200",
+            "type": "color",
+            "value": "rgba(0, 0, 0, 0.22)"
+          },
+          {
+            "name": "blackAlpha/300",
+            "token": "blackalpha-300",
+            "type": "color",
+            "value": "rgba(0, 0, 0, 0.28)"
+          },
+          {
+            "name": "blackAlpha/400",
+            "token": "blackalpha-400",
+            "type": "color",
+            "value": "rgba(0, 0, 0, 0.35)"
+          },
+          {
+            "name": "blackAlpha/500",
+            "token": "blackalpha-500",
+            "type": "color",
+            "value": "rgba(0, 0, 0, 0.43)"
+          },
+          {
+            "name": "blackAlpha/600",
+            "token": "blackalpha-600",
+            "type": "color",
+            "value": "rgba(0, 0, 0, 0.52)"
+          },
+          {
+            "name": "blackAlpha/700",
+            "token": "blackalpha-700",
+            "type": "color",
+            "value": "rgba(0, 0, 0, 0.61)"
+          },
+          {
+            "name": "white",
+            "token": "white",
+            "type": "color",
+            "value": "#ffffff"
+          },
+          {
+            "name": "whiteAlpha/80",
+            "token": "whitealpha-80",
+            "type": "color",
+            "value": "rgba(255, 255, 255, 0.08)"
+          },
+          {
+            "name": "whiteAlpha/100",
+            "token": "whitealpha-100",
+            "type": "color",
+            "value": "rgba(255, 255, 255, 0.12)"
+          },
+          {
+            "name": "whiteAlpha/150",
+            "token": "whitealpha-150",
+            "type": "color",
+            "value": "rgba(255, 255, 255, 0.16)"
+          },
+          {
+            "name": "whiteAlpha/200",
+            "token": "whitealpha-200",
+            "type": "color",
+            "value": "rgba(255, 255, 255, 0.22)"
+          },
+          {
+            "name": "whiteAlpha/300",
+            "token": "whitealpha-300",
+            "type": "color",
+            "value": "rgba(255, 255, 255, 0.28)"
+          },
+          {
+            "name": "whiteAlpha/400",
+            "token": "whitealpha-400",
+            "type": "color",
+            "value": "rgba(255, 255, 255, 0.35)"
+          },
+          {
+            "name": "whiteAlpha/500",
+            "token": "whitealpha-500",
+            "type": "color",
+            "value": "rgba(255, 255, 255, 0.43)"
+          },
+          {
+            "name": "whiteAlpha/600",
+            "token": "whitealpha-600",
+            "type": "color",
+            "value": "rgba(255, 255, 255, 0.52)"
+          },
+          {
+            "name": "whiteAlpha/700",
+            "token": "whitealpha-700",
+            "type": "color",
+            "value": "rgba(255, 255, 255, 0.61)"
+          },
+          {
+            "name": "steelBlue/50",
+            "token": "steelblue-50",
+            "type": "color",
+            "value": "#f8f9fc"
+          },
+          {
+            "name": "sunsetRed/50",
+            "token": "sunsetred-50",
+            "type": "color",
+            "value": "#fff5f7"
+          },
+          {
+            "name": "red/50",
+            "token": "red-50",
+            "type": "color",
+            "value": "#fff5f5"
+          },
+          {
+            "name": "coralRed/50",
+            "token": "coralred-50",
+            "type": "color",
+            "value": "#fff6f5"
+          },
+          {
+            "name": "redOrange/50",
+            "token": "redorange-50",
+            "type": "color",
+            "value": "#fff8f5"
+          },
+          {
+            "name": "orange/50",
+            "token": "orange-50",
+            "type": "color",
+            "value": "#fff7f0"
+          },
+          {
+            "name": "sunOrange/50",
+            "token": "sunorange-50",
+            "type": "color",
+            "value": "#fff9f0"
+          },
+          {
+            "name": "goldYellow/50",
+            "token": "goldyellow-50",
+            "type": "color",
+            "value": "#fffdf0"
+          },
+          {
+            "name": "yellow/50",
+            "token": "yellow-50",
+            "type": "color",
+            "value": "#fffff0"
+          },
+          {
+            "name": "neonYellow/50",
+            "token": "neonyellow-50",
+            "type": "color",
+            "value": "#fdfff0"
+          },
+          {
+            "name": "yellowGreen/50",
+            "token": "yellowgreen-50",
+            "type": "color",
+            "value": "#f9fcf2"
+          },
+          {
+            "name": "limeGreen/50",
+            "token": "limegreen-50",
+            "type": "color",
+            "value": "#f7fcf2"
+          },
+          {
+            "name": "forestGreen/50",
+            "token": "forestgreen-50",
+            "type": "color",
+            "value": "#f3fcf6"
+          },
+          {
+            "name": "green/50",
+            "token": "green-50",
+            "type": "color",
+            "value": "#f4fbf8"
+          },
+          {
+            "name": "emeraldGreen/50",
+            "token": "emeraldgreen-50",
+            "type": "color",
+            "value": "#f4faf9"
+          },
+          {
+            "name": "tealGreen/50",
+            "token": "tealgreen-50",
+            "type": "color",
+            "value": "#f4fafa"
+          },
+          {
+            "name": "\bskyBlue/50",
+            "token": "skyblue-50",
+            "type": "color",
+            "value": "#f0faff"
+          },
+          {
+            "name": "blue/50",
+            "token": "blue-50",
+            "type": "color",
+            "value": "#f0f7ff"
+          },
+          {
+            "name": "emocogBlue/50",
+            "token": "emocogblue-50",
+            "type": "color",
+            "value": "#f1f4fd"
+          },
+          {
+            "name": "paleBlue/50",
+            "token": "paleblue-50",
+            "type": "color",
+            "value": "#f3f7fc"
+          },
+          {
+            "name": "navy/50",
+            "token": "navy-50",
+            "type": "color",
+            "value": "#f3f3fc"
+          },
+          {
+            "name": "persianPurple/50",
+            "token": "persianpurple-50",
+            "type": "color",
+            "value": "#f5f6ff"
+          },
+          {
+            "name": "royalPurple/50",
+            "token": "royalpurple-50",
+            "type": "color",
+            "value": "#f6f5ff"
+          },
+          {
+            "name": "cogtheraPurple/50",
+            "token": "cogtherapurple-50",
+            "type": "color",
+            "value": "#f6f0ff"
+          },
+          {
+            "name": "violetPurple/50",
+            "token": "violetpurple-50",
+            "type": "color",
+            "value": "#fcf5ff"
+          },
+          {
+            "name": "flamingo/50",
+            "token": "flamingo-50",
+            "type": "color",
+            "value": "#fef1fe"
+          },
+          {
+            "name": "hotPink/50",
+            "token": "hotpink-50",
+            "type": "color",
+            "value": "#fdf1f7"
+          },
+          {
+            "name": "pink/50",
+            "token": "pink-50",
+            "type": "color",
+            "value": "#fff0f6"
+          },
+          {
+            "name": "pastelPink/50",
+            "token": "pastelpink-50",
+            "type": "color",
+            "value": "#fdf1f4"
+          },
+          {
+            "name": "pastelRed/50",
+            "token": "pastelred-50",
+            "type": "color",
+            "value": "#fcf4f2"
+          },
+          {
+            "name": "pastelOrange/50",
+            "token": "pastelorange-50",
+            "type": "color",
+            "value": "#fcf6f3"
+          },
+          {
+            "name": "pastelYellow/50",
+            "token": "pastelyellow-50",
+            "type": "color",
+            "value": "#faf9f4"
+          },
+          {
+            "name": "pastelGreen/50",
+            "token": "pastelgreen-50",
+            "type": "color",
+            "value": "#f6f9f6"
+          },
+          {
+            "name": "pasteltealGreen/50",
+            "token": "pasteltealgreen-50",
+            "type": "color",
+            "value": "#f4fafa"
+          },
+          {
+            "name": "pastelBlue/50",
+            "token": "pastelblue-50",
+            "type": "color",
+            "value": "#f4f8fb"
+          },
+          {
+            "name": "pastelNavy/50",
+            "token": "pastelnavy-50",
+            "type": "color",
+            "value": "#f4f6fa"
+          },
+          {
+            "name": "pastelPurple/50",
+            "token": "pastelpurple-50",
+            "type": "color",
+            "value": "#f4f4fa"
+          },
+          {
+            "name": "pastelViolet/50",
+            "token": "pastelviolet-50",
+            "type": "color",
+            "value": "#f7f6f9"
+          },
+          {
+            "name": "pastelBrown/50",
+            "token": "pastelbrown-50",
+            "type": "color",
+            "value": "#f9f7f6"
+          },
+          {
+            "name": "happymindRed/50",
+            "token": "happymindred-50",
+            "type": "color",
+            "value": "#fef6f5"
+          },
+          {
+            "name": "happymindRed/100",
+            "token": "happymindred-100",
+            "type": "color",
+            "value": "#feeeec"
+          },
+          {
+            "name": "happymindRed/200",
+            "token": "happymindred-200",
+            "type": "color",
+            "value": "#fcddd9"
+          },
+          {
+            "name": "happymindRed/300",
+            "token": "happymindred-300",
+            "type": "color",
+            "value": "#fbccc6"
+          },
+          {
+            "name": "happymindRed/400",
+            "token": "happymindred-400",
+            "type": "color",
+            "value": "#f9aea4"
+          },
+          {
+            "name": "happymindRed/500",
+            "token": "happymindred-500",
+            "type": "color",
+            "value": "#f68879"
+          },
+          {
+            "name": "happymindRed/600",
+            "token": "happymindred-600",
+            "type": "color",
+            "value": "#f35e49"
+          },
+          {
+            "name": "happymindRed/700",
+            "token": "happymindred-700",
+            "type": "color",
+            "value": "#e6290f"
+          },
+          {
+            "name": "happymindRed/800",
+            "token": "happymindred-800",
+            "type": "color",
+            "value": "#ce250d"
+          },
+          {
+            "name": "happymindRed/900",
+            "token": "happymindred-900",
+            "type": "color",
+            "value": "#b1200b"
+          },
+          {
+            "name": "happymindRed/1000",
+            "token": "happymindred-1000",
+            "type": "color",
+            "value": "#9a1c0a"
+          },
+          {
+            "name": "happymindRed/1100",
+            "token": "happymindred-1100",
+            "type": "color",
+            "value": "#781608"
+          },
+          {
+            "name": "happymindRed/1200",
+            "token": "happymindred-1200",
+            "type": "color",
+            "value": "#641207"
+          },
+          {
+            "name": "happymindRed/1300",
+            "token": "happymindred-1300",
+            "type": "color",
+            "value": "#430c05"
+          },
+          {
+            "name": "happymindBlue/50",
+            "token": "happymindblue-50",
+            "type": "color",
+            "value": "#f3f6fc"
+          },
+          {
+            "name": "happymindBlue/100",
+            "token": "happymindblue-100",
+            "type": "color",
+            "value": "#e3eaf7"
+          },
+          {
+            "name": "happymindBlue/200",
+            "token": "happymindblue-200",
+            "type": "color",
+            "value": "#d2ddf3"
+          },
+          {
+            "name": "happymindBlue/300",
+            "token": "happymindblue-300",
+            "type": "color",
+            "value": "#b2c5eb"
+          },
+          {
+            "name": "happymindBlue/400",
+            "token": "happymindblue-400",
+            "type": "color",
+            "value": "#99b3e5"
+          },
+          {
+            "name": "happymindBlue/500",
+            "token": "happymindblue-500",
+            "type": "color",
+            "value": "#789add"
+          },
+          {
+            "name": "happymindBlue/600",
+            "token": "happymindblue-600",
+            "type": "color",
+            "value": "#5c85d6"
+          },
+          {
+            "name": "happymindBlue/700",
+            "token": "happymindblue-700",
+            "type": "color",
+            "value": "#4372d0"
+          },
+          {
+            "name": "happymindBlue/800",
+            "token": "happymindblue-800",
+            "type": "color",
+            "value": "#3060c0"
+          },
+          {
+            "name": "happymindBlue/900",
+            "token": "happymindblue-900",
+            "type": "color",
+            "value": "#2850a0"
+          },
+          {
+            "name": "happymindBlue/1000",
+            "token": "happymindblue-1000",
+            "type": "color",
+            "value": "#214183"
+          },
+          {
+            "name": "happymindBlue/1100",
+            "token": "happymindblue-1100",
+            "type": "color",
+            "value": "#1b356a"
+          },
+          {
+            "name": "happymindBlue/1200",
+            "token": "happymindblue-1200",
+            "type": "color",
+            "value": "#172d59"
+          },
+          {
+            "name": "happymindBlue/1300",
+            "token": "happymindblue-1300",
+            "type": "color",
+            "value": "#122345"
+          },
+          {
+            "name": "blackAlpha/50",
+            "token": "blackalpha-50",
+            "type": "color",
+            "value": "rgba(0, 0, 0, 0.05)"
+          },
+          {
+            "name": "whiteAlpha/50",
+            "token": "whitealpha-50",
+            "type": "color",
+            "value": "rgba(255, 255, 255, 0.05)"
+          },
+          {
+            "name": "gray/50",
+            "token": "gray-50",
+            "type": "color",
+            "value": "#f5f5f5"
+          },
+          {
+            "name": "gray/1050",
+            "token": "gray-1050",
+            "type": "color",
+            "value": "#3b3b3b"
+          },
+          {
+            "name": "gray/1150",
+            "token": "gray-1150",
+            "type": "color",
+            "value": "#2b2b2b"
+          },
+          {
+            "name": "gray/1250",
+            "token": "gray-1250",
+            "type": "color",
+            "value": "#181818"
+          },
+          {
+            "name": "coolGray/30",
+            "token": "coolgray-30",
+            "type": "color",
+            "value": "#f7f7f8"
+          },
+          {
+            "name": "coolGray/50",
+            "token": "coolgray-50",
+            "type": "color",
+            "value": "#f4f4f5"
+          },
+          {
+            "name": "coolGray/100",
+            "token": "coolgray-100",
+            "type": "color",
+            "value": "#eaebec"
+          },
+          {
+            "name": "coolGray/200",
+            "token": "coolgray-200",
+            "type": "color",
+            "value": "#e1e2e4"
+          },
+          {
+            "name": "coolGray/300",
+            "token": "coolgray-300",
+            "type": "color",
+            "value": "#d6d8db"
+          },
+          {
+            "name": "coolGray/400",
+            "token": "coolgray-400",
+            "type": "color",
+            "value": "#c2c4c8"
+          },
+          {
+            "name": "coolGray/500",
+            "token": "coolgray-500",
+            "type": "color",
+            "value": "#aeb0b6"
+          },
+          {
+            "name": "coolGray/600",
+            "token": "coolgray-600",
+            "type": "color",
+            "value": "#989ba2"
+          },
+          {
+            "name": "coolGray/700",
+            "token": "coolgray-700",
+            "type": "color",
+            "value": "#70737c"
+          },
+          {
+            "name": "coolGray/800",
+            "token": "coolgray-800",
+            "type": "color",
+            "value": "#5a5c63"
+          },
+          {
+            "name": "coolGray/900",
+            "token": "coolgray-900",
+            "type": "color",
+            "value": "#4c4d52"
+          },
+          {
+            "name": "coolGray/1000",
+            "token": "coolgray-1000",
+            "type": "color",
+            "value": "#3d3e43"
+          },
+          {
+            "name": "coolGray/1050",
+            "token": "coolgray-1050",
+            "type": "color",
+            "value": "#38393d"
+          },
+          {
+            "name": "coolGray/1100",
+            "token": "coolgray-1100",
+            "type": "color",
+            "value": "#2e2f33"
+          },
+          {
+            "name": "coolGray/1150",
+            "token": "coolgray-1150",
+            "type": "color",
+            "value": "#292a2d"
+          },
+          {
+            "name": "coolGray/1200",
+            "token": "coolgray-1200",
+            "type": "color",
+            "value": "#212225"
+          },
+          {
+            "name": "coolGray/1250",
+            "token": "coolgray-1250",
+            "type": "color",
+            "value": "#171719"
+          },
+          {
+            "name": "coolGray/1300",
+            "token": "coolgray-1300",
+            "type": "color",
+            "value": "#0f0f10"
+          },
+          {
+            "name": "ravenGray/30",
+            "token": "ravengray-30",
+            "type": "color",
+            "value": "#f7f7f8"
+          },
+          {
+            "name": "ravenGray/50",
+            "token": "ravengray-50",
+            "type": "color",
+            "value": "#f4f5f5"
+          },
+          {
+            "name": "ravenGray/100",
+            "token": "ravengray-100",
+            "type": "color",
+            "value": "#eaebec"
+          },
+          {
+            "name": "ravenGray/200",
+            "token": "ravengray-200",
+            "type": "color",
+            "value": "#e1e3e4"
+          },
+          {
+            "name": "ravenGray/300",
+            "token": "ravengray-300",
+            "type": "color",
+            "value": "#d6d9db"
+          },
+          {
+            "name": "ravenGray/400",
+            "token": "ravengray-400",
+            "type": "color",
+            "value": "#c2c5c8"
+          },
+          {
+            "name": "ravenGray/500",
+            "token": "ravengray-500",
+            "type": "color",
+            "value": "#aeb2b6"
+          },
+          {
+            "name": "ravenGray/600",
+            "token": "ravengray-600",
+            "type": "color",
+            "value": "#989da2"
+          },
+          {
+            "name": "ravenGray/700",
+            "token": "ravengray-700",
+            "type": "color",
+            "value": "#70767c"
+          },
+          {
+            "name": "ravenGray/800",
+            "token": "ravengray-800",
+            "type": "color",
+            "value": "#5a5f63"
+          },
+          {
+            "name": "ravenGray/900",
+            "token": "ravengray-900",
+            "type": "color",
+            "value": "#4c4f52"
+          },
+          {
+            "name": "ravenGray/1000",
+            "token": "ravengray-1000",
+            "type": "color",
+            "value": "#3d4043"
+          },
+          {
+            "name": "ravenGray/1050",
+            "token": "ravengray-1050",
+            "type": "color",
+            "value": "#383b3d"
+          },
+          {
+            "name": "ravenGray/1100",
+            "token": "ravengray-1100",
+            "type": "color",
+            "value": "#2e3133"
+          },
+          {
+            "name": "ravenGray/1150",
+            "token": "ravengray-1150",
+            "type": "color",
+            "value": "#292b2d"
+          },
+          {
+            "name": "ravenGray/1200",
+            "token": "ravengray-1200",
+            "type": "color",
+            "value": "#212325"
+          },
+          {
+            "name": "ravenGray/1250",
+            "token": "ravengray-1250",
+            "type": "color",
+            "value": "#171819"
+          },
+          {
+            "name": "ravenGray/1300",
+            "token": "ravengray-1300",
+            "type": "color",
+            "value": "#0f1010"
+          },
+          {
+            "name": "gray/650",
+            "token": "gray-650",
+            "type": "color",
+            "value": "#8d8d8d"
+          },
+          {
+            "name": "coolGray/650",
+            "token": "coolgray-650",
+            "type": "color",
+            "value": "#878a93"
+          },
+          {
+            "name": "ravenGray/650",
+            "token": "ravengray-650",
+            "type": "color",
+            "value": "#878d93"
+          },
+          {
+            "name": "blackAlpha/800",
+            "token": "blackalpha-800",
+            "type": "color",
+            "value": "rgba(0, 0, 0, 0.74)"
+          },
+          {
+            "name": "blackAlpha/900",
+            "token": "blackalpha-900",
+            "type": "color",
+            "value": "rgba(0, 0, 0, 0.88)"
+          },
+          {
+            "name": "blackAlpha/1000",
+            "token": "blackalpha-1000",
+            "type": "color",
+            "value": "rgba(0, 0, 0, 0.97)"
+          },
+          {
+            "name": "whiteAlpha/800",
+            "token": "whitealpha-800",
+            "type": "color",
+            "value": "rgba(255, 255, 255, 0.74)"
+          },
+          {
+            "name": "whiteAlpha/900",
+            "token": "whitealpha-900",
+            "type": "color",
+            "value": "rgba(255, 255, 255, 0.88)"
+          },
+          {
+            "name": "whiteAlpha/1000",
+            "token": "whitealpha-1000",
+            "type": "color",
+            "value": "rgba(255, 255, 255, 0.97)"
+          },
+          {
+            "name": "\boliveGreen/50",
+            "token": "olivegreen-50",
+            "type": "color",
+            "value": "#fcfdf2"
+          },
+          {
+            "name": "\boliveGreen/100",
+            "token": "olivegreen-100",
+            "type": "color",
+            "value": "#f8fae0"
+          },
+          {
+            "name": "\boliveGreen/200",
+            "token": "olivegreen-200",
+            "type": "color",
+            "value": "#f2f5c2"
+          },
+          {
+            "name": "\boliveGreen/300",
+            "token": "olivegreen-300",
+            "type": "color",
+            "value": "#e9ee96"
+          },
+          {
+            "name": "\boliveGreen/400",
+            "token": "olivegreen-400",
+            "type": "color",
+            "value": "#dee562"
+          },
+          {
+            "name": "\boliveGreen/500",
+            "token": "olivegreen-500",
+            "type": "color",
+            "value": "#d1db24"
+          },
+          {
+            "name": "\boliveGreen/600",
+            "token": "olivegreen-600",
+            "type": "color",
+            "value": "#bcc521"
+          },
+          {
+            "name": "\boliveGreen/700",
+            "token": "olivegreen-700",
+            "type": "color",
+            "value": "#abb31e"
+          },
+          {
+            "name": "\boliveGreen/800",
+            "token": "olivegreen-800",
+            "type": "color",
+            "value": "#9ba21b"
+          },
+          {
+            "name": "\boliveGreen/900",
+            "token": "olivegreen-900",
+            "type": "color",
+            "value": "#8b9018"
+          },
+          {
+            "name": "\boliveGreen/1000",
+            "token": "olivegreen-1000",
+            "type": "color",
+            "value": "#6e7213"
+          },
+          {
+            "name": "\boliveGreen/1100",
+            "token": "olivegreen-1100",
+            "type": "color",
+            "value": "#585c0f"
+          },
+          {
+            "name": "\boliveGreen/1200",
+            "token": "olivegreen-1200",
+            "type": "color",
+            "value": "#43460b"
+          },
+          {
+            "name": "\boliveGreen/1300",
+            "token": "olivegreen-1300",
+            "type": "color",
+            "value": "#373909"
+          }
+        ],
+        "numbers": [],
+        "strings": [],
+        "booleans": []
+      }
+    },
+    "Primitive : Number": {
+      "id": "VariableCollectionId:152:9435",
+      "modes": [
+        {
+          "id": "152:3",
+          "name": "Mode 1"
+        }
+      ],
+      "variables": {
+        "colors": [],
+        "numbers": [
+          {
+            "name": "0",
+            "token": "0",
+            "type": "float",
+            "value": 0
+          },
+          {
+            "name": "1",
+            "token": "1",
+            "type": "float",
+            "value": 1
+          },
+          {
+            "name": "2",
+            "token": "2",
+            "type": "float",
+            "value": 2
+          },
+          {
+            "name": "5",
+            "token": "5",
+            "type": "float",
+            "value": 8
+          },
+          {
+            "name": "4",
+            "token": "4",
+            "type": "float",
+            "value": 6
+          },
+          {
+            "name": "3",
+            "token": "3",
+            "type": "float",
+            "value": 4
+          },
+          {
+            "name": "8",
+            "token": "8",
+            "type": "float",
+            "value": 14
+          },
+          {
+            "name": "7",
+            "token": "7",
+            "type": "float",
+            "value": 12
+          },
+          {
+            "name": "6",
+            "token": "6",
+            "type": "float",
+            "value": 10
+          },
+          {
+            "name": "11",
+            "token": "11",
+            "type": "float",
+            "value": 20
+          },
+          {
+            "name": "10",
+            "token": "10",
+            "type": "float",
+            "value": 18
+          },
+          {
+            "name": "9",
+            "token": "9",
+            "type": "float",
+            "value": 16
+          },
+          {
+            "name": "17",
+            "token": "17",
+            "type": "float",
+            "value": 32
+          },
+          {
+            "name": "15",
+            "token": "15",
+            "type": "float",
+            "value": 28
+          },
+          {
+            "name": "13",
+            "token": "13",
+            "type": "float",
+            "value": 24
+          },
+          {
+            "name": "31",
+            "token": "31",
+            "type": "float",
+            "value": 80
+          },
+          {
+            "name": "30",
+            "token": "30",
+            "type": "float",
+            "value": 72
+          },
+          {
+            "name": "26",
+            "token": "26",
+            "type": "float",
+            "value": 56
+          },
+          {
+            "name": "25",
+            "token": "25",
+            "type": "float",
+            "value": 52
+          },
+          {
+            "name": "29",
+            "token": "29",
+            "type": "float",
+            "value": 64
+          },
+          {
+            "name": "23",
+            "token": "23",
+            "type": "float",
+            "value": 44
+          },
+          {
+            "name": "24",
+            "token": "24",
+            "type": "float",
+            "value": 48
+          },
+          {
+            "name": "35",
+            "token": "35",
+            "type": "float",
+            "value": 104
+          },
+          {
+            "name": "38",
+            "token": "38",
+            "type": "float",
+            "value": 128
+          },
+          {
+            "name": "37",
+            "token": "37",
+            "type": "float",
+            "value": 120
+          },
+          {
+            "name": "34",
+            "token": "34",
+            "type": "float",
+            "value": 96
+          },
+          {
+            "name": "36",
+            "token": "36",
+            "type": "float",
+            "value": 112
+          },
+          {
+            "name": "21",
+            "token": "21",
+            "type": "float",
+            "value": 40
+          },
+          {
+            "name": "33",
+            "token": "33",
+            "type": "float",
+            "value": 88
+          },
+          {
+            "name": "19",
+            "token": "19",
+            "type": "float",
+            "value": 36
+          },
+          {
+            "name": "40",
+            "token": "40",
+            "type": "float",
+            "value": 144
+          },
+          {
+            "name": "41",
+            "token": "41",
+            "type": "float",
+            "value": 152
+          },
+          {
+            "name": "42",
+            "token": "42",
+            "type": "float",
+            "value": 160
+          },
+          {
+            "name": "39",
+            "token": "39",
+            "type": "float",
+            "value": 136
+          },
+          {
+            "name": "47",
+            "token": "47",
+            "type": "float",
+            "value": 200
+          },
+          {
+            "name": "46",
+            "token": "46",
+            "type": "float",
+            "value": 192
+          },
+          {
+            "name": "45",
+            "token": "45",
+            "type": "float",
+            "value": 184
+          },
+          {
+            "name": "44",
+            "token": "44",
+            "type": "float",
+            "value": 176
+          },
+          {
+            "name": "43",
+            "token": "43",
+            "type": "float",
+            "value": 168
+          },
+          {
+            "name": "57",
+            "token": "57",
+            "type": "float",
+            "value": 280
+          },
+          {
+            "name": "56",
+            "token": "56",
+            "type": "float",
+            "value": 272
+          },
+          {
+            "name": "55",
+            "token": "55",
+            "type": "float",
+            "value": 264
+          },
+          {
+            "name": "54",
+            "token": "54",
+            "type": "float",
+            "value": 256
+          },
+          {
+            "name": "53",
+            "token": "53",
+            "type": "float",
+            "value": 248
+          },
+          {
+            "name": "50",
+            "token": "50",
+            "type": "float",
+            "value": 224
+          },
+          {
+            "name": "52",
+            "token": "52",
+            "type": "float",
+            "value": 240
+          },
+          {
+            "name": "51",
+            "token": "51",
+            "type": "float",
+            "value": 232
+          },
+          {
+            "name": "49",
+            "token": "49",
+            "type": "float",
+            "value": 216
+          },
+          {
+            "name": "48",
+            "token": "48",
+            "type": "float",
+            "value": 208
+          },
+          {
+            "name": "65",
+            "token": "65",
+            "type": "float",
+            "value": 344
+          },
+          {
+            "name": "66",
+            "token": "66",
+            "type": "float",
+            "value": 352
+          },
+          {
+            "name": "63",
+            "token": "63",
+            "type": "float",
+            "value": 328
+          },
+          {
+            "name": "58",
+            "token": "58",
+            "type": "float",
+            "value": 288
+          },
+          {
+            "name": "60",
+            "token": "60",
+            "type": "float",
+            "value": 304
+          },
+          {
+            "name": "62",
+            "token": "62",
+            "type": "float",
+            "value": 320
+          },
+          {
+            "name": "64",
+            "token": "64",
+            "type": "float",
+            "value": 336
+          },
+          {
+            "name": "61",
+            "token": "61",
+            "type": "float",
+            "value": 312
+          },
+          {
+            "name": "59",
+            "token": "59",
+            "type": "float",
+            "value": 296
+          },
+          {
+            "name": "70",
+            "token": "70",
+            "type": "float",
+            "value": 384
+          },
+          {
+            "name": "69",
+            "token": "69",
+            "type": "float",
+            "value": 376
+          },
+          {
+            "name": "68",
+            "token": "68",
+            "type": "float",
+            "value": 368
+          },
+          {
+            "name": "67",
+            "token": "67",
+            "type": "float",
+            "value": 360
+          },
+          {
+            "name": "71",
+            "token": "71",
+            "type": "float",
+            "value": 392
+          },
+          {
+            "name": "72",
+            "token": "72",
+            "type": "float",
+            "value": 400
+          },
+          {
+            "name": "max",
+            "token": "max",
+            "type": "float",
+            "value": 9999
+          },
+          {
+            "name": "12",
+            "token": "12",
+            "type": "float",
+            "value": 22
+          },
+          {
+            "name": "14",
+            "token": "14",
+            "type": "float",
+            "value": 26
+          },
+          {
+            "name": "18",
+            "token": "18",
+            "type": "float",
+            "value": 34
+          },
+          {
+            "name": "20",
+            "token": "20",
+            "type": "float",
+            "value": 38
+          },
+          {
+            "name": "22",
+            "token": "22",
+            "type": "float",
+            "value": 42
+          },
+          {
+            "name": "27",
+            "token": "27",
+            "type": "float",
+            "value": 58
+          },
+          {
+            "name": "32",
+            "token": "32",
+            "type": "float",
+            "value": 86
+          },
+          {
+            "name": "16",
+            "token": "16",
+            "type": "float",
+            "value": 30
+          },
+          {
+            "name": "-1",
+            "token": "1",
+            "type": "float",
+            "value": -1
+          },
+          {
+            "name": "-2",
+            "token": "2",
+            "type": "float",
+            "value": -2
+          },
+          {
+            "name": "28",
+            "token": "28",
+            "type": "float",
+            "value": 60
+          }
+        ],
+        "strings": [],
+        "booleans": []
+      }
+    },
+    "Primitive : Typography": {
+      "id": "VariableCollectionId:185:1860",
+      "modes": [
+        {
+          "id": "185:0",
+          "name": "Value"
+        }
+      ],
+      "variables": {
+        "colors": [],
+        "numbers": [
+          {
+            "name": "fontSize/fontSize80",
+            "token": "fontsize-fontsize80",
+            "type": "float",
+            "value": 10,
+            "values": {
+              "Value": 10
+            }
+          },
+          {
+            "name": "fontSize/fontSize90",
+            "token": "fontsize-fontsize90",
+            "type": "float",
+            "value": 12,
+            "values": {
+              "Value": 12
+            }
+          },
+          {
+            "name": "fontSize/fontSize100",
+            "token": "fontsize-fontsize100",
+            "type": "float",
+            "value": 14,
+            "values": {
+              "Value": 14
+            }
+          },
+          {
+            "name": "fontSize/fontSize110",
+            "token": "fontsize-fontsize110",
+            "type": "float",
+            "value": 16,
+            "values": {
+              "Value": 16
+            }
+          },
+          {
+            "name": "fontSize/fontSize120",
+            "token": "fontsize-fontsize120",
+            "type": "float",
+            "value": 18,
+            "values": {
+              "Value": 18
+            }
+          },
+          {
+            "name": "fontSize/fontSize130",
+            "token": "fontsize-fontsize130",
+            "type": "float",
+            "value": 20,
+            "values": {
+              "Value": 20
+            }
+          },
+          {
+            "name": "fontSize/fontSize140",
+            "token": "fontsize-fontsize140",
+            "type": "float",
+            "value": 22,
+            "values": {
+              "Value": 22
+            }
+          },
+          {
+            "name": "fontSize/fontSize150",
+            "token": "fontsize-fontsize150",
+            "type": "float",
+            "value": 24,
+            "values": {
+              "Value": 24
+            }
+          },
+          {
+            "name": "fontSize/fontSize160",
+            "token": "fontsize-fontsize160",
+            "type": "float",
+            "value": 26,
+            "values": {
+              "Value": 26
+            }
+          },
+          {
+            "name": "fontSize/fontSize170",
+            "token": "fontsize-fontsize170",
+            "type": "float",
+            "value": 28,
+            "values": {
+              "Value": 28
+            }
+          },
+          {
+            "name": "fontSize/fontSize180",
+            "token": "fontsize-fontsize180",
+            "type": "float",
+            "value": 30,
+            "values": {
+              "Value": 30
+            }
+          },
+          {
+            "name": "fontSize/fontSize190",
+            "token": "fontsize-fontsize190",
+            "type": "float",
+            "value": 32,
+            "values": {
+              "Value": 32
+            }
+          },
+          {
+            "name": "fontSize/fontSize200",
+            "token": "fontsize-fontsize200",
+            "type": "float",
+            "value": 34,
+            "values": {
+              "Value": 34
+            }
+          },
+          {
+            "name": "fontSize/fontSize210",
+            "token": "fontsize-fontsize210",
+            "type": "float",
+            "value": 36,
+            "values": {
+              "Value": 36
+            }
+          },
+          {
+            "name": "fontSize/fontSize220",
+            "token": "fontsize-fontsize220",
+            "type": "float",
+            "value": 38,
+            "values": {
+              "Value": 38
+            }
+          },
+          {
+            "name": "fontSize/fontSize230",
+            "token": "fontsize-fontsize230",
+            "type": "float",
+            "value": 40,
+            "values": {
+              "Value": 40
+            }
+          },
+          {
+            "name": "fontSize/fontSize290",
+            "token": "fontsize-fontsize290",
+            "type": "float",
+            "value": 64,
+            "values": {
+              "Value": 64
+            }
+          },
+          {
+            "name": "fontSize/fontSize250",
+            "token": "fontsize-fontsize250",
+            "type": "float",
+            "value": 48,
+            "values": {
+              "Value": 48
+            }
+          },
+          {
+            "name": "fontSize/fontSize280",
+            "token": "fontsize-fontsize280",
+            "type": "float",
+            "value": 60,
+            "values": {
+              "Value": 60
+            }
+          },
+          {
+            "name": "fontSize/fontSize260",
+            "token": "fontsize-fontsize260",
+            "type": "float",
+            "value": 52,
+            "values": {
+              "Value": 52
+            }
+          },
+          {
+            "name": "fontSize/fontSize240",
+            "token": "fontsize-fontsize240",
+            "type": "float",
+            "value": 44,
+            "values": {
+              "Value": 44
+            }
+          },
+          {
+            "name": "fontSize/fontSize350",
+            "token": "fontsize-fontsize350",
+            "type": "float",
+            "value": 120,
+            "values": {
+              "Value": 120
+            }
+          },
+          {
+            "name": "fontSize/fontSize340",
+            "token": "fontsize-fontsize340",
+            "type": "float",
+            "value": 112,
+            "values": {
+              "Value": 112
+            }
+          },
+          {
+            "name": "fontSize/fontSize330",
+            "token": "fontsize-fontsize330",
+            "type": "float",
+            "value": 104,
+            "values": {
+              "Value": 104
+            }
+          },
+          {
+            "name": "fontSize/fontSize310",
+            "token": "fontsize-fontsize310",
+            "type": "float",
+            "value": 80,
+            "values": {
+              "Value": 80
+            }
+          },
+          {
+            "name": "fontSize/fontSize320",
+            "token": "fontsize-fontsize320",
+            "type": "float",
+            "value": 88,
+            "values": {
+              "Value": 88
+            }
+          },
+          {
+            "name": "fontSize/fontSize300",
+            "token": "fontsize-fontsize300",
+            "type": "float",
+            "value": 72,
+            "values": {
+              "Value": 72
+            }
+          },
+          {
+            "name": "fontSize/fontSize410",
+            "token": "fontsize-fontsize410",
+            "type": "float",
+            "value": 168,
+            "values": {
+              "Value": 168
+            }
+          },
+          {
+            "name": "fontSize/fontSize420",
+            "token": "fontsize-fontsize420",
+            "type": "float",
+            "value": 176,
+            "values": {
+              "Value": 176
+            }
+          },
+          {
+            "name": "fontSize/fontSize390",
+            "token": "fontsize-fontsize390",
+            "type": "float",
+            "value": 152,
+            "values": {
+              "Value": 152
+            }
+          },
+          {
+            "name": "fontSize/fontSize400",
+            "token": "fontsize-fontsize400",
+            "type": "float",
+            "value": 160,
+            "values": {
+              "Value": 160
+            }
+          },
+          {
+            "name": "fontSize/fontSize360",
+            "token": "fontsize-fontsize360",
+            "type": "float",
+            "value": 128,
+            "values": {
+              "Value": 128
+            }
+          },
+          {
+            "name": "fontSize/fontSize380",
+            "token": "fontsize-fontsize380",
+            "type": "float",
+            "value": 144,
+            "values": {
+              "Value": 144
+            }
+          },
+          {
+            "name": "fontSize/fontSize370",
+            "token": "fontsize-fontsize370",
+            "type": "float",
+            "value": 136,
+            "values": {
+              "Value": 136
+            }
+          },
+          {
+            "name": "fontSize/fontSize430",
+            "token": "fontsize-fontsize430",
+            "type": "float",
+            "value": 184,
+            "values": {
+              "Value": 184
+            }
+          },
+          {
+            "name": "fontSize/fontSize440",
+            "token": "fontsize-fontsize440",
+            "type": "float",
+            "value": 192,
+            "values": {
+              "Value": 192
+            }
+          },
+          {
+            "name": "letterSpacing/denser",
+            "token": "letterspacing-denser",
+            "type": "float",
+            "value": -2,
+            "values": {
+              "Value": -2
+            }
+          },
+          {
+            "name": "letterSpacing/dense",
+            "token": "letterspacing-dense",
+            "type": "float",
+            "value": -1,
+            "values": {
+              "Value": -1
+            }
+          },
+          {
+            "name": "letterSpacing/none",
+            "token": "letterspacing-none",
+            "type": "float",
+            "value": 0,
+            "values": {
+              "Value": 0
+            }
+          },
+          {
+            "name": "letterSpacing/loose",
+            "token": "letterspacing-loose",
+            "type": "float",
+            "value": 1,
+            "values": {
+              "Value": 1
+            }
+          },
+          {
+            "name": "letterSpacing/looser",
+            "token": "letterspacing-looser",
+            "type": "float",
+            "value": 2,
+            "values": {
+              "Value": 2
+            }
+          },
+          {
+            "name": "lineHeight/lineHeight50",
+            "token": "lineheight-lineheight50",
+            "type": "float",
+            "value": 14,
+            "values": {
+              "Value": 14
+            }
+          },
+          {
+            "name": "lineHeight/lineHeight60",
+            "token": "lineheight-lineheight60",
+            "type": "float",
+            "value": 16,
+            "values": {
+              "Value": 16
+            }
+          },
+          {
+            "name": "lineHeight/lineHeight70",
+            "token": "lineheight-lineheight70",
+            "type": "float",
+            "value": 20,
+            "values": {
+              "Value": 20
+            }
+          },
+          {
+            "name": "lineHeight/lineHeight100",
+            "token": "lineheight-lineheight100",
+            "type": "float",
+            "value": 26,
+            "values": {
+              "Value": 26
+            }
+          },
+          {
+            "name": "lineHeight/lineHeight80",
+            "token": "lineheight-lineheight80",
+            "type": "float",
+            "value": 22,
+            "values": {
+              "Value": 22
+            }
+          },
+          {
+            "name": "lineHeight/lineHeight90",
+            "token": "lineheight-lineheight90",
+            "type": "float",
+            "value": 24,
+            "values": {
+              "Value": 24
+            }
+          },
+          {
+            "name": "lineHeight/lineHeight110",
+            "token": "lineheight-lineheight110",
+            "type": "float",
+            "value": 28,
+            "values": {
+              "Value": 28
+            }
+          },
+          {
+            "name": "lineHeight/lineHeight120",
+            "token": "lineheight-lineheight120",
+            "type": "float",
+            "value": 32,
+            "values": {
+              "Value": 32
+            }
+          },
+          {
+            "name": "lineHeight/lineHeight140",
+            "token": "lineheight-lineheight140",
+            "type": "float",
+            "value": 36,
+            "values": {
+              "Value": 36
+            }
+          },
+          {
+            "name": "lineHeight/lineHeight160",
+            "token": "lineheight-lineheight160",
+            "type": "float",
+            "value": 40,
+            "values": {
+              "Value": 40
+            }
+          },
+          {
+            "name": "lineHeight/lineHeight130",
+            "token": "lineheight-lineheight130",
+            "type": "float",
+            "value": 34,
+            "values": {
+              "Value": 34
+            }
+          },
+          {
+            "name": "lineHeight/lineHeight170",
+            "token": "lineheight-lineheight170",
+            "type": "float",
+            "value": 42,
+            "values": {
+              "Value": 42
+            }
+          },
+          {
+            "name": "lineHeight/lineHeight150",
+            "token": "lineheight-lineheight150",
+            "type": "float",
+            "value": 38,
+            "values": {
+              "Value": 38
+            }
+          },
+          {
+            "name": "lineHeight/lineHeight180",
+            "token": "lineheight-lineheight180",
+            "type": "float",
+            "value": 44,
+            "values": {
+              "Value": 44
+            }
+          },
+          {
+            "name": "lineHeight/lineHeight190",
+            "token": "lineheight-lineheight190",
+            "type": "float",
+            "value": 52,
+            "values": {
+              "Value": 52
+            }
+          },
+          {
+            "name": "lineHeight/lineHeight200",
+            "token": "lineheight-lineheight200",
+            "type": "float",
+            "value": 58,
+            "values": {
+              "Value": 58
+            }
+          },
+          {
+            "name": "lineHeight/lineHeight210",
+            "token": "lineheight-lineheight210",
+            "type": "float",
+            "value": 72,
+            "values": {
+              "Value": 72
+            }
+          },
+          {
+            "name": "lineHeight/lineHeight220",
+            "token": "lineheight-lineheight220",
+            "type": "float",
+            "value": 86,
+            "values": {
+              "Value": 86
+            }
+          },
+          {
+            "name": "fontSize/fontSize450",
+            "token": "fontsize-fontsize450",
+            "type": "float",
+            "value": 200,
+            "values": {
+              "Value": 200
+            }
+          },
+          {
+            "name": "fontSize/fontSize270",
+            "token": "fontsize-fontsize270",
+            "type": "float",
+            "value": 56,
+            "values": {
+              "Value": 56
+            }
+          }
+        ],
+        "strings": [
+          {
+            "name": "fontFamily/fontFamilySans",
+            "token": "fontfamily-fontfamilysans",
+            "type": "string",
+            "value": "pretendard",
+            "values": {
+              "Value": "pretendard"
+            }
+          },
+          {
+            "name": "fontWeight/fontWeight300",
+            "token": "fontweight-fontweight300",
+            "type": "string",
+            "value": "light",
+            "values": {
+              "Value": "light"
+            }
+          },
+          {
+            "name": "fontWeight/fontWeight400",
+            "token": "fontweight-fontweight400",
+            "type": "string",
+            "value": "regular",
+            "values": {
+              "Value": "regular"
+            }
+          },
+          {
+            "name": "fontWeight/fontWeight500",
+            "token": "fontweight-fontweight500",
+            "type": "string",
+            "value": "medium",
+            "values": {
+              "Value": "medium"
+            }
+          },
+          {
+            "name": "fontWeight/fontWeight700",
+            "token": "fontweight-fontweight700",
+            "type": "string",
+            "value": "bold",
+            "values": {
+              "Value": "bold"
+            }
+          },
+          {
+            "name": "fontWeight/fontWeight600",
+            "token": "fontweight-fontweight600",
+            "type": "string",
+            "value": "semibold",
+            "values": {
+              "Value": "semibold"
+            }
+          },
+          {
+            "name": "textDeco/underLine",
+            "token": "textdeco-underline",
+            "type": "string",
+            "value": "underline",
+            "values": {
+              "Value": "underline"
+            }
+          },
+          {
+            "name": "textDeco/none",
+            "token": "textdeco-none",
+            "type": "string",
+            "value": "none",
+            "values": {
+              "Value": "none"
+            }
+          },
+          {
+            "name": "fontFamily/fontFamilySerif",
+            "token": "fontfamily-fontfamilyserif",
+            "type": "string",
+            "value": "MaruBuriOTF",
+            "values": {
+              "Value": "MaruBuriOTF"
+            }
+          },
+          {
+            "name": "fontFamily/fontFamilySansEMR",
+            "token": "fontfamily-fontfamilysansemr",
+            "type": "string",
+            "value": "Nanum Gothic",
+            "values": {
+              "Value": "Nanum Gothic"
+            }
+          }
+        ],
+        "booleans": []
+      }
+    },
+    "Primitive : Radius": {
+      "id": "VariableCollectionId:185:1863",
+      "modes": [
+        {
+          "id": "185:2",
+          "name": "Mode 1"
+        }
+      ],
+      "variables": {
+        "colors": [],
+        "numbers": [
+          {
+            "name": "radius/3xs",
+            "token": "radius-3xs",
+            "type": "float",
+            "value": 2
+          },
+          {
+            "name": "radius/2xs",
+            "token": "radius-2xs",
+            "type": "float",
+            "value": 4
+          },
+          {
+            "name": "radius/xs",
+            "token": "radius-xs",
+            "type": "float",
+            "value": 6
+          },
+          {
+            "name": "radius/sm",
+            "token": "radius-sm",
+            "type": "float",
+            "value": 8
+          },
+          {
+            "name": "radius/md",
+            "token": "radius-md",
+            "type": "float",
+            "value": 10
+          },
+          {
+            "name": "radius/3xl",
+            "token": "radius-3xl",
+            "type": "float",
+            "value": 18
+          },
+          {
+            "name": "radius/2xl",
+            "token": "radius-2xl",
+            "type": "float",
+            "value": 16
+          },
+          {
+            "name": "radius/circle",
+            "token": "radius-circle",
+            "type": "float",
+            "value": 9999
+          },
+          {
+            "name": "radius/xl",
+            "token": "radius-xl",
+            "type": "float",
+            "value": 14
+          },
+          {
+            "name": "radius/lg",
+            "token": "radius-lg",
+            "type": "float",
+            "value": 12
+          },
+          {
+            "name": "radius/4xl",
+            "token": "radius-4xl",
+            "type": "float",
+            "value": 20
+          },
+          {
+            "name": "radius/5xl",
+            "token": "radius-5xl",
+            "type": "float",
+            "value": 24
+          },
+          {
+            "name": "radius/6xl",
+            "token": "radius-6xl",
+            "type": "float",
+            "value": 32
+          }
+        ],
+        "strings": [],
+        "booleans": []
+      }
+    },
+    "Primitive : Border Width": {
+      "id": "VariableCollectionId:276:2514",
+      "modes": [
+        {
+          "id": "276:0",
+          "name": "Mode 1"
+        }
+      ],
+      "variables": {
+        "colors": [],
+        "numbers": [
+          {
+            "name": "borderWidth/thin",
+            "token": "borderwidth-thin",
+            "type": "float",
+            "value": 1
+          },
+          {
+            "name": "borderWidth/thick",
+            "token": "borderwidth-thick",
+            "type": "float",
+            "value": 2
+          },
+          {
+            "name": "borderWidth/thicker",
+            "token": "borderwidth-thicker",
+            "type": "float",
+            "value": 4
+          }
+        ],
+        "strings": [],
+        "booleans": []
+      }
+    },
+    "Primitive : Gap": {
+      "id": "VariableCollectionId:602:1936",
+      "modes": [
+        {
+          "id": "602:0",
+          "name": "Mode 1"
+        }
+      ],
+      "variables": {
+        "colors": [],
+        "numbers": [
+          {
+            "name": "gap/4xs",
+            "token": "gap-4xs",
+            "type": "float",
+            "value": 6
+          },
+          {
+            "name": "gap/3xs",
+            "token": "gap-3xs",
+            "type": "float",
+            "value": 8
+          },
+          {
+            "name": "gap/2xs",
+            "token": "gap-2xs",
+            "type": "float",
+            "value": 10
+          },
+          {
+            "name": "gap/xs",
+            "token": "gap-xs",
+            "type": "float",
+            "value": 12
+          },
+          {
+            "name": "gap/sm",
+            "token": "gap-sm",
+            "type": "float",
+            "value": 14
+          },
+          {
+            "name": "gap/md",
+            "token": "gap-md",
+            "type": "float",
+            "value": 16
+          },
+          {
+            "name": "gap/lg",
+            "token": "gap-lg",
+            "type": "float",
+            "value": 18
+          },
+          {
+            "name": "gap/xl",
+            "token": "gap-xl",
+            "type": "float",
+            "value": 20
+          },
+          {
+            "name": "gap/2xl",
+            "token": "gap-2xl",
+            "type": "float",
+            "value": 22
+          },
+          {
+            "name": "gap/3xl",
+            "token": "gap-3xl",
+            "type": "float",
+            "value": 24
+          },
+          {
+            "name": "gap/4xl",
+            "token": "gap-4xl",
+            "type": "float",
+            "value": 26
+          },
+          {
+            "name": "gap/none",
+            "token": "gap-none",
+            "type": "float",
+            "value": 0
+          },
+          {
+            "name": "gap/5xs",
+            "token": "gap-5xs",
+            "type": "float",
+            "value": 4
+          },
+          {
+            "name": "gap/6xs",
+            "token": "gap-6xs",
+            "type": "float",
+            "value": 2
+          },
+          {
+            "name": "gap/5xl",
+            "token": "gap-5xl",
+            "type": "float",
+            "value": 28
+          },
+          {
+            "name": "gap/6xl",
+            "token": "gap-6xl",
+            "type": "float",
+            "value": 30
+          },
+          {
+            "name": "gap/7xl",
+            "token": "gap-7xl",
+            "type": "float",
+            "value": 32
+          },
+          {
+            "name": "gap/8xl",
+            "token": "gap-8xl",
+            "type": "float",
+            "value": 36
+          },
+          {
+            "name": "gap/9xl",
+            "token": "gap-9xl",
+            "type": "float",
+            "value": 40
+          },
+          {
+            "name": "gap/10xl",
+            "token": "gap-10xl",
+            "type": "float",
+            "value": 44
+          },
+          {
+            "name": "gap/11xl",
+            "token": "gap-11xl",
+            "type": "float",
+            "value": 48
+          },
+          {
+            "name": "gap/12xl",
+            "token": "gap-12xl",
+            "type": "float",
+            "value": 52
+          },
+          {
+            "name": "gap/13xl",
+            "token": "gap-13xl",
+            "type": "float",
+            "value": 56
+          },
+          {
+            "name": "gap/14xl",
+            "token": "gap-14xl",
+            "type": "float",
+            "value": 64
+          },
+          {
+            "name": "gap/15xl",
+            "token": "gap-15xl",
+            "type": "float",
+            "value": 72
+          },
+          {
+            "name": "gap/16xl",
+            "token": "gap-16xl",
+            "type": "float",
+            "value": 80
+          }
+        ],
+        "strings": [],
+        "booleans": []
+      }
+    },
+    "Primitive : Opacity": {
+      "id": "VariableCollectionId:1203:201",
+      "modes": [
+        {
+          "id": "1203:0",
+          "name": "Mode 1"
+        }
+      ],
+      "variables": {
+        "colors": [],
+        "numbers": [
+          {
+            "name": "600",
+            "token": "600",
+            "type": "float",
+            "value": 52
+          },
+          {
+            "name": "500",
+            "token": "500",
+            "type": "float",
+            "value": 43
+          },
+          {
+            "name": "400",
+            "token": "400",
+            "type": "float",
+            "value": 35
+          },
+          {
+            "name": "300",
+            "token": "300",
+            "type": "float",
+            "value": 28
+          },
+          {
+            "name": "150",
+            "token": "150",
+            "type": "float",
+            "value": 16
+          },
+          {
+            "name": "80",
+            "token": "80",
+            "type": "float",
+            "value": 8
+          },
+          {
+            "name": "200",
+            "token": "200",
+            "type": "float",
+            "value": 22
+          },
+          {
+            "name": "100",
+            "token": "100",
+            "type": "float",
+            "value": 12
+          },
+          {
+            "name": "1000",
+            "token": "1000",
+            "type": "float",
+            "value": 97
+          },
+          {
+            "name": "900",
+            "token": "900",
+            "type": "float",
+            "value": 88
+          },
+          {
+            "name": "50",
+            "token": "50",
+            "type": "float",
+            "value": 5
+          },
+          {
+            "name": "800",
+            "token": "800",
+            "type": "float",
+            "value": 74
+          },
+          {
+            "name": "700",
+            "token": "700",
+            "type": "float",
+            "value": 61
+          }
+        ],
+        "strings": [],
+        "booleans": []
+      }
+    }
+  }
+}

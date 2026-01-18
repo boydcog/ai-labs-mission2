@@ -1,0 +1,154 @@
+# Cursor Features Usage Guide
+
+이 프로젝트에서 활용하는 Cursor 기능 가이드입니다.
+
+## 현재 활용 중인 기능
+
+### 1. Commands (`.cursor/commands/`)
+커스텀 커맨드를 정의하여 반복 작업을 자동화합니다.
+
+**사용 가능한 커맨드:**
+- `/setup-project`: 프로젝트 초기 설정
+- `/figma-component`: Figma 컴포넌트 생성/업데이트
+- `/create-page`: Figma 페이지 생성
+
+**사용 방법:**
+```
+/setup-project
+/figma-component @src/components/default/Button/ : {Figma URL}
+/create-page LoginPage : {Figma URL}
+```
+
+### 2. Rules (`.cursor/rules/`)
+프로젝트 규칙을 정의하여 코드 생성 시 자동으로 적용됩니다.
+
+**규칙 파일:**
+- `code-standards.mdc`: 코드 표준
+- `component-usage.mdc`: 컴포넌트 사용 규칙
+- `figma-component-process.mdc`: 컴포넌트 처리 프로세스
+- `figma-page-process.mdc`: 페이지 처리 프로세스
+- `project-context.mdc`: 전역 설정 관리
+- `cursor-features.mdc`: 이 파일
+
+**자동 적용:**
+- Rules는 자동으로 컨텍스트에 포함됩니다
+- 특정 디렉토리의 rules는 해당 디렉토리 작업 시 자동 적용
+
+### 3. Templates (`.cursor/templates/`)
+표준 코드 템플릿을 제공하여 일관된 구조를 유지합니다.
+
+**템플릿 파일:**
+- `component-template.mdc`: 컴포넌트 생성 템플릿
+- `page-template.mdc`: 페이지 생성 템플릿
+
+**사용 방법:**
+- 컴포넌트/페이지 생성 시 템플릿 참조
+- `@.cursor/templates/component-template.mdc`로 참조 가능
+
+### 4. Snippets (`.cursor/snippets/`)
+자주 사용하는 코드 패턴을 모아두어 빠르게 참조할 수 있습니다.
+
+**스니펫 파일:**
+- `common-patterns.mdc`: 레이아웃, 텍스트, 버튼, 입력 등 패턴
+
+**사용 방법:**
+- `@.cursor/snippets/common-patterns.mdc`로 참조
+- 또는 코드 선택 후 "Add to Chat" (Ctrl/Cmd+Shift+L)
+
+### 5. Context Files (`.cursor/context/`)
+프로젝트 컨텍스트 정보를 구조화하여 저장합니다.
+
+**컨텍스트 파일:**
+- `design-tokens-reference.mdc`: 디자인 토큰 참조 가이드
+
+**사용 방법:**
+- `@.cursor/context/design-tokens-reference.mdc`로 참조
+- 디자인 토큰 사용 시 자동 참조
+
+### 6. Codebase Indexing
+Cursor가 자동으로 코드베이스를 인덱싱하여 의미론적 검색을 제공합니다.
+
+**활용:**
+- `codebase_search`를 통한 코드 검색
+- 유사 코드 패턴 찾기
+- 컴포넌트 재사용 가능 여부 확인
+
+### 7. @-Symbols
+파일, 폴더, 코드를 컨텍스트에 추가합니다.
+
+**사용 예시:**
+```
+@src/components/default/Button/Button.tsx
+@src/components/default/
+@Code (선택한 코드)
+```
+
+### 8. .cursorignore
+Cursor AI가 접근하지 않아야 하는 파일을 지정합니다.
+
+**무시되는 파일:**
+- `node_modules/`
+- `dist/`, `build/`
+- `coverage/`, `test-results/`
+- 로그 파일
+- 환경 변수 파일
+
+## 추가 활용 가능한 기능
+
+### 1. Nested Rules
+디렉토리별 규칙을 정의할 수 있습니다.
+
+**예시:**
+```
+src/components/default/.cursor/rules/component-specific.mdc
+src/pages/.cursor/rules/page-specific.mdc
+```
+
+### 2. User Rules (Global)
+전역 사용자 규칙을 정의할 수 있습니다 (프로젝트 외부).
+
+### 3. Code Selection Shortcuts
+- **Add to Chat**: Ctrl/Cmd+Shift+L
+- **Add to Edit**: Ctrl/Cmd+Shift+K
+- **New Chat with Selection**: Ctrl/Cmd+L
+
+### 4. Full Folder Content
+폴더 전체 내용을 컨텍스트에 추가할 수 있습니다.
+
+**사용 방법:**
+```
+@src/components/default/ (Full Folder Content)
+```
+
+## 활용 전략
+
+### 컴포넌트 생성 시
+1. `/figma-component` 커맨드 사용
+2. `@.cursor/templates/component-template.mdc` 참조
+3. `@.cursor/snippets/common-patterns.mdc` 참조
+4. `@.cursor/context/design-tokens-reference.mdc` 참조
+
+### 페이지 생성 시
+1. `/create-page` 커맨드 사용
+2. `@.cursor/templates/page-template.mdc` 참조
+3. `@.cursor/snippets/common-patterns.mdc` 참조
+
+### 코드 작성 시
+1. `codebase_search`로 유사 코드 검색
+2. `@.cursor/snippets/common-patterns.mdc` 참조
+3. `@.cursor/context/design-tokens-reference.mdc` 참조
+4. Rules 자동 적용 확인
+
+## 최적화 팁
+
+1. **자주 사용하는 패턴은 Snippets에 추가**
+2. **프로젝트별 규칙은 Rules에 정의**
+3. **템플릿은 Templates에 저장**
+4. **참조 정보는 Context에 저장**
+5. **불필요한 파일은 .cursorignore에 추가**
+
+## 참고
+
+- Cursor 공식 문서: https://docs.cursor.com/
+- Rules 문서: https://docs.cursor.com/en/context/rules
+- @-Symbols 문서: https://docs.cursor.com/context/@-symbols/

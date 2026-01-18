@@ -1,0 +1,291 @@
+{
+  "collections": {
+    "system_token": {
+      "id": "VariableCollectionId:5561:3203",
+      "modes": [
+        {
+          "id": "5561:0",
+          "name": "Mode 1"
+        }
+      ],
+      "variables": {
+        "colors": [
+          {
+            "name": "color/text/primary_1",
+            "token": "color-text-primary-1",
+            "type": "color",
+            "value": "#2a69e9"
+          },
+          {
+            "name": "color/text/neutral_1",
+            "token": "color-text-neutral-1",
+            "type": "color",
+            "value": "#1e242f"
+          },
+          {
+            "name": "color/text/neutral_3",
+            "token": "color-text-neutral-3",
+            "type": "color",
+            "value": "#5b708f"
+          },
+          {
+            "name": "color/text/onPrimary",
+            "token": "color-text-onprimary",
+            "type": "color",
+            "value": "#ffffff"
+          },
+          {
+            "name": "color/text/error_1",
+            "token": "color-text-error-1",
+            "type": "color",
+            "value": "#91122e"
+          },
+          {
+            "name": "color/text/success_1",
+            "token": "color-text-success-1",
+            "type": "color",
+            "value": "#005243"
+          },
+          {
+            "name": "color/text/neutral_2",
+            "token": "color-text-neutral-2",
+            "type": "color",
+            "value": "#323d4e"
+          },
+          {
+            "name": "color/stroke/primary_1",
+            "token": "color-stroke-primary-1",
+            "type": "color",
+            "value": "#2a69e9"
+          },
+          {
+            "name": "color/surface/primary_1",
+            "token": "color-surface-primary-1",
+            "type": "color",
+            "value": "#2a69e9"
+          },
+          {
+            "name": "color/bg/primary_1",
+            "token": "color-bg-primary-1",
+            "type": "color",
+            "value": "#2a69e9"
+          },
+          {
+            "name": "color/text/primary_0",
+            "token": "color-text-primary-0",
+            "type": "color",
+            "value": "#1657da"
+          },
+          {
+            "name": "color/surface/primary_2",
+            "token": "color-surface-primary-2",
+            "type": "color",
+            "value": "#dee8fc"
+          },
+          {
+            "name": "color/surface/neutral_2",
+            "token": "color-surface-neutral-2",
+            "type": "color",
+            "value": "#edf1f8"
+          },
+          {
+            "name": "color/surface/neutral_3",
+            "token": "color-surface-neutral-3",
+            "type": "color",
+            "value": "#f8f9fc"
+          },
+          {
+            "name": "color/stroke/neutral_2",
+            "token": "color-stroke-neutral-2",
+            "type": "color",
+            "value": "#dbe1eb"
+          },
+          {
+            "name": "color/stroke/neutral_1",
+            "token": "color-stroke-neutral-1",
+            "type": "color",
+            "value": "#c3ccda"
+          },
+          {
+            "name": "color/stroke/error_2",
+            "token": "color-stroke-error-2",
+            "type": "color",
+            "value": "#ff99af"
+          },
+          {
+            "name": "color/stroke/success_2",
+            "token": "color-stroke-success-2",
+            "type": "color",
+            "value": "#60d2bd"
+          },
+          {
+            "name": "color/stroke/error_1",
+            "token": "color-stroke-error-1",
+            "type": "color",
+            "value": "#f4456b"
+          },
+          {
+            "name": "color/stroke/success_1",
+            "token": "color-stroke-success-1",
+            "type": "color",
+            "value": "#00b292"
+          },
+          {
+            "name": "color/text/success_2",
+            "token": "color-text-success-2",
+            "type": "color",
+            "value": "#00b292"
+          },
+          {
+            "name": "color/text/error_2",
+            "token": "color-text-error-2",
+            "type": "color",
+            "value": "#f4456b"
+          },
+          {
+            "name": "color/surface/success_1",
+            "token": "color-surface-success-1",
+            "type": "color",
+            "value": "#c7ebe4"
+          },
+          {
+            "name": "color/surface/error_1",
+            "token": "color-surface-error-1",
+            "type": "color",
+            "value": "#ffd6df"
+          },
+          {
+            "name": "color/bg/neutral_1",
+            "token": "color-bg-neutral-1",
+            "type": "color",
+            "value": "#ffffff"
+          },
+          {
+            "name": "color/stroke/primary_2",
+            "token": "color-stroke-primary-2",
+            "type": "color",
+            "value": "#a7c1f6"
+          },
+          {
+            "name": "color/surface/neutral_4",
+            "token": "color-surface-neutral-4",
+            "type": "color",
+            "value": "#ffffff"
+          },
+          {
+            "name": "color/surface/neutral_1",
+            "token": "color-surface-neutral-1",
+            "type": "color",
+            "value": "#dbe1eb"
+          },
+          {
+            "name": "color/text/neutral_4",
+            "token": "color-text-neutral-4",
+            "type": "color",
+            "value": "#a0aec5"
+          },
+          {
+            "name": "color/surface/primary_3",
+            "token": "color-surface-primary-3",
+            "type": "color",
+            "value": "#f1f4fd"
+          },
+          {
+            "name": "color/bg/primary_2",
+            "token": "color-bg-primary-2",
+            "type": "color",
+            "value": "#dee8fc"
+          },
+          {
+            "name": "color/stroke/neutral_subtle",
+            "token": "color-stroke-neutral-subtle",
+            "type": "color",
+            "value": "#edf1f8"
+          }
+        ],
+        "numbers": [
+          {
+            "name": "gap/gap-m",
+            "token": "gap-gap-m",
+            "type": "float",
+            "value": 20
+          },
+          {
+            "name": "gap/gap-l",
+            "token": "gap-gap-l",
+            "type": "float",
+            "value": 24
+          },
+          {
+            "name": "gap/gap-xl",
+            "token": "gap-gap-xl",
+            "type": "float",
+            "value": 28
+          },
+          {
+            "name": "gap/gap-s",
+            "token": "gap-gap-s",
+            "type": "float",
+            "value": 16
+          },
+          {
+            "name": "gap/gap-xs",
+            "token": "gap-gap-xs",
+            "type": "float",
+            "value": 12
+          },
+          {
+            "name": "gap/gap-none",
+            "token": "gap-gap-none",
+            "type": "float",
+            "value": 0
+          },
+          {
+            "name": "gap/gap-2xs",
+            "token": "gap-gap-2xs",
+            "type": "float",
+            "value": 8
+          },
+          {
+            "name": "gap/gap-3xs",
+            "token": "gap-gap-3xs",
+            "type": "float",
+            "value": 4
+          },
+          {
+            "name": "gap/gap-2xl",
+            "token": "gap-gap-2xl",
+            "type": "float",
+            "value": 32
+          },
+          {
+            "name": "gap/gap-3xl",
+            "token": "gap-gap-3xl",
+            "type": "float",
+            "value": 36
+          },
+          {
+            "name": "gap/contents-padding-side",
+            "token": "gap-contents-padding-side",
+            "type": "float",
+            "value": 20
+          },
+          {
+            "name": "gap/contents-padding-bottom",
+            "token": "gap-contents-padding-bottom",
+            "type": "float",
+            "value": 28
+          },
+          {
+            "name": "gap/contents-padding-top",
+            "token": "gap-contents-padding-top",
+            "type": "float",
+            "value": 16
+          }
+        ],
+        "strings": [],
+        "booleans": []
+      }
+    }
+  }
+}

@@ -1,0 +1,112 @@
+# Component Template
+
+이 템플릿은 새 컴포넌트를 생성할 때 사용하는 표준 구조입니다.
+
+## Default Component Template
+
+### 파일 구조
+```
+ComponentName/
+├── ComponentName.tsx          # 컴포넌트 구현
+├── ComponentName.types.ts     # 타입 정의
+├── ComponentName.stories.tsx  # Storybook 스토리
+└── index.ts                   # Export
+```
+
+### ComponentName.tsx 템플릿
+```tsx
+/**
+ * {ComponentName} 컴포넌트
+ * {용도 설명}
+ */
+
+import React from 'react';
+import type { {ComponentName}Props } from './{ComponentName}.types';
+
+const {ComponentName}: React.FC<{ComponentName}Props> = ({
+  // props
+  className = '',
+  'data-testid': testId,
+  ...props
+}) => {
+  // State management
+  // Event handlers
+  
+  return (
+    <div
+      className={`base-classes ${className}`}
+      data-testid={testId}
+      {...props}
+    >
+      {/* Content */}
+    </div>
+  );
+};
+
+export default {ComponentName};
+export type { {ComponentName}Props };
+```
+
+### ComponentName.types.ts 템플릿
+```tsx
+/**
+ * {ComponentName} 컴포넌트 타입 정의
+ */
+
+export type {ComponentName}Variant = 'variant1' | 'variant2';
+export type {ComponentName}Size = 'small' | 'medium' | 'large';
+
+export interface {ComponentName}Props {
+  variant?: {ComponentName}Variant;
+  size?: {ComponentName}Size;
+  className?: string;
+  'data-testid'?: string;
+}
+```
+
+### ComponentName.stories.tsx 템플릿
+```tsx
+/**
+ * {ComponentName} Storybook 스토리
+ */
+
+import type { Meta, StoryObj } from '@storybook/react-vite';
+import {ComponentName} from './{ComponentName}';
+import type { {ComponentName}Props } from './{ComponentName}.types';
+
+const meta: Meta<{ComponentName}Props> = {
+  title: 'Components/{ComponentName}',
+  component: {ComponentName},
+  parameters: {
+    layout: 'centered',
+  },
+  tags: ['autodocs'],
+};
+
+export default meta;
+type Story = StoryObj<typeof {ComponentName}>;
+
+export const Default: Story = {
+  args: {
+    // default props
+  },
+};
+```
+
+### index.ts 템플릿
+```tsx
+export { default } from './{ComponentName}';
+export type { {ComponentName}Props } from './{ComponentName}.types';
+```
+
+## Local Component Template
+
+Local 컴포넌트는 `src/components/{ComponentName}/`에 생성하며, 동일한 구조를 따릅니다.
+
+**차이점:**
+- Storybook 스토리는 선택사항
+- 아이콘은 `@phosphor-icons/core`에서 직접 import
+
+## 사용 방법
+
+컴포넌트 생성 시 이 템플릿을 참조하여 일관된 구조를 유지하세요.

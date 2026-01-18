@@ -1,0 +1,443 @@
+# Code Standards and Component Organization Rules
+
+이 규칙은 모든 코드 작성 시 따라야 할 표준입니다.
+
+## 컴포넌트 구조 규칙
+
+### 1. 컴포넌트 분류
+
+#### Default Components (`src/components/default/`)
+- **용도**: Figma component 페이지에서 가져온 공통 디자인 시스템 컴포넌트
+- **소스**: Figma MCP를 통해 Figma 디자인에서 추출
+- **특징**: 
+  - 재사용 가능한 기본 컴포넌트
+  - 디자인 시스템의 일부
+  - Storybook 스토리 필수
+  - 타입 정의 필수
+
+**예시:**
+- `Button`, `Input`, `ProgressBar`, `Topbar`, `QuizButton` 등
+
+#### Local Components (`src/components/`)
+- **용도**: 프로젝트 특화 편의 컴포넌트
+- **소스**: 로컬에서 개발자가 생성
+- **명명 규칙**: 
+  - 기능을 명확히 나타내는 이름 사용
+  - 예: `LoginForm`, `DashboardCard`, `UserProfile`, `TaskList` 등
+- **구조**: 
+  ```
+  src/components/
+    ├── LoginForm/
+    │   ├── LoginForm.tsx
+    │   ├── LoginForm.types.ts
+    │   └── index.ts
+    ├── DashboardCard/
+    │   └── ...
+  ```
+
+### 2. 컴포넌트 생성 규칙
+
+#### Default Component 생성
+1. Figma component 페이지에서 링크 제공
+2. `/figma-component` 커맨드 또는 `@src/components/default/{ComponentName}/ : {Figma URL}` 형식 사용
+3. 자동으로 `src/components/default/{ComponentName}/`에 생성
+
+#### Local Component 생성
+1. 기능을 명확히 나타내는 이름 선택
+2. `src/components/{ComponentName}/` 디렉토리 생성
+3. 다음 파일 구조 준수:
+   ```
+   {ComponentName}/
+     ├── {ComponentName}.tsx        # 컴포넌트 구현
+     ├── {ComponentName}.types.ts  # 타입 정의
+     ├── {ComponentName}.stories.tsx  # Storybook (선택)
+     └── index.ts                   # Export
+   ```
+
+## 코드 품질 규칙
+
+### 1. 파일 크기 제한
+- **최대 300줄**: 단일 파일은 300줄을 넘지 않아야 함
+- **초과 시**: 
+  - 컴포넌트를 더 작은 단위로 분리
+  - 유틸리티 함수를 별도 파일로 분리
+  - 타입 정의를 별도 파일로 분리
+
+### 2. 코드 재사용
+- **기존 코드 활용**: 비슷한 작업이 코드베이스에 존재하면:
+  1. 기존 코드를 찾아 확인 (`codebase_search` 사용)
+  2. 재사용 가능한지 판단
+  3. 재사용 가능: 기존 코드 사용 또는 확장
+  4. 재사용 불가: 새로 작성하되 패턴 일관성 유지
+
+### 3. 작업 완료 후 검증 (필수)
+**⚠️ 가장 중요: 모든 코드 변경 후 반드시 실행해야 합니다.**
+
+**실행 순서 (순차적으로, 모두 통과해야 함):**
+```bash
+# 1. Lint 검사 (warning도 오류로 처리됨)
+pnpm lint
+
+# 2. Type Check
+pnpm type-check
+
+# 3. Build 검증 (warning 없이 성공해야 함)
+pnpm build
+
+# 4. 전체 테스트 실행 (lint + type-check + build + playwright test)
+pnpm test
+```
+
+**중요 사항:**
+- 테스트를 실행하지 않고 코드 변경을 완료로 간주하지 않음
+- 테스트 실패 시 원인 분석 및 수정 필수
+- 모든 테스트가 통과할 때까지 수정 및 재실행
+- **코드 수정 시 관련 테스트도 함께 수정 필수** (자세한 내용은 `.cursor/rules/mandatory-testing.mdc` 참고)
+
+### 3-1. 코드 수정 시 테스트 수정 규칙 (필수)
+**모든 코드 변경은 관련 테스트도 함께 수정해야 합니다.**
+
+**체크리스트:**
+- [ ] 컴포넌트 수정 → `tests/visual/{componentname}.spec.ts` 확인 및 수정
+- [ ] 스토리 수정 → 테스트의 Storybook 경로 확인 및 수정
+- [ ] 타입 수정 → 관련 테스트 타입 확인 및 수정
+- [ ] props/속성 변경 → 테스트 선택자/검증 로직 수정
+- [ ] variant/status 추가/제거 → 테스트 케이스 추가/제거
+
+**Storybook 경로 변환:**
+```
+Title: 'Components/Default/Button' → '/story/components-default-button--default'
+Title: 'Design System/Character' → '/story/design-system-character--thumbnail'
+```
+
+**자세한 내용은 `.cursor/rules/mandatory-testing.mdc` 참고**
+
+**검증 체크리스트:**
+- [ ] **⚠️ 필수: `pnpm lint` 실행 및 통과** (오류 및 warning 없음, `--max-warnings 0`)
+- [ ] **⚠️ 필수: `pnpm type-check` 실행 및 통과** (타입 오류 및 warning 없음)
+- [ ] **⚠️ 필수: `pnpm build` 실행 및 통과** (빌드 성공, warning 없음)
+- [ ] **⚠️ 필수: `pnpm test` 실행 및 모든 테스트 통과** (lint + type-check + build + playwright test)
+- [ ] 모든 import 경로 정확
+- [ ] 사용하지 않는 import 제거
+- [ ] 사용하지 않는 변수 없음
+- [ ] console.log, debugger 사용 금지
+- [ ] 테스트 실행 시 발생한 에러/경고 기록 및 해결
+
+**⚠️ 중요**: 테스트를 실행하지 않고 코드 변경을 완료로 간주하지 않습니다.
+자세한 내용은 `.cursor/rules/mandatory-testing.mdc`를 참고하세요.
+
+## 아이콘 사용 규칙
+
+### 1. 아이콘 라이브러리
+**항상 `@phosphor-icons/core`를 사용하세요.**
+
+**참고**: 현재 프로젝트에는 `phosphor-react`가 설치되어 있으나, 새 코드는 `@phosphor-icons/core`를 사용하도록 전환 중입니다.
+
+- ❌ SVG 파일 직접 사용 금지
+- ❌ 다른 아이콘 라이브러리 사용 금지
+- ✅ `@phosphor-icons/core`에서 직접 import (새 코드)
+- ⚠️ 기존 `phosphor-react` 사용 코드는 점진적으로 마이그레이션
+
+### 2. 아이콘 Import 방법
+```tsx
+// ✅ 올바른 사용
+import { X, CaretLeft, CheckCircle } from '@phosphor-icons/core';
+
+<X size={24} weight="regular" />
+<CaretLeft size={24} weight="regular" />
+<CheckCircle size={24} weight="fill" />
+
+// ❌ 잘못된 사용
+import Icon from '@/components/default/Icon'; // Icon 컴포넌트는 default 컴포넌트에서만 사용
+<img src="/icon.svg" /> // SVG 파일 직접 사용
+```
+
+### 3. Icon 컴포넌트 사용
+**Default 컴포넌트에서만 `Icon` 컴포넌트 사용:**
+- `src/components/default/Icon`은 디자인 시스템의 일부
+- Local 컴포넌트에서는 `@phosphor-icons/core` 직접 사용
+
+```tsx
+// Default 컴포넌트 내부에서
+import Icon from '@/components/default/Icon';
+<Icon type="line" name="arrow_back_ios" size={24} />
+
+// Local 컴포넌트에서
+import { CaretLeft } from '@phosphor-icons/core';
+<CaretLeft size={24} weight="regular" />
+```
+
+### 4. 기존 SVG 파일 마이그레이션
+- 기존 `src/assets/icons/`의 SVG 파일은 점진적으로 `@phosphor-icons/core`로 교체
+- 새 컴포넌트 작성 시 SVG 사용 금지
+
+## 컴포넌트 작성 패턴
+
+### 1. 기본 구조
+```tsx
+/**
+ * {ComponentName} 컴포넌트
+ * {용도 설명}
+ */
+
+import React from 'react';
+import type { ComponentNameProps } from './ComponentName.types';
+
+const ComponentName: React.FC<ComponentNameProps> = ({
+  // props
+  className = '',
+  'data-testid': testId,
+  ...props
+}) => {
+  // State management
+  // Event handlers
+  
+  return (
+    <div
+      className={`base-classes ${className}`}
+      data-testid={testId}
+      {...props}
+    >
+      {/* Content */}
+    </div>
+  );
+};
+
+export default ComponentName;
+export type { ComponentNameProps };
+```
+
+### 2. 타입 정의 구조
+```tsx
+/**
+ * {ComponentName} 컴포넌트 타입 정의
+ */
+
+export type ComponentNameVariant = 'variant1' | 'variant2';
+export type ComponentNameSize = 'small' | 'medium' | 'large';
+
+export interface ComponentNameProps {
+  variant?: ComponentNameVariant;
+  size?: ComponentNameSize;
+  className?: string;
+  'data-testid'?: string;
+}
+```
+
+### 3. 파일 분리 기준
+**300줄 초과 시 분리:**
+- 타입 정의 → `{ComponentName}.types.ts`
+- 유틸리티 함수 → `{ComponentName}.utils.ts`
+- 상수/설정 → `{ComponentName}.constants.ts`
+- 하위 컴포넌트 → 별도 파일
+
+## Import 규칙
+
+### 1. 경로 별칭 사용
+```tsx
+// ✅ 올바른 사용
+import { Button, Input } from '@/components/default';
+import { LoginForm } from '@/components/LoginForm';
+
+// ❌ 잘못된 사용
+import Button from '../../../components/default/Button';
+```
+
+### 2. Import 순서
+1. React 및 라이브러리
+2. 타입 정의
+3. 컴포넌트 (default → local 순서)
+4. 유틸리티 함수
+5. 상대 경로 (최소화)
+
+```tsx
+// ✅ 올바른 순서
+import React, { useState } from 'react';
+import type { Meta, StoryObj } from '@storybook/react-vite';
+import { Button, Input } from '@/components/default';
+import { LoginForm } from '@/components/LoginForm';
+import { getSemanticColors } from '@/tokens/utils';
+```
+
+## 반응형 디자인 규칙
+
+### 1. 기본 디자인 크기
+- **기본 디자인**: 360px x 732px (모바일 세로)
+- **다른 모바일 기기**: 320px ~ 480px 범위에서 반응형으로 동작
+- **데스크탑/태블릿**: 모바일 UI를 그대로 보여주되, 중앙 정렬 + 최대 너비 360px
+
+### 2. 레이아웃 패턴
+```tsx
+// ✅ 페이지/화면 루트 레이아웃
+<div className="w-full min-h-screen bg-white">
+  <div className="w-full max-w-[360px] mx-auto">
+    {/* 모든 내용은 여기 안에 */}
+  </div>
+</div>
+
+// ✅ 컴포넌트 내부 반응형 (모바일 크기 범위 내)
+<div className="w-full px-4 sm:px-5">
+  {/* 320px: 16px padding, 360px+: 20px padding */}
+</div>
+```
+
+### 3. 금지 사항
+- ❌ 데스크탑/태블릿에서 레이아웃 변경 (그리드, 컬럼 수 변경 등)
+- ❌ `md:`, `lg:` breakpoint로 레이아웃 구조 변경
+- ❌ 최대 너비를 360px 이상으로 설정
+- ✅ `sm:` breakpoint는 모바일 크기 범위 내 반응형에만 사용
+
+### 4. 반응형 적용 범위
+- **적용**: 텍스트 크기, 간격, 패딩, 버튼 크기 (모바일 범위 내)
+- **비적용**: 레이아웃 구조, 컬럼 수, 최대 너비 (항상 360px 기준)
+
+## 작업 워크플로우
+
+### 1. 컴포넌트 생성 시
+1. 기존 유사 컴포넌트 검색 (`codebase_search`)
+2. 재사용 가능한지 판단
+3. 컴포넌트 작성 (300줄 이내)
+4. **반응형 디자인 적용** (모바일 우선, 최대 너비 360px)
+5. 타입 정의
+6. Storybook 스토리 (필요시)
+7. **⚠️ 필수: Lint 실행**: `pnpm lint`
+8. **⚠️ 필수: Type-check 실행**: `pnpm type-check`
+9. **⚠️ 필수: Build 실행**: `pnpm build`
+10. **⚠️ 필수: 컴포넌트 테스트 실행**: `pnpm test:component` (컴포넌트 생성/수정 시)
+11. 오류/경고 수정 후 재검증
+12. 테스트 실행 시 발생한 에러/경고 기록 및 해결
+
+### 2. 컴포넌트 수정 시
+1. 기존 코드 확인
+2. 수정 사항 적용
+3. 타입 일관성 확인
+4. **⚠️ 필수: Lint 실행**: `pnpm lint`
+5. **⚠️ 필수: Type-check 실행**: `pnpm type-check`
+6. **⚠️ 필수: Build 실행**: `pnpm build`
+7. **⚠️ 필수: 컴포넌트 테스트 실행**: `pnpm test:component` (컴포넌트 수정 시)
+8. 오류/경고 수정 후 재검증
+9. 테스트 실행 시 발생한 에러/경고 기록 및 해결
+
+### 3. 페이지 생성 시
+1. Figma 페이지 링크 제공
+2. `/create-page` 커맨드 사용
+3. 자동으로 페이지 생성
+4. **⚠️ 필수: Lint 실행**: `pnpm lint`
+5. **⚠️ 필수: Type-check 실행**: `pnpm type-check`
+6. **⚠️ 필수: Build 실행**: `pnpm build`
+7. **⚠️ 필수: 페이지 테스트 실행**: `pnpm test` (페이지 생성/수정 시, 컴포넌트 테스트 제외)
+8. 오류/경고 수정 후 재검증
+9. 테스트 실행 시 발생한 에러/경고 기록 및 해결
+
+**참고**: 페이지 개발 시 컴포넌트는 안정되어 있다고 가정하므로 컴포넌트 테스트(`pnpm test:component`)는 실행하지 않습니다.
+
+## 금지 사항
+
+### 1. 컴포넌트 구조
+- ❌ `src/components/default/`에 로컬 컴포넌트 생성 금지
+- ❌ 300줄 초과 파일 생성 금지
+- ❌ 타입 정의 없이 컴포넌트 생성 금지
+
+### 2. 아이콘 사용
+- ❌ SVG 파일 직접 import 금지
+- ❌ `src/assets/icons/`에 새 SVG 추가 금지
+- ❌ Local 컴포넌트에서 `Icon` 컴포넌트 사용 금지 (직접 import 사용)
+
+### 3. 코드 품질
+- ❌ Lint 오류 및 warning이 있는 상태로 커밋 금지
+- ❌ Build 실패 또는 warning이 있는 상태로 커밋 금지
+- ❌ 타입 오류 및 warning 무시 (`as any` 남용) 금지
+- ❌ 사용하지 않는 import, 변수, 매개변수 사용 금지
+- ❌ console.log, debugger 사용 금지 (개발 중에도 제거 필수)
+- ❌ TypeScript warning 무시 금지 (모든 warning은 오류로 처리)
+
+## 예제: Local Component 생성
+
+```tsx
+// src/components/UserProfile/UserProfile.tsx
+import React from 'react';
+import { User, Mail, Phone } from '@phosphor-icons/core';
+import { Card } from '@/components/default';
+import type { UserProfileProps } from './UserProfile.types';
+
+const UserProfile: React.FC<UserProfileProps> = ({
+  name,
+  email,
+  phone,
+  className = '',
+  'data-testid': testId,
+}) => {
+  return (
+    <Card type="default" className={className} data-testid={testId}>
+      <div className="space-y-4 p-5">
+        <h2 className="text-xl font-bold text-[#1e242f]">{name}</h2>
+        <div className="space-y-2">
+          <div className="flex items-center gap-3">
+            <Mail size={20} weight="regular" className="text-[#323d4e]" />
+            <span className="text-base text-[#323d4e]">{email}</span>
+          </div>
+          <div className="flex items-center gap-3">
+            <Phone size={20} weight="regular" className="text-[#323d4e]" />
+            <span className="text-base text-[#323d4e]">{phone}</span>
+          </div>
+        </div>
+      </div>
+    </Card>
+  );
+};
+
+export default UserProfile;
+export type { UserProfileProps };
+```
+
+## 자동 검증 명령어
+
+작업 완료 후 항상 실행:
+```bash
+# Lint 검사 (warning도 오류로 처리)
+pnpm lint
+
+# Type Check
+pnpm type-check
+
+# Build 검증 (warning 없이 성공해야 함)
+pnpm build
+
+# 테스트 실행 (작업 유형에 따라 선택)
+# - 컴포넌트 생성/수정 시: pnpm test:component
+# - 페이지 생성/수정 시: pnpm test
+pnpm test:component  # 컴포넌트 테스트 (프로젝트 템플릿 기본 컴포넌트 검증)
+pnpm test            # 페이지 테스트 (일반 프로젝트 테스트, 컴포넌트 테스트 제외)
+```
+
+**중요**: 
+- 모든 명령어는 warning 없이 성공해야 합니다
+- `pnpm test`와 `pnpm test:component`는 lint, type-check, build, test를 순차 실행하며 모든 단계에서 warning이 발생하면 실패합니다
+- 오류나 warning이 있으면 반드시 수정 후 재검증하세요
+- **컴포넌트 생성/수정 시**: `pnpm test:component` 실행 (프로젝트 템플릿 기본 컴포넌트 검증)
+- **페이지 생성/수정 시**: `pnpm test` 실행 (컴포넌트는 안정되어 있다고 가정, 컴포넌트 테스트 제외)
+
+## 프로젝트 전역 설정 저장 규칙
+
+### 전역 설정 판단
+사용자 요청이 다음에 해당하면 프로젝트 전역 설정으로 판단하고 저장해야 합니다:
+
+- 프로젝트 전체에 영향을 미치는 설정
+- 여러 파일/컴포넌트에 적용되는 규칙
+- 향후 작업에 영향을 미치는 설정
+- 기술 스택, 디자인 시스템, 코드 스타일 변경
+
+### 저장 방법
+1. **Cursor 메모리 저장**: 프로젝트 전역 설정을 메모리에 저장
+2. **규칙 파일 저장**: `.cursor/rules/project-context.mdc` 파일에 저장
+3. **프로젝트 설정 파일**: `.cursor/project-setup.md` 또는 `.cursor/project-context.md`에 저장
+
+### 저장 프로세스
+1. 전역 설정인지 판단
+2. 설정 정보 추출 (카테고리, 설정명, 설정값)
+3. Cursor 메모리 저장
+4. 규칙 파일 업데이트
+5. 관련 규칙 파일 업데이트 (필요시)
+6. 사용자에게 저장 완료 알림
+
+자세한 내용은 `.cursor/rules/project-context.mdc`를 참고하세요.

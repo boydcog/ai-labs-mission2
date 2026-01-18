@@ -1,0 +1,135 @@
+# Figma Component Processing Workflow
+
+When a user provides a Figma link for a component, follow this standardized process:
+
+## Step 1: Extract Node ID from Figma URL
+- Figma URLs format: `https://www.figma.com/design/{fileKey}/{fileName}?node-id={nodeId}&t=...`
+- Extract nodeId from URL (e.g., `5089-16174` becomes `5089:16174` or `5089-16174`)
+- If URL format is `https://www.figma.com/design/{fileKey}/branch/{branchKey}/{fileName}`, use branchKey as fileKey
+
+## Step 2: Get Design Context
+1. Use `mcp_Figma_get_design_context` with extracted nodeId
+   - Parameters:
+     - `nodeId`: Extracted from URL (format: `"123:456"` or `"123-456"`)
+     - `clientLanguages`: `"typescript,tsx"`
+     - `clientFrameworks`: `"react"`
+     - `artifactType`: `"REUSABLE_COMPONENT"` (for components) or appropriate type
+     - `taskType`: `"CHANGE_ARTIFACT"` (for updates) or `"CREATE_ARTIFACT"` (for new)
+2. Use `mcp_Figma_get_screenshot` to get visual reference
+   - Same parameters as above
+
+## Step 3: Analyze Existing Component Structure
+1. Check if component exists in `src/components/default/{ComponentName}/`
+2. Read existing files:
+   - `{ComponentName}.tsx` - Component implementation
+   - `{ComponentName}.types.ts` - Type definitions
+   - `{ComponentName}.stories.tsx` - Storybook stories
+   - `index.ts` - Exports
+
+## Step 4: Apply Design Changes
+1. Update component implementation based on Figma design:
+   - Colors: Use semantic tokens from `src/tokens/sementic token.json`
+   - Spacing: Use gap tokens from semantic tokens
+   - Typography: Follow design guidelines
+   - Border radius: Match Figma design (typically rounded-full, rounded-2xl, etc.)
+   - Remove brutalist styles if design is minimal (no black borders, no shadows)
+2. Update types if new props are needed
+3. Update stories to reflect all design variations
+
+## Step 5: Verify Implementation
+1. Check for linter errors using `read_lints`
+2. Ensure all design tokens are used correctly
+3. Update Storybook stories to show all states from Figma
+4. **Run lint**: Execute `pnpm lint` to check for errors
+5. **Run build**: Execute `pnpm build` to verify build success
+6. Fix any errors and re-verify
+
+## Component Mapping Pattern
+
+When user provides Figma link in format:
+```
+@src/components/default/{ComponentName}/ : {Figma URL}
+```
+
+Process:
+1. Extract component name from path
+2. Extract nodeId from Figma URL
+3. Follow Step 1-5 above
+
+## Design Token Usage
+
+Always use semantic tokens from `src/tokens/sementic token.json`:
+- Colors: `color/text/primary_1` → `#2a69e9`
+- Colors: `color/surface/neutral_2` → `#edf1f8`
+- Colors: `color/text/success_1` → `#005243`
+- Colors: `color/text/error_1` → `#91122e`
+- Gaps: `gap/gap-m` → `20px`, `gap/gap-s` → `16px`, etc.
+
+## Common Design Patterns
+
+### ProgressBar
+- Background: `bg-[#edf1f8]` (neutral_2)
+- Fill: `bg-[#2a69e9]` (primary_1)
+- Border radius: `rounded-full`
+- No borders or shadows
+
+### Topbar
+- Background: `bg-white`
+- Text color: `text-[#1e242f]` (neutral_1)
+- Icons: Use Icon component with `arrow_back_ios` and `close`
+- No bottom border
+
+### QuizButton (Large - 256px)
+- Default: `bg-[#f8f9fc]` (neutral_3), `text-[#2a69e9]` (primary_1)
+- Correct: `bg-[#c7ebe4]` (success_1), `text-[#005243]` (success_1 text)
+- Incorrect: `bg-[#ffd6df]` (error_1), `text-[#91122e]` (error_1 text)
+- Border radius: `rounded-2xl`
+- Progress bar: Use same colors as ProgressBar component
+
+### QuizButton (Small - 64px, 60px, 56px)
+- Default: `bg-white`, `border border-[#dbe1eb]`, `text-[#323d4e]` (neutral_2)
+- Correct/Incorrect: Same as large button
+- Border radius: `rounded-full` (pill shape)
+- Padding: `px-4` for 64px, `px-3` for 56px
+
+### Input
+- Right button: Use `labelButtonText` prop
+- Clear button: Use `showClearButton` prop with X icon
+- States: default, focus, filled, error, success, disabled
+- Always include stories for all combinations
+
+## Storybook Story Requirements
+
+When updating components, ensure stories include:
+1. All states from Figma design
+2. All size variations
+3. Interactive examples (with state management)
+4. Edge cases (empty, filled, error states)
+
+## Code Style
+
+- Use TypeScript with strict types
+- Use Tailwind CSS utility classes
+- Follow existing component structure
+- Export types from component files
+- Use semantic HTML and ARIA attributes for accessibility
+- **File size limit**: Keep files under 300 lines. Split if necessary.
+- **Code reuse**: Search for similar code before creating new. Reuse or extend existing code when possible.
+
+**참고**: 프로젝트 전역 설정(아이콘 라이브러리, 디자인 토큰, 코드 스타일 등)은 `.cursor/rules/project-context.mdc`를 참고하세요.
+
+## Post-Implementation Verification
+
+**⚠️ 필수: 모든 코드 변경 후 반드시 테스트를 실행해야 합니다.**
+
+After completing any component work, **always**:
+1. Run `pnpm lint` to check for linting errors
+2. Run `pnpm type-check` to verify TypeScript types
+3. Run `pnpm build` to verify build success
+4. Run `pnpm test:component` to execute component tests (lint + type-check + build + playwright component tests)
+5. Fix any errors and re-run verification
+6. Do not proceed if any test fails
+
+**테스트 실행은 필수이며, 생략할 수 없습니다.**
+
+**참고**: 컴포넌트 생성/수정 시에는 `pnpm test:component`를 실행합니다. 이는 프로젝트 템플릿의 기본 컴포넌트가 잘 구현되었는지 확인하는 테스트입니다.
