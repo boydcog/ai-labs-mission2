@@ -104,7 +104,7 @@ function App() {
               </p>
               <div className="bg-white rounded-lg p-3 sm:p-4 lg:p-5 border border-[#dbe1eb]">
                 <code className="text-sm sm:text-base lg:text-lg text-[#2a69e9] font-mono block break-all">
-                  /figma-component @src/components/default/ComponentName/ : https://www.figma.com/design/...?node-id=123-456
+                  /create-component @src/components/default/ComponentName/ : https://www.figma.com/design/...?node-id=123-456
                 </code>
               </div>
               <div className="space-y-2 text-sm sm:text-base text-[#323d4e]">
@@ -115,6 +115,7 @@ function App() {
                   <li>컴포넌트 생성/업데이트</li>
                   <li>Storybook 스토리 생성</li>
                   <li>Lint 및 Build 검증</li>
+                  <li>컴포넌트 테스트 실행 (pnpm test:component)</li>
                 </ul>
               </div>
             </div>
@@ -143,6 +144,7 @@ function App() {
                   <li>상태 관리 추가</li>
                   <li>반응형 디자인 적용</li>
                   <li>Lint 및 Build 검증</li>
+                  <li>페이지 테스트 실행 (pnpm test)</li>
                 </ul>
               </div>
             </div>
@@ -154,7 +156,7 @@ function App() {
               5. 최종 결과 확인
             </h2>
             <div className="bg-[#f8f9fc] rounded-lg p-4 sm:p-5 lg:p-6 space-y-3 sm:space-y-4">
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-3 sm:gap-4">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
                 <div className="bg-white rounded-lg p-3 sm:p-4 lg:p-5 border border-[#dbe1eb]">
                   <p className="text-sm sm:text-base lg:text-lg font-medium text-[#1e242f] mb-2">
                     개발 서버 실행
@@ -176,6 +178,18 @@ function App() {
                   </code>
                   <p className="text-xs sm:text-sm text-[#323d4e] mt-2">
                     <code className="bg-[#edf1f8] px-1 py-0.5 rounded text-[#2a69e9]">http://localhost:6006</code>에서 확인
+                  </p>
+                </div>
+
+                <div className="bg-white rounded-lg p-3 sm:p-4 lg:p-5 border border-[#dbe1eb]">
+                  <p className="text-sm sm:text-base lg:text-lg font-medium text-[#1e242f] mb-2">
+                    컴포넌트 테스트
+                  </p>
+                  <code className="text-sm sm:text-base lg:text-lg text-[#2a69e9] font-mono block break-all">
+                    pnpm test:component
+                  </code>
+                  <p className="text-xs sm:text-sm text-[#323d4e] mt-2">
+                    컴포넌트 생성/수정 시 실행
                   </p>
                 </div>
 

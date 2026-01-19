@@ -1,0 +1,22 @@
+{
+  "framework": null,
+  "buildCommand": "pnpm run build:vercel",
+  "outputDirectory": "dist",
+  "routes": [
+    {
+      "src": "/storybook",
+      "dest": "/storybook/index.html"
+    },
+    {
+      "src": "/storybook/(.*)",
+      "dest": "/storybook/$1"
+    },
+    {
+      "handle": "filesystem"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
+    }
+  ]
+}
