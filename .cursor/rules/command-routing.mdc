@@ -1,0 +1,152 @@
+# Command Routing Rules
+
+자동으로 사용자 요청을 분석하여 적절한 커맨드를 실행하도록 하는 규칙입니다.
+
+## Intent Detection
+
+사용자가 명시적으로 커맨드를 입력하지 않았을 때, 다음 패턴을 분석하여 적절한 커맨드를 자동으로 실행합니다:
+
+### `/setup-project` - 프로젝트 초기 설정
+
+**Intent Keywords:**
+- 프로젝트 설정, 초기 설정, 셋업, setup
+- 프로젝트 초기화, 프로젝트 시작
+- Figma 설정, 디자인 시스템 설정
+- 아이콘 라이브러리 설정, 디자인 토큰 설정
+- 반응형 디자인 설정
+
+**Trigger Patterns:**
+- "프로젝트 설정해줘"
+- "초기 설정해줘"
+- "프로젝트 셋업해줘"
+- "Figma 설정해줘"
+- 프로젝트 관련 초기화 요청
+
+**Required Context:**
+- 프로젝트 초기 상태 또는 설정 업데이트 요청
+- 전역 설정 관련 질문/요청
+
+### `/create-component` - 컴포넌트 생성
+
+**Intent Keywords:**
+- 컴포넌트 생성, 컴포넌트 만들기, 컴포넌트 추가
+- Button, Input, ProgressBar 등 컴포넌트 이름
+- Figma 컴포넌트, 디자인 컴포넌트
+- 컴포넌트 업데이트, 컴포넌트 수정
+- @src/components/default/ 경로 언급
+
+**Trigger Patterns:**
+- "{ComponentName} 컴포넌트 만들어줘"
+- "Figma에서 {ComponentName} 컴포넌트 가져와줘"
+- "{ComponentName} 컴포넌트를 Figma 디자인으로 업데이트해줘"
+- "@src/components/default/{ComponentName}/" 경로 언급 + Figma URL
+- 컴포넌트 이름 + Figma 링크
+
+**Required Context:**
+- 컴포넌트 이름 또는 경로
+- Figma URL (선택적이지만 권장)
+
+### `/create-page` - 페이지 생성
+
+**Intent Keywords:**
+- 페이지 생성, 페이지 만들기, 페이지 추가
+- MainPage, LoginPage 등 페이지 이름
+- Figma 페이지, 디자인 페이지
+- 페이지 업데이트, 페이지 수정
+- @src/pages/ 경로 언급
+
+**Trigger Patterns:**
+- "{PageName} 페이지 만들어줘"
+- "Figma에서 {PageName} 페이지 가져와줘"
+- "{PageName} 페이지를 Figma 디자인으로 업데이트해줘"
+- "@src/pages/{PageName}.tsx" 경로 언급 + Figma URL
+- 페이지 이름 + Figma 링크
+
+**Required Context:**
+- 페이지 이름 또는 경로
+- Figma URL 또는 Anima 코드 (선택적이지만 권장)
+
+## Routing Decision Tree
+
+사용자 요청을 받았을 때 다음 순서로 판단:
+
+```
+1. 명시적 커맨드가 있는가? (/setup-project, /create-component, /create-page)
+   → YES: 해당 커맨드 실행
+   → NO: 2단계로
+
+2. 경로 패턴 분석
+   → @src/components/default/ → /create-component
+   → @src/pages/ → /create-page
+   → 경로 없음 → 3단계로
+
+3. Intent Keywords 분석
+   → 프로젝트 설정 키워드 → /setup-project
+   → 컴포넌트 키워드 → /create-component
+   → 페이지 키워드 → /create-page
+   → 불명확 → 4단계로
+
+4. 컨텍스트 분석
+   → Figma URL + 컴포넌트명 → /create-component
+   → Figma URL + 페이지명 → /create-page
+   → 전역 설정 관련 → /setup-project
+   → 불명확 → 사용자에게 명확화 요청
+```
+
+## Examples
+
+### Example 1: 자연어 요청
+```
+사용자: "Button 컴포넌트를 Figma에서 만들어줘"
+분석: 
+  - Intent Keyword: "컴포넌트" + "Button" → /create-component
+  - Figma 링크 요청 필요 → 사용자에게 Figma URL 요청
+```
+
+### Example 2: 경로 기반
+```
+사용자: "@src/components/default/ProgressBar/ : https://figma.com/...?node-id=123"
+분석:
+  - 경로 패턴: @src/components/default/ → /create-component
+  - Figma URL 있음 → 즉시 실행
+```
+
+### Example 3: 프로젝트 설정
+```
+사용자: "프로젝트 설정해줘"
+분석:
+  - Intent Keyword: "프로젝트 설정" → /setup-project
+  - 즉시 실행
+```
+
+### Example 4: 페이지 생성
+```
+사용자: "MainPage 만들어줘"
+분석:
+  - Intent Keyword: "페이지" + "MainPage" → /create-page
+  - Figma 링크 요청 필요 → 사용자에게 Figma URL 요청
+```
+
+## Priority Rules
+
+1. **명시적 커맨드 > 경로 패턴 > Intent Keywords > 컨텍스트 분석**
+2. **경로 패턴이 가장 명확한 신호**
+3. **Intent Keywords가 여러 개 일치하면 가장 구체적인 것 선택**
+4. **불명확한 경우 사용자에게 명확화 요청**
+
+## Ambiguity Handling
+
+요청이 불명확한 경우:
+
+1. **컴포넌트 vs 페이지 구분 불명확**
+   - 경로 확인 (@src/components/ vs @src/pages/)
+   - 이름 패턴 확인 (컴포넌트: Button, Input | 페이지: MainPage, LoginPage)
+   - 사용자에게 명확화 요청
+
+2. **커맨드 선택 불명확**
+   - 사용 가능한 옵션 제시
+   - "다음 중 어떤 작업을 원하시나요?" 형식으로 질문
+
+3. **필수 정보 누락**
+   - 컴포넌트/페이지 생성: Figma URL 요청
+   - 프로젝트 설정: 체크리스트 시작

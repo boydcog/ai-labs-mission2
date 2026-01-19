@@ -8,15 +8,28 @@ When a user provides a Figma link for a component, follow this standardized proc
 - If URL format is `https://www.figma.com/design/{fileKey}/branch/{branchKey}/{fileName}`, use branchKey as fileKey
 
 ## Step 2: Get Design Context
-1. Use `mcp_Figma_get_design_context` with extracted nodeId
-   - Parameters:
-     - `nodeId`: Extracted from URL (format: `"123:456"` or `"123-456"`)
-     - `clientLanguages`: `"typescript,tsx"`
-     - `clientFrameworks`: `"react"`
-     - `artifactType`: `"REUSABLE_COMPONENT"` (for components) or appropriate type
-     - `taskType`: `"CHANGE_ARTIFACT"` (for updates) or `"CREATE_ARTIFACT"` (for new)
-2. Use `mcp_Figma_get_screenshot` to get visual reference
-   - Same parameters as above
+
+**⚠️ MANDATORY: Check cache first before calling Figma API**
+
+1. **Check cache first**:
+   - **Generate cache key**: Extract node-id from URL (e.g., `5089-16174` → `5089:16174` → cache key: `5089-16174`)
+   - **Check for cached files**:
+     * Screenshot: `.figma-cache/screenshots/{nodeId}.png` or `.figma-cache/screenshots/{componentName}-{nodeId}.png`
+     * Design specs: `.figma-cache/specs/{nodeId}.json` or `.figma-cache/specs/{componentName}-{nodeId}.json`
+   - **If cached files exist**: Use cached files, skip API calls
+   - **If cache missing**: Proceed to extract from Figma API
+
+2. **Extract from Figma (Only if cache missing)**:
+   - Use `mcp_Figma_get_design_context` with extracted nodeId
+     - Parameters:
+       - `nodeId`: Extracted from URL (format: `"123:456"` or `"123-456"`)
+       - `clientLanguages`: `"typescript,tsx"`
+       - `clientFrameworks`: `"react"`
+       - `artifactType`: `"REUSABLE_COMPONENT"` (for components) or appropriate type
+       - `taskType`: `"CHANGE_ARTIFACT"` (for updates) or `"CREATE_ARTIFACT"` (for new)
+   - **Save design specs to cache**: Extract design context and save as JSON to `.figma-cache/specs/{nodeId}.json`
+   - Use `mcp_Figma_get_screenshot` with `downloadPath: ".figma-cache/screenshots/{nodeId}.png"`
+   - **Save screenshot to cache**: Use `downloadPath` parameter to save directly to cache folder
 
 ## Step 3: Analyze Existing Component Structure
 1. Check if component exists in `src/components/default/{ComponentName}/`

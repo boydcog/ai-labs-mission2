@@ -47,7 +47,7 @@ Cursor IDE에서 다음 커맨드를 실행하세요:
 Figma 디자인 컴포넌트를 React 컴포넌트로 변환:
 
 ```
-/figma-component @src/components/default/ProgressBar/ : https://www.figma.com/design/...?node-id=5089-16174
+/create-component @src/components/default/ProgressBar/ : https://www.figma.com/design/...?node-id=5089-16174
 ```
 
 또는:
@@ -71,7 +71,7 @@ ai_mvp/
 ├── .cursor/
 │   ├── commands/              # Cursor 커맨드 정의
 │   │   ├── setup-project.md   # 프로젝트 초기 설정
-│   │   ├── figma-component.md # 컴포넌트 생성/업데이트
+│   │   ├── create-component.md # 컴포넌트 생성/업데이트
 │   │   └── create-page.md     # 페이지 생성
 │   ├── rules/                 # Cursor 규칙 정의
 │   │   ├── code-standards.mdc      # 코드 표준
@@ -136,13 +136,13 @@ ai_mvp/
 /setup-project
 ```
 
-### `/figma-component`
+### `/create-component`
 
 Figma 디자인 컴포넌트를 React 컴포넌트로 변환합니다.
 
 **사용 예시:**
 ```
-/figma-component @src/components/default/Button/ : https://www.figma.com/design/...?node-id=123-456
+/create-component @src/components/default/Button/ : https://www.figma.com/design/...?node-id=123-456
 ```
 
 **처리 과정:**
@@ -257,7 +257,7 @@ pnpm test            # 페이지 테스트
 ### 1. 새 컴포넌트 추가
 
 1. Figma에서 컴포넌트 디자인 확인
-2. Cursor에서 `/figma-component` 커맨드 실행
+2. Cursor에서 `/create-component` 커맨드 실행
 3. 자동으로 컴포넌트 생성 및 Storybook 스토리 생성
 4. Lint, Type-check, Build 검증
 5. **컴포넌트 테스트 실행**: `pnpm test:component`
@@ -273,7 +273,7 @@ pnpm test            # 페이지 테스트
 ### 3. 디자인 업데이트
 
 1. Figma에서 디자인 수정
-2. 기존 컴포넌트에 `/figma-component` 커맨드 재실행
+2. 기존 컴포넌트에 `/create-component` 커맨드 재실행
 3. 자동으로 디자인 변경사항 적용
 
 ## 📝 규칙 및 표준
@@ -311,7 +311,7 @@ pnpm test            # 페이지 테스트
 
 이 프로젝트는 Cursor의 다양한 기능을 활용합니다:
 
-- **Commands**: `/setup-project`, `/figma-component`, `/create-page`
+- **Commands**: `/setup-project`, `/create-component`, `/create-page`
 - **Rules**: 프로젝트 규칙 및 표준 정의
 - **Templates**: 컴포넌트 및 페이지 생성 템플릿
 - **Snippets**: 자주 사용하는 코드 패턴

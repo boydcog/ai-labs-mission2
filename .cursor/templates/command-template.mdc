@@ -1,0 +1,107 @@
+# {Command Name}
+
+{One-line description of what this command does.}
+
+{Optional: Additional context or background information}
+
+**Note**: {Reference to detailed rules file if applicable, e.g., "For detailed implementation steps, refer to `.cursor/rules/{rule-file}.mdc`"}
+
+{Optional: Role definition for complex commands}
+**Role**: {Role definition}
+**Top Priority**: {Top priority statement}
+**Optimization Goal**: {Optimization goal}
+
+## Usage
+
+{Basic usage format}
+
+```
+/{command-name} {parameters}
+```
+
+{Optional: Multiple usage options}
+
+### Option 1: {Option Name}
+```
+/{command-name} {option1-parameters}
+```
+
+### Option 2: {Option Name}
+```
+/{command-name} {option2-parameters}
+```
+
+{Optional: Workflow selection for complex commands}
+## Workflow Selection
+
+**Determine which workflow to follow based on user input**:
+
+1. **{Workflow Name}** → Follow **{Workflow Name}**
+   - Use `.cursor/rules/{rule-file}.mdc` for detailed steps
+   - {Workflow description}
+
+{Optional: Additional workflows}
+
+**⚠️ CRITICAL**: {Critical requirements if multiple workflows}
+
+## Core Principles
+
+All {command purpose} must follow these principles {reference to rules}:
+
+- **{Principle Name}**: {Principle description}
+- **{Principle Name}**: {Principle description}
+- **{Principle Name}**: {Principle description}
+
+## Intent Detection
+
+This command should be executed automatically when user request matches these patterns (see `.cursor/rules/command-routing.mdc`):
+
+**Keywords:**
+- {Keyword 1}
+- {Keyword 2}
+- {Keyword 3}
+
+**Patterns:**
+- "{Pattern 1}"
+- "{Pattern 2}"
+- "{Pattern 3}"
+
+**Required Context:**
+- {Context requirement 1}
+- {Context requirement 2}
+
+## Execution
+
+{Execution description}
+
+Execute all steps automatically when user provides:
+- {Input requirement 1}
+- {Input requirement 2}
+- OR natural language request matching intent patterns above
+
+**For detailed implementation steps, refer to**: `.cursor/rules/{rule-file}.mdc`
+
+{Optional: Execution Flow for complex commands}
+## Execution Flow
+
+### Step 1: {Step Name}
+{Step description}
+
+### Step 2: {Step Name}
+{Step description}
+
+{Additional steps...}
+
+**⚠️ Critical**: {Command name} is only considered complete when:
+- All requirements in `.cursor/rules/{rule-file}.mdc` are met
+- {Completion criteria 1}
+- {Completion criteria 2}
+- All lint and build checks pass
+- {Test command if applicable} execution succeeds
+
+{Optional: Additional sections}
+## Notes
+
+- {Note 1}
+- {Note 2}
+- {Note 3}

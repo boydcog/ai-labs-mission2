@@ -1,0 +1,109 @@
+# {Rule Title}
+
+{One-line description of what this rule defines or governs}
+
+{Optional: Additional context or background information}
+
+**참고**: {Reference to other rules if applicable, e.g., "프로젝트 전역 설정(아이콘 라이브러리, 디자인 토큰, 코드 스타일 등)은 `.cursor/rules/project-context.mdc`를 참고하세요."}
+
+{Optional: Critical warning at the top}
+**⚠️ 가장 중요한 규칙**: {Critical rule statement}
+
+## 개요
+
+이 규칙은 다음을 정의합니다:
+1. **{Rule aspect 1}**
+2. **{Rule aspect 2}**
+3. **{Rule aspect 3}**
+
+{Optional: Use "핵심 원칙" instead for principles-based rules}
+## 핵심 원칙
+
+### 1. {Principle Name}
+**{Principle statement in bold}**
+
+{Principle description}
+
+{Code example or usage if applicable}
+
+### 2. {Principle Name}
+**{Principle statement in bold}**
+
+{Principle description}
+
+## {Main Rule Category}
+
+### {Sub-category 1}
+
+**{Rule statement in bold}**
+
+- {Rule detail 1}
+- {Rule detail 2}
+- {Rule detail 3}
+
+**사용 예시:**
+```tsx
+// ✅ 올바른 사용
+{Correct usage example}
+
+// ❌ 잘못된 사용
+{Incorrect usage example}
+```
+
+### {Sub-category 2}
+
+**{Rule statement in bold}**
+
+{Rule description}
+
+{Optional: Step-by-step process}
+## Step 1: {Step Name}
+
+{Step description}
+
+## Step 2: {Step Name}
+
+{Step description}
+
+{Additional steps...}
+
+{Optional: Required actions section}
+## ⚠️ 필수: {Required Action Title}
+
+**⚠️ 필수: {Required action statement}**
+
+{Required action description}
+
+{Execution steps if applicable}
+```bash
+# 1. {Step 1}
+{command 1}
+
+# 2. {Step 2}
+{command 2}
+```
+
+**{Action name} 실행은 필수이며, 생략할 수 없습니다.**
+
+{Optional: Additional sections}
+## {Additional Section Title}
+
+{Section content}
+
+{Optional: Checklist section}
+## 체크리스트
+
+{Checklist items}
+
+{Optional: Examples section}
+## 예제: {Example Title}
+
+{Example content}
+
+{Optional: Notes section}
+## 주의사항
+
+- {Note 1}
+- {Note 2}
+
+**참고**: {Additional reference information}
